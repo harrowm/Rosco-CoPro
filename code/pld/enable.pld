@@ -1,0 +1,36 @@
+Name      enable;
+Partno    ;
+Date      02/29/24;
+Revision  01;
+Designer  Malcolm Harrow;
+Company   Malcolm Harrow, MIT License;
+Assembly  None;
+Location  None;
+Device    g22V10;
+
+/****************************************************************/
+/*                                                              */
+/* Set  DS and CS for the 68882 Co Processor                    */
+/*                                                              */
+/****************************************************************/
+
+/**  Inputs  **/
+
+PIN 1           = UDS;          /* Dont need a clock            */
+PIN 2           = LDS;         
+PIN [3..5]      = [F0..F2];
+PIN [6..11]     = [A13..A18];   /* PIN 12 is GND                */
+PIN 13          = A19;
+PIN [14..21]    = [A5..A12];    /* might need these for 68000   */
+ 
+
+/**  Outputs  **/
+
+PIN 23          = DS;           /* Recreate DS                  */
+PIN 22          = CS;           /* Enable 68882                 */
+
+/** Logic Equations **/
+
+!DS             = !UDS # !LDS;
+
+!CS             = F2 & F1 & F0 & !A19 & !A18 & A17 & !A16 & !A15 & !A14 & A13;

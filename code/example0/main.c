@@ -8,8 +8,10 @@
  */
 
 #include "stdio.h"
+#include "debug_stub.h"
 
 int kmain() {
+    debug_stub();
     double a, b; 
 
     a = 5.8;

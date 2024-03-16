@@ -1,0 +1,2333 @@
+
+divbyzero.elf:     file format elf32-m68k
+
+
+Disassembly of section .text.init:
+
+00002000 <_init>:
+    2000:	41fa fffe      	lea %pc@(2000 <_init>),%a0
+    2004:	43f9 0000 2000 	lea 2000 <_init>,%a1
+    200a:	203c 0000 20c4 	movel #8388,%d0
+    2010:	9089           	subl %a1,%d0
+    2012:	e488           	lsrl #2,%d0
+    2014:	5380           	subql #1,%d0
+    2016:	22d8           	movel %a0@+,%a1@+
+    2018:	51c8 fffc      	dbf %d0,2016 <_init+0x16>
+    201c:	4ef9 0000 2024 	jmp 2024 <_postinit>
+
+Disassembly of section .text.postinit:
+
+00002024 <_postinit>:
+    2024:	203c 0000 3494 	movel #13460,%d0
+    202a:	9089           	subl %a1,%d0
+    202c:	e488           	lsrl #2,%d0
+    202e:	2200           	movel %d0,%d1
+    2030:	4841           	swap %d1
+    2032:	6002           	bras 2036 <_postinit+0x12>
+    2034:	22d8           	movel %a0@+,%a1@+
+    2036:	51c8 fffc      	dbf %d0,2034 <_postinit+0x10>
+    203a:	51c9 fff8      	dbf %d1,2034 <_postinit+0x10>
+
+0000203e <_start>:
+    203e:	2e78 0414      	moveal 414 <SDB_MEMSIZE>,%sp
+    2042:	23f8 0490 0000 	movel 490 <EFP_PROG_EXIT>,34a0 <SAVE_PROG_EXIT>
+    2048:	34a0 
+    204a:	21fc 0000 2064 	movel #8292,490 <EFP_PROG_EXIT>
+    2050:	0490 
+    2052:	41f9 0000 32d0 	lea 32d0 <__kinit>,%a0
+    2058:	4e90           	jsr %a0@
+    205a:	6124           	bsrs 2080 <CALL_CTORS>
+    205c:	41f9 0000 20c4 	lea 20c4 <_postinit_end>,%a0
+    2062:	4e90           	jsr %a0@
+    2064:	21f9 0000 34a0 	movel 34a0 <SAVE_PROG_EXIT>,490 <EFP_PROG_EXIT>
+    206a:	0490 
+    206c:	42a7           	clrl %sp@-
+    206e:	41f9 0000 32fc 	lea 32fc <__cxa_finalize>,%a0
+    2074:	4e90           	jsr %a0@
+    2076:	588f           	addql #4,%sp
+    2078:	6128           	bsrs 20a2 <CALL_DTORS>
+    207a:	2078 0004      	moveal 4 <DUART_CRA>,%a0
+    207e:	4ed0           	jmp %a0@
+
+00002080 <CALL_CTORS>:
+    2080:	48e7 0038      	moveml %a2-%a4,%sp@-
+    2084:	45f9 0000 3490 	lea 3490 <crbuf>,%a2
+    208a:	47f9 0000 3490 	lea 3490 <crbuf>,%a3
+    2090:	598b           	subql #4,%a3
+    2092:	b7ca           	cmpal %a2,%a3
+    2094:	6506           	bcss 209c <CALL_CTORS+0x1c>
+    2096:	2853           	moveal %a3@,%a4
+    2098:	4e94           	jsr %a4@
+    209a:	60f4           	bras 2090 <CALL_CTORS+0x10>
+    209c:	4cdf 1c00      	moveml %sp@+,%a2-%a4
+    20a0:	4e75           	rts
+
+000020a2 <CALL_DTORS>:
+    20a2:	48e7 0038      	moveml %a2-%a4,%sp@-
+    20a6:	45f9 0000 3490 	lea 3490 <crbuf>,%a2
+    20ac:	47f9 0000 3490 	lea 3490 <crbuf>,%a3
+    20b2:	b5cb           	cmpal %a3,%a2
+    20b4:	6708           	beqs 20be <CALL_DTORS+0x1c>
+    20b6:	2852           	moveal %a2@,%a4
+    20b8:	4e94           	jsr %a4@
+    20ba:	588a           	addql #4,%a2
+    20bc:	60f4           	bras 20b2 <CALL_DTORS+0x10>
+    20be:	4cdf 1c00      	moveml %sp@+,%a2-%a4
+    20c2:	4e75           	rts
+
+Disassembly of section .text:
+
+000020c4 <kmain>:
+ */
+
+#include "stdio.h"
+#include "debug_stub.h"
+
+int kmain() {
+    20c4:	2f0a           	movel %a2,%sp@-
+    debug_stub();
+    20c6:	4eb9 0000 2100 	jsr 2100 <debug_stub>
+    
+    int i=0;
+    int j=10;
+
+    printf("Size of long %ld\n", sizeof(long));
+    20cc:	4878 0004      	pea 4 <DUART_CRA>
+    20d0:	4879 0000 341a 	pea 341a <__mulsi3+0x22>
+    20d6:	45f9 0000 3254 	lea 3254 <printf_>,%a2
+    20dc:	4e92           	jsr %a2@
+    printf("Div by zero trap (0x14) set to %lX\n", *(long *) 0x14);
+    20de:	2f38 0014      	movel 14 <DUART_CRB>,%sp@-
+    20e2:	4879 0000 342c 	pea 342c <__mulsi3+0x34>
+    20e8:	4e92           	jsr %a2@
+    printf("F-line trap (0x2C) set to %lX\n", *(long *) 0x2C);
+    20ea:	2f38 002c      	movel 2c <R_STOPCNTCMD+0xe>,%sp@-
+    20ee:	4879 0000 3450 	pea 3450 <__mulsi3+0x58>
+    20f4:	4e92           	jsr %a2@
+    printf("About to divide by zero ..\n");
+    20f6:	4879 0000 346f 	pea 346f <__mulsi3+0x77>
+    20fc:	4e92           	jsr %a2@
+
+    printf("Answer (int) %d\n", j/i);
+    20fe:	4e47           	trap #7
+
+00002100 <debug_stub>:
+    2100:	700a           	moveq #10,%d0
+    2102:	43f8 0008      	lea 8 <DUART_ACR>,%a1
+    2106:	41fa 00fc      	lea %pc@(2204 <debug_stub+0x104>),%a0
+    210a:	22c8           	movel %a0,%a1@+
+    210c:	41e8 000c      	lea %a0@(12),%a0
+    2110:	5380           	subql #1,%d0
+    2112:	66f6           	bnes 210a <debug_stub+0xa>
+    2114:	4e75           	rts
+    2116:	4275 7320 6572 	clrw %a5@(6572,%d7:w:2)
+    211c:	726f           	moveq #111,%d1
+    211e:	7200           	moveq #0,%d1
+    2120:	4164           	.short 0x4164
+    2122:	6472           	bccs 2196 <debug_stub+0x96>
+    2124:	6573           	bcss 2199 <debug_stub+0x99>
+    2126:	7320           	.short 0x7320
+    2128:	6572           	bcss 219c <debug_stub+0x9c>
+    212a:	726f           	moveq #111,%d1
+    212c:	7200           	moveq #0,%d1
+    212e:	496c           	.short 0x496c
+    2130:	6c65           	bges 2197 <debug_stub+0x97>
+    2132:	6761           	beqs 2195 <debug_stub+0x95>
+    2134:	6c20           	bges 2156 <debug_stub+0x56>
+    2136:	696e           	bvss 21a6 <debug_stub+0xa6>
+    2138:	7374           	.short 0x7374
+    213a:	7275           	moveq #117,%d1
+    213c:	6374           	blss 21b2 <debug_stub+0xb2>
+    213e:	696f           	bvss 21af <debug_stub+0xaf>
+    2140:	6e00 4469      	bgtw 65ab <cxa_atexits+0x3105>
+    2144:	7669           	moveq #105,%d3
+    2146:	7369           	.short 0x7369
+    2148:	6f6e           	bles 21b8 <debug_stub+0xb8>
+    214a:	2062           	moveal %a2@-,%a0
+    214c:	7920           	.short 0x7920
+    214e:	7a65           	moveq #101,%d5
+    2150:	726f           	moveq #111,%d1
+    2152:	0043 484b      	oriw #18507,%d3
+    2156:	2069 6e73      	moveal %a1@(28275),%a0
+    215a:	7472           	moveq #114,%d2
+    215c:	7563           	.short 0x7563
+    215e:	7469           	moveq #105,%d2
+    2160:	6f6e           	bles 21d0 <debug_stub+0xd0>
+    2162:	0054 5241      	oriw #21057,%a4@
+    2166:	5056           	addqw #8,%fp@
+    2168:	2069 6e73      	moveal %a1@(28275),%a0
+    216c:	7472           	moveq #114,%d2
+    216e:	7563           	.short 0x7563
+    2170:	7469           	moveq #105,%d2
+    2172:	6f6e           	bles 21e2 <debug_stub+0xe2>
+    2174:	0050 7269      	oriw #29289,%a0@
+    2178:	7669           	moveq #105,%d3
+    217a:	6c65           	bges 21e1 <debug_stub+0xe1>
+    217c:	6765           	beqs 21e3 <debug_stub+0xe3>
+    217e:	2076 696f 6c61 	moveal %fp@(6c61)@(74696f6e),%a0
+    2184:	7469 6f6e 
+    2188:	0054 7261      	oriw #29281,%a4@
+    218c:	6365           	blss 21f3 <debug_stub+0xf3>
+    218e:	0024 4178      	orib #120,%a4@-
+    2192:	7878           	moveq #120,%d4
+    2194:	2069 6e73      	moveal %a1@(28275),%a0
+    2198:	7472           	moveq #114,%d2
+    219a:	7563           	.short 0x7563
+    219c:	7469           	moveq #105,%d2
+    219e:	6f6e           	bles 220e <debug_stub+0x10e>
+    21a0:	0024 4678      	orib #120,%a4@-
+    21a4:	7878           	moveq #120,%d4
+    21a6:	204c           	moveal %a4,%a0
+    21a8:	4942           	.short 0x4942
+    21aa:	2069 6e73      	moveal %a1@(28275),%a0
+    21ae:	7472           	moveq #114,%d2
+    21b0:	7563           	.short 0x7563
+    21b2:	7469           	moveq #105,%d2
+    21b4:	6f6e           	bles 2224 <debug_stub+0x124>
+    21b6:	000d           	.short 0x000d
+    21b8:	0a07 2a2a      	eorib #42,%d7
+    21bc:	2a20           	movel %a0@-,%d5
+    21be:	536f 6674      	subqw #1,%sp@(26228)
+    21c2:	7761           	.short 0x7761
+    21c4:	7265           	moveq #101,%d1
+    21c6:	2046           	moveal %d6,%a0
+    21c8:	6169           	bsrs 2233 <debug_stub+0x133>
+    21ca:	6c75           	bges 2241 <debug_stub+0x141>
+    21cc:	7265           	moveq #101,%d1
+    21ce:	3a20           	movew %a0@-,%d5
+    21d0:	0020 2866      	orib #102,%a0@-
+    21d4:	6175           	bsrs 224b <debug_stub+0x14b>
+    21d6:	6c74           	bges 224c <debug_stub+0x14c>
+    21d8:	2061           	moveal %a1@-,%a0
+    21da:	6464           	bccs 2240 <debug_stub+0x140>
+    21dc:	7220           	moveq #32,%d1
+    21de:	0029 000d 0a50 	orib #13,%a1@(2640)
+    21e4:	433d           	.short 0x433d
+    21e6:	0020 6f70      	orib #112,%a0@-
+    21ea:	3d00           	movew %d0,%fp@-
+    21ec:	2020           	movel %a0@-,%d0
+    21ee:	2020           	movel %a0@-,%d0
+    21f0:	2053           	moveal %a3@,%a0
+    21f2:	523d           	.short 0x523d
+    21f4:	0020 2020      	orib #32,%a0@-
+    21f8:	2055           	moveal %a5@,%a0
+    21fa:	5350           	subqw #1,%a0@
+    21fc:	3d00           	movew %d0,%fp@-
+    21fe:	0d0a 0000      	movepw %a2@(0),%d6
+    2202:	0000 007c      	orib #124,%d0
+    2206:	0700           	btst %d3,%d0
+    2208:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    220c:	7400           	moveq #0,%d2
+    220e:	606a           	bras 227a <debug_stub+0x17a>
+    2210:	007c 0700      	oriw #1792,%sr
+    2214:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2218:	7402           	moveq #2,%d2
+    221a:	605e           	bras 227a <debug_stub+0x17a>
+    221c:	007c 0700      	oriw #1792,%sr
+    2220:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2224:	7404           	moveq #4,%d2
+    2226:	6052           	bras 227a <debug_stub+0x17a>
+    2228:	007c 0700      	oriw #1792,%sr
+    222c:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2230:	7406           	moveq #6,%d2
+    2232:	6046           	bras 227a <debug_stub+0x17a>
+    2234:	007c 0700      	oriw #1792,%sr
+    2238:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    223c:	7408           	moveq #8,%d2
+    223e:	603a           	bras 227a <debug_stub+0x17a>
+    2240:	007c 0700      	oriw #1792,%sr
+    2244:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2248:	740a           	moveq #10,%d2
+    224a:	602e           	bras 227a <debug_stub+0x17a>
+    224c:	007c 0700      	oriw #1792,%sr
+    2250:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2254:	740c           	moveq #12,%d2
+    2256:	6022           	bras 227a <debug_stub+0x17a>
+    2258:	007c 0700      	oriw #1792,%sr
+    225c:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2260:	740e           	moveq #14,%d2
+    2262:	6016           	bras 227a <debug_stub+0x17a>
+    2264:	007c 0700      	oriw #1792,%sr
+    2268:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    226c:	7410           	moveq #16,%d2
+    226e:	600a           	bras 227a <debug_stub+0x17a>
+    2270:	007c 0700      	oriw #1792,%sr
+    2274:	48e7 ffff      	moveml %d0-%sp,%sp@-
+    2278:	7412           	moveq #18,%d2
+    227a:	3f6f 0040 fffe 	movew %sp@(64),%sp@(-2)
+    2280:	206f 0042      	moveal %sp@(66),%a0
+    2284:	2f48 fffa      	movel %a0,%sp@(-6)
+    2288:	3f50 fff8      	movew %a0@,%sp@(-8)
+    228c:	42af fff4      	clrl %sp@(-12)
+    2290:	b47c 0004      	cmpw #4,%d2
+    2294:	6c1c           	bges 22b2 <debug_stub+0x1b2>
+    2296:	2f6f 004a fff4 	movel %sp@(74),%sp@(-12)
+    229c:	6014           	bras 22b2 <debug_stub+0x1b2>
+    229e:	fe78           	.short 0xfe78
+    22a0:	fe82           	.short 0xfe82
+    22a2:	fe90           	.short 0xfe90
+    22a4:	fea4           	.short 0xfea4
+    22a6:	feb5           	.short 0xfeb5
+    22a8:	fec5           	.short 0xfec5
+    22aa:	fed7           	.short 0xfed7
+    22ac:	feeb           	.short 0xfeeb
+    22ae:	fef1           	.short 0xfef1
+    22b0:	ff03           	.short 0xff03
+    22b2:	4fef fff4      	lea %sp@(-12),%sp
+    22b6:	43fa 00f4      	lea %pc@(23ac <stub_print>),%a1
+    22ba:	41fa fefb      	lea %pc@(21b7 <debug_stub+0xb7>),%a0
+    22be:	4e91           	jsr %a1@
+    22c0:	303b 20dc      	movew %pc@(229e <debug_stub+0x19e>,%d2:w),%d0
+    22c4:	41fb 00d8      	lea %pc@(229e <debug_stub+0x19e>,%d0:w),%a0
+    22c8:	4e91           	jsr %a1@
+    22ca:	2417           	movel %sp@,%d2
+    22cc:	6710           	beqs 22de <debug_stub+0x1de>
+    22ce:	41fa ff01      	lea %pc@(21d1 <debug_stub+0xd1>),%a0
+    22d2:	4e91           	jsr %a1@
+    22d4:	6100 0098      	bsrw 236e <printhex>
+    22d8:	41fa ff05      	lea %pc@(21df <debug_stub+0xdf>),%a0
+    22dc:	4e91           	jsr %a1@
+    22de:	41fa ff01      	lea %pc@(21e1 <debug_stub+0xe1>),%a0
+    22e2:	4e91           	jsr %a1@
+    22e4:	242f 0006      	movel %sp@(6),%d2
+    22e8:	6100 0084      	bsrw 236e <printhex>
+    22ec:	41fa fef9      	lea %pc@(21e7 <debug_stub+0xe7>),%a0
+    22f0:	4e91           	jsr %a1@
+    22f2:	206f 0006      	moveal %sp@(6),%a0
+    22f6:	2410           	movel %a0@,%d2
+    22f8:	7604           	moveq #4,%d3
+    22fa:	6174           	bsrs 2370 <printhex_n>
+    22fc:	41fa feee      	lea %pc@(21ec <debug_stub+0xec>),%a0
+    2300:	4e91           	jsr %a1@
+    2302:	242f 000a      	movel %sp@(10),%d2
+    2306:	7604           	moveq #4,%d3
+    2308:	6166           	bsrs 2370 <printhex_n>
+    230a:	41fa fee9      	lea %pc@(21f5 <debug_stub+0xf5>),%a0
+    230e:	4e91           	jsr %a1@
+    2310:	4fef 000c      	lea %sp@(12),%sp
+    2314:	4e68           	movel %usp,%a0
+    2316:	2408           	movel %a0,%d2
+    2318:	6154           	bsrs 236e <printhex>
+    231a:	41fa fee2      	lea %pc@(21fe <debug_stub+0xfe>),%a0
+    231e:	4e91           	jsr %a1@
+    2320:	7800           	moveq #0,%d4
+    2322:	41fa 0070      	lea %pc@(2394 <stub_prchar>),%a0
+    2326:	244f           	moveal %sp,%a2
+    2328:	7064           	moveq #100,%d0
+    232a:	b83c 0008      	cmpb #8,%d4
+    232e:	6d02           	blts 2332 <debug_stub+0x232>
+    2330:	7061           	moveq #97,%d0
+    2332:	4e90           	jsr %a0@
+    2334:	2004           	movel %d4,%d0
+    2336:	c03c 0007      	andb #7,%d0
+    233a:	614a           	bsrs 2386 <hexdigit>
+    233c:	4e90           	jsr %a0@
+    233e:	703d           	moveq #61,%d0
+    2340:	4e90           	jsr %a0@
+    2342:	241a           	movel %a2@+,%d2
+    2344:	6128           	bsrs 236e <printhex>
+    2346:	5284           	addql #1,%d4
+    2348:	1004           	moveb %d4,%d0
+    234a:	c03c 0003      	andb #3,%d0
+    234e:	6706           	beqs 2356 <debug_stub+0x256>
+    2350:	7020           	moveq #32,%d0
+    2352:	4e90           	jsr %a0@
+    2354:	60d2           	bras 2328 <debug_stub+0x228>
+    2356:	700d           	moveq #13,%d0
+    2358:	4e90           	jsr %a0@
+    235a:	700a           	moveq #10,%d0
+    235c:	4e90           	jsr %a0@
+    235e:	b83c 0010      	cmpb #16,%d4
+    2362:	6dc4           	blts 2328 <debug_stub+0x228>
+    2364:	027c f0ff      	andiw #-3841,%sr
+    2368:	2078 0004      	moveal 4 <DUART_CRA>,%a0
+    236c:	4ed0           	jmp %a0@
+
+0000236e <printhex>:
+    236e:	7608           	moveq #8,%d3
+
+00002370 <printhex_n>:
+    2370:	41fa 0022      	lea %pc@(2394 <stub_prchar>),%a0
+    2374:	e99a           	roll #4,%d2
+    2376:	1002           	moveb %d2,%d0
+    2378:	c07c 000f      	andw #15,%d0
+    237c:	6108           	bsrs 2386 <hexdigit>
+    237e:	4e90           	jsr %a0@
+    2380:	5303           	subqb #1,%d3
+    2382:	66f0           	bnes 2374 <printhex_n+0x4>
+    2384:	4e75           	rts
+
+00002386 <hexdigit>:
+    2386:	b03c 000a      	cmpb #10,%d0
+    238a:	6d02           	blts 238e <hexdigit+0x8>
+    238c:	5e00           	addqb #7,%d0
+    238e:	d07c 0030      	addw #48,%d0
+    2392:	4e75           	rts
+
+00002394 <stub_prchar>:
+    2394:	2f08           	movel %a0,%sp@-
+    2396:	2078 0428      	moveal 428 <_EFP_PRINTCHAR>,%a0
+    239a:	4e90           	jsr %a0@
+    239c:	b1f8 0430      	cmpal 430 <_EFP_SENDCHAR>,%a0
+    23a0:	6706           	beqs 23a8 <stub_prchar+0x14>
+    23a2:	2078 0430      	moveal 430 <_EFP_SENDCHAR>,%a0
+    23a6:	4e90           	jsr %a0@
+    23a8:	205f           	moveal %sp@+,%a0
+    23aa:	4e75           	rts
+
+000023ac <stub_print>:
+    23ac:	2f09           	movel %a1,%sp@-
+    23ae:	2f08           	movel %a0,%sp@-
+    23b0:	2278 0420      	moveal 420 <_EFP_PRINT>,%a1
+    23b4:	4e91           	jsr %a1@
+    23b6:	2278 0428      	moveal 428 <_EFP_PRINTCHAR>,%a1
+    23ba:	b3f8 0430      	cmpal 430 <_EFP_SENDCHAR>,%a1
+    23be:	205f           	moveal %sp@+,%a0
+    23c0:	670c           	beqs 23ce <stub_print+0x22>
+    23c2:	2278 0430      	moveal 430 <_EFP_SENDCHAR>,%a1
+    23c6:	1018           	moveb %a0@+,%d0
+    23c8:	6704           	beqs 23ce <stub_print+0x22>
+    23ca:	4e91           	jsr %a1@
+    23cc:	60f8           	bras 23c6 <stub_print+0x1a>
+    23ce:	225f           	moveal %sp@+,%a1
+    23d0:	4e75           	rts
+
+000023d2 <_out_null>:
+
+// internal null output
+static inline void _out_null(char character, void* buffer, size_t idx, size_t maxlen)
+{
+  (void)character; (void)buffer; (void)idx; (void)maxlen;
+}
+    23d2:	4e75           	rts
+
+000023d4 <_ntoa_long>:
+}
+
+
+// internal itoa for 'long' type
+static size_t _ntoa_long(out_fct_type out, char* buffer, size_t idx, size_t maxlen, unsigned long value, bool negative, unsigned long base, unsigned int prec, unsigned int width, unsigned int flags)
+{
+    23d4:	4fef ffcc      	lea %sp@(-52),%sp
+    23d8:	48e7 3f3e      	moveml %d2-%d7/%a2-%fp,%sp@-
+    23dc:	246f 0064      	moveal %sp@(100),%a2
+    23e0:	2a2f 0068      	movel %sp@(104),%d5
+    23e4:	2c2f 0070      	movel %sp@(112),%d6
+    23e8:	242f 0074      	movel %sp@(116),%d2
+    23ec:	262f 007c      	movel %sp@(124),%d3
+    23f0:	2e2f 0084      	movel %sp@(132),%d7
+    23f4:	1f6f 007b 003f 	moveb %sp@(123),%sp@(63)
+  if (!value) {
+    flags &= ~FLAGS_HASH;
+  }
+
+  // write if precision != 0 and value is != 0
+  if (!(flags & FLAGS_PRECISION) || value) {
+    23fa:	222f 0088      	movel %sp@(136),%d1
+    23fe:	0281 0000 0400 	andil #1024,%d1
+    2404:	2f41 0032      	movel %d1,%sp@(50)
+  if (!value) {
+    2408:	4a82           	tstl %d2
+    240a:	6700 0174      	beqw 2580 <_ntoa_long+0x1ac>
+  if (flags & FLAGS_HASH) {
+    240e:	7210           	moveq #16,%d1
+    2410:	c2af 0088      	andl %sp@(136),%d1
+    2414:	2f41 0036      	movel %d1,%sp@(54)
+    2418:	082f 0005 008b 	btst #5,%sp@(139)
+    241e:	6600 017e      	bnew 259e <_ntoa_long+0x1ca>
+    2422:	7061           	moveq #97,%d0
+    2424:	41ef 0040      	lea %sp@(64),%a0
+    2428:	2f48 002e      	movel %a0,%sp@(46)
+    242c:	4def 0060      	lea %sp@(96),%fp
+    do {
+      const char digit = (char)(value % base);
+      buf[len++] = digit < 10 ? '0' + digit : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
+    2430:	2808           	movel %a0,%d4
+    2432:	49f9 0000 33c8 	lea 33c8 <__umodsi3>,%a4
+    2438:	47f9 0000 336c 	lea 336c <__udivsi3>,%a3
+    243e:	1200           	moveb %d0,%d1
+    2440:	0601 fff6      	addib #-10,%d1
+    2444:	2f4a 003a      	movel %a2,%sp@(58)
+    2448:	2a45           	moveal %d5,%a5
+    244a:	1a01           	moveb %d1,%d5
+      const char digit = (char)(value % base);
+    244c:	2f03           	movel %d3,%sp@-
+    244e:	2f02           	movel %d2,%sp@-
+    2450:	4e94           	jsr %a4@
+    2452:	508f           	addql #8,%sp
+      buf[len++] = digit < 10 ? '0' + digit : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
+    2454:	7209           	moveq #9,%d1
+    2456:	b280           	cmpl %d0,%d1
+    2458:	652a           	bcss 2484 <_ntoa_long+0xb0>
+    245a:	0600 0030      	addib #48,%d0
+    245e:	2444           	moveal %d4,%a2
+    2460:	14c0           	moveb %d0,%a2@+
+      value /= base;
+    2462:	2f03           	movel %d3,%sp@-
+    2464:	2f02           	movel %d2,%sp@-
+    2466:	4e93           	jsr %a3@
+    2468:	508f           	addql #8,%sp
+    } while (value && (len < PRINTF_NTOA_BUFFER_SIZE));
+    246a:	b682           	cmpl %d2,%d3
+    246c:	6228           	bhis 2496 <_ntoa_long+0xc2>
+    246e:	bdca           	cmpal %a2,%fp
+    2470:	6724           	beqs 2496 <_ntoa_long+0xc2>
+    2472:	280a           	movel %a2,%d4
+      value /= base;
+    2474:	2400           	movel %d0,%d2
+      const char digit = (char)(value % base);
+    2476:	2f03           	movel %d3,%sp@-
+    2478:	2f02           	movel %d2,%sp@-
+    247a:	4e94           	jsr %a4@
+    247c:	508f           	addql #8,%sp
+      buf[len++] = digit < 10 ? '0' + digit : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
+    247e:	7209           	moveq #9,%d1
+    2480:	b280           	cmpl %d0,%d1
+    2482:	64d6           	bccs 245a <_ntoa_long+0x86>
+    2484:	d005           	addb %d5,%d0
+    2486:	2444           	moveal %d4,%a2
+    2488:	14c0           	moveb %d0,%a2@+
+      value /= base;
+    248a:	2f03           	movel %d3,%sp@-
+    248c:	2f02           	movel %d2,%sp@-
+    248e:	4e93           	jsr %a3@
+    2490:	508f           	addql #8,%sp
+    } while (value && (len < PRINTF_NTOA_BUFFER_SIZE));
+    2492:	b682           	cmpl %d2,%d3
+    2494:	63d8           	blss 246e <_ntoa_long+0x9a>
+      buf[len++] = digit < 10 ? '0' + digit : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
+    2496:	246f 003a      	moveal %sp@(58),%a2
+    249a:	2a0d           	movel %a5,%d5
+    249c:	307c 0001      	moveaw #1,%a0
+    24a0:	91ef 002e      	subal %sp@(46),%a0
+    24a4:	d888           	addl %a0,%d4
+  if (!(flags & FLAGS_LEFT)) {
+    24a6:	082f 0001 008b 	btst #1,%sp@(139)
+    24ac:	6700 013e      	beqw 25ec <_ntoa_long+0x218>
+    24b0:	3c7c 0002      	moveaw #2,%fp
+  if (flags & FLAGS_HASH) {
+    24b4:	4aaf 0036      	tstl %sp@(54)
+    24b8:	6700 023c      	beqw 26f6 <_ntoa_long+0x322>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    24bc:	4aaf 0032      	tstl %sp@(50)
+    24c0:	6600 01aa      	bnew 266c <_ntoa_long+0x298>
+    24c4:	4a84           	tstl %d4
+    24c6:	6600 0324      	bnew 27ec <_ntoa_long+0x418>
+    if ((base == 16U) && !(flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    24ca:	7010           	moveq #16,%d0
+    24cc:	b083           	cmpl %d3,%d0
+    24ce:	6700 0412      	beqw 28e2 <_ntoa_long+0x50e>
+    else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    24d2:	5583           	subql #2,%d3
+    24d4:	6700 04b0      	beqw 2986 <_ntoa_long+0x5b2>
+      buf[len++] = '0';
+    24d8:	1f7c 0030 0040 	moveb #48,%sp@(64)
+    24de:	202f 0088      	movel %sp@(136),%d0
+    24e2:	7401           	moveq #1,%d2
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    24e4:	7203           	moveq #3,%d1
+    24e6:	c280           	andl %d0,%d1
+      buf[len++] = '-';
+    24e8:	2802           	movel %d2,%d4
+    if (negative) {
+    24ea:	4a2f 003f      	tstb %sp@(63)
+    24ee:	6700 02dc      	beqw 27cc <_ntoa_long+0x3f8>
+      buf[len++] = '-';
+    24f2:	5284           	addql #1,%d4
+    24f4:	1fbc 002d 2840 	moveb #45,%sp@(40,%d2:l)
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    24fa:	4a81           	tstl %d1
+    24fc:	6600 0194      	bnew 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    2500:	b887           	cmpl %d7,%d4
+    2502:	6400 018e      	bccw 2692 <_ntoa_long+0x2be>
+    2506:	242f 006c      	movel %sp@(108),%d2
+    250a:	2604           	movel %d4,%d3
+    250c:	9682           	subl %d2,%d3
+      out(' ', buffer, idx++, maxlen);
+    250e:	2002           	movel %d2,%d0
+    2510:	5282           	addql #1,%d2
+    2512:	2f06           	movel %d6,%sp@-
+    2514:	2f00           	movel %d0,%sp@-
+    2516:	2f05           	movel %d5,%sp@-
+    2518:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    251c:	4e92           	jsr %a2@
+    for (size_t i = len; i < width; i++) {
+    251e:	2003           	movel %d3,%d0
+    2520:	d082           	addl %d2,%d0
+    2522:	4fef 0010      	lea %sp@(16),%sp
+    2526:	be80           	cmpl %d0,%d7
+    2528:	62e4           	bhis 250e <_ntoa_long+0x13a>
+    252a:	2004           	movel %d4,%d0
+    252c:	5280           	addql #1,%d0
+    252e:	be80           	cmpl %d0,%d7
+    2530:	6500 033e      	bcsw 2870 <_ntoa_long+0x49c>
+    2534:	2047           	moveal %d7,%a0
+    2536:	5388           	subql #1,%a0
+    2538:	91c4           	subal %d4,%a0
+    253a:	226f 006c      	moveal %sp@(108),%a1
+    253e:	43f1 8801      	lea %a1@(1,%a0:l),%a1
+    2542:	2609           	movel %a1,%d3
+  while (len) {
+    2544:	4a84           	tstl %d4
+    2546:	6600 014e      	bnew 2696 <_ntoa_long+0x2c2>
+    254a:	2403           	movel %d3,%d2
+  if (flags & FLAGS_LEFT) {
+    254c:	bcfc 0000      	cmpaw #0,%fp
+    2550:	6722           	beqs 2574 <_ntoa_long+0x1a0>
+    while (idx - start_idx < width) {
+    2552:	2602           	movel %d2,%d3
+    2554:	96af 006c      	subl %sp@(108),%d3
+    2558:	be83           	cmpl %d3,%d7
+    255a:	6318           	blss 2574 <_ntoa_long+0x1a0>
+      out(' ', buffer, idx++, maxlen);
+    255c:	2f06           	movel %d6,%sp@-
+    255e:	2f02           	movel %d2,%sp@-
+    2560:	5282           	addql #1,%d2
+    2562:	2f05           	movel %d5,%sp@-
+    2564:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    2568:	4e92           	jsr %a2@
+    while (idx - start_idx < width) {
+    256a:	5283           	addql #1,%d3
+    256c:	4fef 0010      	lea %sp@(16),%sp
+    2570:	be83           	cmpl %d3,%d7
+    2572:	62e8           	bhis 255c <_ntoa_long+0x188>
+  }
+
+  return _ntoa_format(out, buffer, idx, maxlen, buf, len, negative, (unsigned int)base, prec, width, flags);
+}
+    2574:	2002           	movel %d2,%d0
+    2576:	4cdf 7cfc      	moveml %sp@+,%d2-%d7/%a2-%fp
+    257a:	4fef 0034      	lea %sp@(52),%sp
+    257e:	4e75           	rts
+    flags &= ~FLAGS_HASH;
+    2580:	70ef           	moveq #-17,%d0
+    2582:	c0af 0088      	andl %sp@(136),%d0
+  if (!(flags & FLAGS_PRECISION) || value) {
+    2586:	4aaf 0032      	tstl %sp@(50)
+    258a:	6640           	bnes 25cc <_ntoa_long+0x1f8>
+    258c:	42af 0036      	clrl %sp@(54)
+    flags &= ~FLAGS_HASH;
+    2590:	2f40 0088      	movel %d0,%sp@(136)
+    2594:	082f 0005 008b 	btst #5,%sp@(139)
+    259a:	6700 fe86      	beqw 2422 <_ntoa_long+0x4e>
+    259e:	7041           	moveq #65,%d0
+    25a0:	41ef 0040      	lea %sp@(64),%a0
+    25a4:	2f48 002e      	movel %a0,%sp@(46)
+    25a8:	4def 0060      	lea %sp@(96),%fp
+      buf[len++] = digit < 10 ? '0' + digit : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
+    25ac:	2808           	movel %a0,%d4
+    25ae:	49f9 0000 33c8 	lea 33c8 <__umodsi3>,%a4
+    25b4:	47f9 0000 336c 	lea 336c <__udivsi3>,%a3
+    25ba:	1200           	moveb %d0,%d1
+    25bc:	0601 fff6      	addib #-10,%d1
+    25c0:	2f4a 003a      	movel %a2,%sp@(58)
+    25c4:	2a45           	moveal %d5,%a5
+    25c6:	1a01           	moveb %d1,%d5
+    25c8:	6000 fe82      	braw 244c <_ntoa_long+0x78>
+  if (!(flags & FLAGS_LEFT)) {
+    25cc:	7802           	moveq #2,%d4
+    25ce:	c8af 0088      	andl %sp@(136),%d4
+    25d2:	082f 0001 008b 	btst #1,%sp@(139)
+    25d8:	6600 01e0      	bnew 27ba <_ntoa_long+0x3e6>
+    25dc:	42af 0036      	clrl %sp@(54)
+    flags &= ~FLAGS_HASH;
+    25e0:	2f40 0088      	movel %d0,%sp@(136)
+  if (!(flags & FLAGS_PRECISION) || value) {
+    25e4:	2f7c 0000 0400 	movel #1024,%sp@(50)
+    25ea:	0032 
+    if (width && (flags & FLAGS_ZEROPAD) && (negative || (flags & (FLAGS_PLUS | FLAGS_SPACE)))) {
+    25ec:	4a87           	tstl %d7
+    25ee:	6700 012e      	beqw 271e <_ntoa_long+0x34a>
+    25f2:	7001           	moveq #1,%d0
+    25f4:	c0af 0088      	andl %sp@(136),%d0
+    25f8:	2c40           	moveal %d0,%fp
+    25fa:	082f 0000 008b 	btst #0,%sp@(139)
+    2600:	6700 0194      	beqw 2796 <_ntoa_long+0x3c2>
+    2604:	4a2f 003f      	tstb %sp@(63)
+    2608:	6600 0250      	bnew 285a <_ntoa_long+0x486>
+    260c:	700c           	moveq #12,%d0
+    260e:	c0af 0088      	andl %sp@(136),%d0
+    2612:	6600 0246      	bnew 285a <_ntoa_long+0x486>
+    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2616:	b8af 0080      	cmpl %sp@(128),%d4
+    261a:	6400 013a      	bccw 2756 <_ntoa_long+0x382>
+    261e:	7020           	moveq #32,%d0
+    2620:	b084           	cmpl %d4,%d0
+    2622:	6700 030a      	beqw 292e <_ntoa_long+0x55a>
+    2626:	41f7 4840      	lea %sp@(40,%d4:l),%a0
+    262a:	202f 0080      	movel %sp@(128),%d0
+      buf[len++] = '0';
+    262e:	5284           	addql #1,%d4
+    2630:	10fc 0030      	moveb #48,%a0@+
+    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2634:	b880           	cmpl %d0,%d4
+    2636:	6400 0116      	bccw 274e <_ntoa_long+0x37a>
+    263a:	7220           	moveq #32,%d1
+    263c:	b284           	cmpl %d4,%d1
+    263e:	66ee           	bnes 262e <_ntoa_long+0x25a>
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2640:	bcfc 0000      	cmpaw #0,%fp
+    2644:	6700 0140      	beqw 2786 <_ntoa_long+0x3b2>
+    2648:	7020           	moveq #32,%d0
+    264a:	b087           	cmpl %d7,%d0
+    264c:	6400 0138      	bccw 2786 <_ntoa_long+0x3b2>
+  if (flags & FLAGS_HASH) {
+    2650:	4aaf 0036      	tstl %sp@(54)
+    2654:	6700 020a      	beqw 2860 <_ntoa_long+0x48c>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    2658:	4aaf 0032      	tstl %sp@(50)
+    265c:	6600 0390      	bnew 29ee <_ntoa_long+0x61a>
+    2660:	7020           	moveq #32,%d0
+    2662:	9dce           	subal %fp,%fp
+    2664:	b0af 0080      	cmpl %sp@(128),%d0
+    2668:	6700 02e8      	beqw 2952 <_ntoa_long+0x57e>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    266c:	7003           	moveq #3,%d0
+    266e:	c0af 0088      	andl %sp@(136),%d0
+    if ((base == 16U) && !(flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2672:	7210           	moveq #16,%d1
+    2674:	b283           	cmpl %d3,%d1
+    2676:	6700 0220      	beqw 2898 <_ntoa_long+0x4c4>
+    else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    267a:	5583           	subql #2,%d3
+    267c:	6700 01bc      	beqw 283a <_ntoa_long+0x466>
+    if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    2680:	7220           	moveq #32,%d1
+    2682:	b284           	cmpl %d4,%d1
+    2684:	6666           	bnes 26ec <_ntoa_long+0x318>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    2686:	4a80           	tstl %d0
+    2688:	6608           	bnes 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    268a:	7220           	moveq #32,%d1
+    268c:	b287           	cmpl %d7,%d1
+    268e:	6500 fe76      	bcsw 2506 <_ntoa_long+0x132>
+  if (flags & FLAGS_HASH) {
+    2692:	262f 006c      	movel %sp@(108),%d3
+    2696:	4bef 0040      	lea %sp@(64),%a5
+    269a:	47f5 4800      	lea %a5@(0,%d4:l),%a3
+    269e:	d684           	addl %d4,%d3
+    26a0:	49f5 3800      	lea %a5@(0,%d3:l),%a4
+    26a4:	2403           	movel %d3,%d2
+    out(buf[--len], buffer, idx++, maxlen);
+    26a6:	2f06           	movel %d6,%sp@-
+    26a8:	200c           	movel %a4,%d0
+    26aa:	908b           	subl %a3,%d0
+    26ac:	2f00           	movel %d0,%sp@-
+    26ae:	2f05           	movel %d5,%sp@-
+    26b0:	1023           	moveb %a3@-,%d0
+    26b2:	4880           	extw %d0
+    26b4:	3040           	moveaw %d0,%a0
+    26b6:	2f08           	movel %a0,%sp@-
+    26b8:	4e92           	jsr %a2@
+  while (len) {
+    26ba:	4fef 0010      	lea %sp@(16),%sp
+    26be:	b7cd           	cmpal %a5,%a3
+    26c0:	6700 fe8a      	beqw 254c <_ntoa_long+0x178>
+    26c4:	2403           	movel %d3,%d2
+    out(buf[--len], buffer, idx++, maxlen);
+    26c6:	2f06           	movel %d6,%sp@-
+    26c8:	200c           	movel %a4,%d0
+    26ca:	908b           	subl %a3,%d0
+    26cc:	2f00           	movel %d0,%sp@-
+    26ce:	2f05           	movel %d5,%sp@-
+    26d0:	1023           	moveb %a3@-,%d0
+    26d2:	4880           	extw %d0
+    26d4:	3040           	moveaw %d0,%a0
+    26d6:	2f08           	movel %a0,%sp@-
+    26d8:	4e92           	jsr %a2@
+  while (len) {
+    26da:	4fef 0010      	lea %sp@(16),%sp
+    26de:	b7cd           	cmpal %a5,%a3
+    26e0:	66c2           	bnes 26a4 <_ntoa_long+0x2d0>
+    26e2:	6000 fe68      	braw 254c <_ntoa_long+0x178>
+      buf[len++] = 'X';
+    26e6:	5384           	subql #1,%d4
+    26e8:	10bc 0058      	moveb #88,%a0@
+      buf[len++] = '0';
+    26ec:	2004           	movel %d4,%d0
+    26ee:	5284           	addql #1,%d4
+    26f0:	1fbc 0030 0840 	moveb #48,%sp@(40,%d0:l)
+  if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    26f6:	7020           	moveq #32,%d0
+    26f8:	b084           	cmpl %d4,%d0
+    26fa:	6600 0134      	bnew 2830 <_ntoa_long+0x45c>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    26fe:	7003           	moveq #3,%d0
+    2700:	c0af 0088      	andl %sp@(136),%d0
+    2704:	6700 00a8      	beqw 27ae <_ntoa_long+0x3da>
+  if (flags & FLAGS_HASH) {
+    2708:	262f 006c      	movel %sp@(108),%d3
+    270c:	7820           	moveq #32,%d4
+    270e:	4bef 0040      	lea %sp@(64),%a5
+    2712:	47f5 4800      	lea %a5@(0,%d4:l),%a3
+    2716:	d684           	addl %d4,%d3
+    2718:	49f5 3800      	lea %a5@(0,%d3:l),%a4
+    271c:	6086           	bras 26a4 <_ntoa_long+0x2d0>
+    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    271e:	b8af 0080      	cmpl %sp@(128),%d4
+    2722:	6400 0280      	bccw 29a4 <_ntoa_long+0x5d0>
+    if (width && (flags & FLAGS_ZEROPAD) && (negative || (flags & (FLAGS_PLUS | FLAGS_SPACE)))) {
+    2726:	7201           	moveq #1,%d1
+    2728:	c2af 0088      	andl %sp@(136),%d1
+    272c:	2c41           	moveal %d1,%fp
+    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    272e:	7020           	moveq #32,%d0
+    2730:	b084           	cmpl %d4,%d0
+    2732:	6600 fef2      	bnew 2626 <_ntoa_long+0x252>
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2736:	4a81           	tstl %d1
+    2738:	6700 02ba      	beqw 29f4 <_ntoa_long+0x620>
+  if (flags & FLAGS_HASH) {
+    273c:	4aaf 0036      	tstl %sp@(54)
+    2740:	6600 02ba      	bnew 29fc <_ntoa_long+0x628>
+    2744:	9dce           	subal %fp,%fp
+    2746:	262f 006c      	movel %sp@(108),%d3
+    274a:	7820           	moveq #32,%d4
+    274c:	60c0           	bras 270e <_ntoa_long+0x33a>
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    274e:	bcfc 0000      	cmpaw #0,%fp
+    2752:	6700 fd60      	beqw 24b4 <_ntoa_long+0xe0>
+    2756:	be84           	cmpl %d4,%d7
+    2758:	6300 024a      	blsw 29a4 <_ntoa_long+0x5d0>
+    275c:	7220           	moveq #32,%d1
+    275e:	b284           	cmpl %d4,%d1
+    2760:	6700 0270      	beqw 29d2 <_ntoa_long+0x5fe>
+    2764:	43ef 0040      	lea %sp@(64),%a1
+    2768:	41f1 4800      	lea %a1@(0,%d4:l),%a0
+    276c:	2009           	movel %a1,%d0
+    276e:	d087           	addl %d7,%d0
+    2770:	4def 0060      	lea %sp@(96),%fp
+      buf[len++] = '0';
+    2774:	10bc 0030      	moveb #48,%a0@
+    2778:	2208           	movel %a0,%d1
+    277a:	5288           	addql #1,%a0
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    277c:	b1c0           	cmpal %d0,%a0
+    277e:	6700 0100      	beqw 2880 <_ntoa_long+0x4ac>
+    2782:	bdc8           	cmpal %a0,%fp
+    2784:	66ee           	bnes 2774 <_ntoa_long+0x3a0>
+  if (flags & FLAGS_HASH) {
+    2786:	4aaf 0036      	tstl %sp@(54)
+    278a:	6700 00d4      	beqw 2860 <_ntoa_long+0x48c>
+    278e:	9dce           	subal %fp,%fp
+    2790:	7820           	moveq #32,%d4
+    2792:	6000 fd28      	braw 24bc <_ntoa_long+0xe8>
+    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2796:	b8af 0080      	cmpl %sp@(128),%d4
+    279a:	6400 fd18      	bccw 24b4 <_ntoa_long+0xe0>
+    279e:	7220           	moveq #32,%d1
+    27a0:	b284           	cmpl %d4,%d1
+    27a2:	6600 fe82      	bnew 2626 <_ntoa_long+0x252>
+  if (flags & FLAGS_HASH) {
+    27a6:	4aaf 0036      	tstl %sp@(54)
+    27aa:	6600 0250      	bnew 29fc <_ntoa_long+0x628>
+    for (size_t i = len; i < width; i++) {
+    27ae:	7820           	moveq #32,%d4
+    27b0:	b887           	cmpl %d7,%d4
+    27b2:	6500 fd52      	bcsw 2506 <_ntoa_long+0x132>
+    27b6:	6000 feda      	braw 2692 <_ntoa_long+0x2be>
+  if (!(flags & FLAGS_LEFT)) {
+    27ba:	3c7c 0002      	moveaw #2,%fp
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    27be:	7203           	moveq #3,%d1
+    27c0:	c280           	andl %d0,%d1
+      buf[len++] = '-';
+    27c2:	2802           	movel %d2,%d4
+    if (negative) {
+    27c4:	4a2f 003f      	tstb %sp@(63)
+    27c8:	6600 fd28      	bnew 24f2 <_ntoa_long+0x11e>
+    else if (flags & FLAGS_PLUS) {
+    27cc:	0800 0002      	btst #2,%d0
+    27d0:	6700 00e8      	beqw 28ba <_ntoa_long+0x4e6>
+      buf[len++] = '+';  // ignore the space if the '+' exists
+    27d4:	5284           	addql #1,%d4
+    27d6:	1fbc 002b 2840 	moveb #43,%sp@(40,%d2:l)
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    27dc:	4a81           	tstl %d1
+    27de:	6600 feb2      	bnew 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    27e2:	b887           	cmpl %d7,%d4
+    27e4:	6500 fd20      	bcsw 2506 <_ntoa_long+0x132>
+    27e8:	6000 fea8      	braw 2692 <_ntoa_long+0x2be>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    27ec:	b8af 0080      	cmpl %sp@(128),%d4
+    27f0:	6706           	beqs 27f8 <_ntoa_long+0x424>
+    27f2:	be84           	cmpl %d4,%d7
+    27f4:	6600 fe76      	bnew 266c <_ntoa_long+0x298>
+      len--;
+    27f8:	2004           	movel %d4,%d0
+    27fa:	5380           	subql #1,%d0
+      if (len && (base == 16U)) {
+    27fc:	7201           	moveq #1,%d1
+    27fe:	b284           	cmpl %d4,%d1
+    2800:	6700 fcc8      	beqw 24ca <_ntoa_long+0xf6>
+    2804:	7210           	moveq #16,%d1
+    2806:	b283           	cmpl %d3,%d1
+    2808:	6700 01a8      	beqw 29b2 <_ntoa_long+0x5de>
+    else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    280c:	7202           	moveq #2,%d1
+      len--;
+    280e:	2800           	movel %d0,%d4
+    else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2810:	b283           	cmpl %d3,%d1
+    2812:	6600 feda      	bnew 26ee <_ntoa_long+0x31a>
+    2816:	7003           	moveq #3,%d0
+    2818:	c0af 0088      	andl %sp@(136),%d0
+      buf[len++] = 'b';
+    281c:	1fbc 0062 4840 	moveb #98,%sp@(40,%d4:l)
+    2822:	5284           	addql #1,%d4
+    if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    2824:	7220           	moveq #32,%d1
+    2826:	b284           	cmpl %d4,%d1
+    2828:	6700 fe5c      	beqw 2686 <_ntoa_long+0x2b2>
+    282c:	6000 febe      	braw 26ec <_ntoa_long+0x318>
+    2830:	202f 0088      	movel %sp@(136),%d0
+    2834:	2404           	movel %d4,%d2
+    2836:	6000 fcac      	braw 24e4 <_ntoa_long+0x110>
+    else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    283a:	7220           	moveq #32,%d1
+    283c:	b284           	cmpl %d4,%d1
+    283e:	66dc           	bnes 281c <_ntoa_long+0x448>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    2840:	4a80           	tstl %d0
+    2842:	6600 fe4e      	bnew 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    2846:	7020           	moveq #32,%d0
+    2848:	b087           	cmpl %d7,%d0
+    284a:	6400 fe46      	bccw 2692 <_ntoa_long+0x2be>
+    284e:	242f 006c      	movel %sp@(108),%d2
+    2852:	2604           	movel %d4,%d3
+    2854:	9682           	subl %d2,%d3
+    2856:	6000 fcb6      	braw 250e <_ntoa_long+0x13a>
+      width--;
+    285a:	5387           	subql #1,%d7
+    285c:	6000 fdb8      	braw 2616 <_ntoa_long+0x242>
+  if (flags & FLAGS_HASH) {
+    2860:	9dce           	subal %fp,%fp
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    2862:	7003           	moveq #3,%d0
+    2864:	c0af 0088      	andl %sp@(136),%d0
+    2868:	6600 fe9e      	bnew 2708 <_ntoa_long+0x334>
+    286c:	6000 ff40      	braw 27ae <_ntoa_long+0x3da>
+    2870:	91c8           	subal %a0,%a0
+    2872:	226f 006c      	moveal %sp@(108),%a1
+    2876:	43f1 8801      	lea %a1@(1,%a0:l),%a1
+    287a:	2609           	movel %a1,%d3
+    287c:	6000 fcc6      	braw 2544 <_ntoa_long+0x170>
+      buf[len++] = '0';
+    2880:	307c 0001      	moveaw #1,%a0
+    2884:	91c9           	subal %a1,%a0
+    2886:	2808           	movel %a0,%d4
+    2888:	d881           	addl %d1,%d4
+    288a:	9dce           	subal %fp,%fp
+  if (flags & FLAGS_HASH) {
+    288c:	4aaf 0036      	tstl %sp@(54)
+    2890:	6600 fc2a      	bnew 24bc <_ntoa_long+0xe8>
+    2894:	6000 fe60      	braw 26f6 <_ntoa_long+0x322>
+    if ((base == 16U) && !(flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    2898:	7220           	moveq #32,%d1
+    289a:	082f 0005 008b 	btst #5,%sp@(139)
+    28a0:	6600 00ca      	bnew 296c <_ntoa_long+0x598>
+    28a4:	b284           	cmpl %d4,%d1
+    28a6:	6600 00b0      	bnew 2958 <_ntoa_long+0x584>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    28aa:	4a80           	tstl %d0
+    28ac:	6600 fde4      	bnew 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    28b0:	b287           	cmpl %d7,%d1
+    28b2:	6500 fc52      	bcsw 2506 <_ntoa_long+0x132>
+    28b6:	6000 fdda      	braw 2692 <_ntoa_long+0x2be>
+    else if (flags & FLAGS_SPACE) {
+    28ba:	0800 0003      	btst #3,%d0
+    28be:	6640           	bnes 2900 <_ntoa_long+0x52c>
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    28c0:	4a81           	tstl %d1
+    28c2:	6600 00d8      	bnew 299c <_ntoa_long+0x5c8>
+    for (size_t i = len; i < width; i++) {
+    28c6:	b487           	cmpl %d7,%d2
+    28c8:	6500 fc3c      	bcsw 2506 <_ntoa_long+0x132>
+  while (len) {
+    28cc:	4a82           	tstl %d2
+    28ce:	6600 fdc2      	bnew 2692 <_ntoa_long+0x2be>
+    28d2:	242f 006c      	movel %sp@(108),%d2
+}
+    28d6:	2002           	movel %d2,%d0
+    28d8:	4cdf 7cfc      	moveml %sp@+,%d2-%d7/%a2-%fp
+    28dc:	4fef 0034      	lea %sp@(52),%sp
+    28e0:	4e75           	rts
+    if ((base == 16U) && !(flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    28e2:	082f 0005 008b 	btst #5,%sp@(139)
+    28e8:	662e           	bnes 2918 <_ntoa_long+0x544>
+      buf[len++] = 'x';
+    28ea:	1f7c 0078 0040 	moveb #120,%sp@(64)
+      buf[len++] = '0';
+    28f0:	1f7c 0030 0041 	moveb #48,%sp@(65)
+  if (!(flags & FLAGS_LEFT)) {
+    28f6:	202f 0088      	movel %sp@(136),%d0
+      buf[len++] = '0';
+    28fa:	7402           	moveq #2,%d2
+    28fc:	6000 fbe6      	braw 24e4 <_ntoa_long+0x110>
+      buf[len++] = ' ';
+    2900:	5284           	addql #1,%d4
+    2902:	1fbc 0020 2840 	moveb #32,%sp@(40,%d2:l)
+  if (!(flags & FLAGS_LEFT) && !(flags & FLAGS_ZEROPAD)) {
+    2908:	4a81           	tstl %d1
+    290a:	6600 fd86      	bnew 2692 <_ntoa_long+0x2be>
+    for (size_t i = len; i < width; i++) {
+    290e:	b887           	cmpl %d7,%d4
+    2910:	6500 fbf4      	bcsw 2506 <_ntoa_long+0x132>
+    2914:	6000 fd7c      	braw 2692 <_ntoa_long+0x2be>
+      buf[len++] = 'X';
+    2918:	1f7c 0058 0040 	moveb #88,%sp@(64)
+      buf[len++] = '0';
+    291e:	1f7c 0030 0041 	moveb #48,%sp@(65)
+  if (!(flags & FLAGS_LEFT)) {
+    2924:	202f 0088      	movel %sp@(136),%d0
+      buf[len++] = '0';
+    2928:	7402           	moveq #2,%d2
+    292a:	6000 fbb8      	braw 24e4 <_ntoa_long+0x110>
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    292e:	7220           	moveq #32,%d1
+    2930:	b287           	cmpl %d7,%d1
+    2932:	6400 fe08      	bccw 273c <_ntoa_long+0x368>
+  if (flags & FLAGS_HASH) {
+    2936:	4aaf 0036      	tstl %sp@(54)
+    293a:	6700 ff24      	beqw 2860 <_ntoa_long+0x48c>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    293e:	4aaf 0032      	tstl %sp@(50)
+    2942:	6600 00aa      	bnew 29ee <_ntoa_long+0x61a>
+    2946:	7220           	moveq #32,%d1
+    2948:	9dce           	subal %fp,%fp
+    294a:	b2af 0080      	cmpl %sp@(128),%d1
+    294e:	6600 fd1c      	bnew 266c <_ntoa_long+0x298>
+      len--;
+    2952:	701f           	moveq #31,%d0
+    2954:	6000 feae      	braw 2804 <_ntoa_long+0x430>
+      buf[len++] = 'x';
+    2958:	1fbc 0078 4840 	moveb #120,%sp@(40,%d4:l)
+    295e:	5284           	addql #1,%d4
+    if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    2960:	7220           	moveq #32,%d1
+    2962:	b284           	cmpl %d4,%d1
+    2964:	6700 fd20      	beqw 2686 <_ntoa_long+0x2b2>
+    2968:	6000 fd82      	braw 26ec <_ntoa_long+0x318>
+    else if ((base == 16U) && (flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    296c:	b284           	cmpl %d4,%d1
+    296e:	6700 fed0      	beqw 2840 <_ntoa_long+0x46c>
+      buf[len++] = 'X';
+    2972:	1fbc 0058 4840 	moveb #88,%sp@(40,%d4:l)
+    2978:	5284           	addql #1,%d4
+    if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    297a:	7220           	moveq #32,%d1
+    297c:	b284           	cmpl %d4,%d1
+    297e:	6700 fd06      	beqw 2686 <_ntoa_long+0x2b2>
+    2982:	6000 fd68      	braw 26ec <_ntoa_long+0x318>
+      buf[len++] = 'b';
+    2986:	1f7c 0062 0040 	moveb #98,%sp@(64)
+      buf[len++] = '0';
+    298c:	1f7c 0030 0041 	moveb #48,%sp@(65)
+  if (!(flags & FLAGS_LEFT)) {
+    2992:	202f 0088      	movel %sp@(136),%d0
+      buf[len++] = '0';
+    2996:	7402           	moveq #2,%d2
+    2998:	6000 fb4a      	braw 24e4 <_ntoa_long+0x110>
+    299c:	262f 006c      	movel %sp@(108),%d3
+    29a0:	6000 fba2      	braw 2544 <_ntoa_long+0x170>
+    while ((flags & FLAGS_ZEROPAD) && (len < width) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    29a4:	9dce           	subal %fp,%fp
+  if (flags & FLAGS_HASH) {
+    29a6:	4aaf 0036      	tstl %sp@(54)
+    29aa:	6600 fb10      	bnew 24bc <_ntoa_long+0xe8>
+    29ae:	6000 fd46      	braw 26f6 <_ntoa_long+0x322>
+      buf[len++] = 'x';
+    29b2:	41f7 483e      	lea %sp@(3e,%d4:l),%a0
+    if ((base == 16U) && !(flags & FLAGS_UPPERCASE) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    29b6:	082f 0005 008b 	btst #5,%sp@(139)
+    29bc:	6600 fd28      	bnew 26e6 <_ntoa_long+0x312>
+      buf[len++] = 'x';
+    29c0:	2004           	movel %d4,%d0
+    29c2:	5380           	subql #1,%d0
+    29c4:	10bc 0078      	moveb #120,%a0@
+      buf[len++] = '0';
+    29c8:	1fbc 0030 0840 	moveb #48,%sp@(40,%d0:l)
+    29ce:	6000 fd26      	braw 26f6 <_ntoa_long+0x322>
+  if (flags & FLAGS_HASH) {
+    29d2:	4aaf 0036      	tstl %sp@(54)
+    29d6:	6700 fe88      	beqw 2860 <_ntoa_long+0x48c>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    29da:	4aaf 0032      	tstl %sp@(50)
+    29de:	660e           	bnes 29ee <_ntoa_long+0x61a>
+    29e0:	7020           	moveq #32,%d0
+    29e2:	b0af 0080      	cmpl %sp@(128),%d0
+    29e6:	6738           	beqs 2a20 <_ntoa_long+0x64c>
+    29e8:	7220           	moveq #32,%d1
+    29ea:	b287           	cmpl %d7,%d1
+    29ec:	6732           	beqs 2a20 <_ntoa_long+0x64c>
+    29ee:	9dce           	subal %fp,%fp
+    29f0:	6000 fc7a      	braw 266c <_ntoa_long+0x298>
+  if (flags & FLAGS_HASH) {
+    29f4:	4aaf 0036      	tstl %sp@(54)
+    29f8:	6700 fc98      	beqw 2692 <_ntoa_long+0x2be>
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    29fc:	4aaf 0032      	tstl %sp@(50)
+    2a00:	6708           	beqs 2a0a <_ntoa_long+0x636>
+    2a02:	9dce           	subal %fp,%fp
+    2a04:	7820           	moveq #32,%d4
+    2a06:	6000 fc64      	braw 266c <_ntoa_long+0x298>
+    2a0a:	7020           	moveq #32,%d0
+    2a0c:	7820           	moveq #32,%d4
+    2a0e:	b0af 0080      	cmpl %sp@(128),%d0
+    2a12:	6714           	beqs 2a28 <_ntoa_long+0x654>
+    2a14:	9dce           	subal %fp,%fp
+    2a16:	be84           	cmpl %d4,%d7
+    2a18:	6600 fc52      	bnew 266c <_ntoa_long+0x298>
+    2a1c:	6000 fdda      	braw 27f8 <_ntoa_long+0x424>
+    2a20:	9dce           	subal %fp,%fp
+      len--;
+    2a22:	701f           	moveq #31,%d0
+    2a24:	6000 fdde      	braw 2804 <_ntoa_long+0x430>
+    2a28:	701f           	moveq #31,%d0
+    if (!(flags & FLAGS_PRECISION) && len && ((len == prec) || (len == width))) {
+    2a2a:	9dce           	subal %fp,%fp
+    2a2c:	6000 fdd6      	braw 2804 <_ntoa_long+0x430>
+
+00002a30 <_out_char>:
+{
+    2a30:	202f 0004      	movel %sp@(4),%d0
+  if (character) {
+    2a34:	4a00           	tstb %d0
+    2a36:	6602           	bnes 2a3a <_out_char+0xa>
+}
+    2a38:	4e75           	rts
+    _putchar(character);
+    2a3a:	4880           	extw %d0
+    2a3c:	3040           	moveaw %d0,%a0
+    2a3e:	2f48 0004      	movel %a0,%sp@(4)
+    2a42:	4ef9 0000 327c 	jmp 327c <_putchar>
+
+00002a48 <_vsnprintf>:
+#endif  // PRINTF_SUPPORT_FLOAT
+
+
+// internal vsnprintf
+static int _vsnprintf(out_fct_type out, char* buffer, const size_t maxlen, const char* format, va_list va)
+{
+    2a48:	4fef fff4      	lea %sp@(-12),%sp
+    2a4c:	48e7 3f3e      	moveml %d2-%d7/%a2-%fp,%sp@-
+    2a50:	2a6f 003c      	moveal %sp@(60),%a5
+    2a54:	2c2f 0040      	movel %sp@(64),%d6
+    2a58:	242f 0044      	movel %sp@(68),%d2
+    2a5c:	286f 0048      	moveal %sp@(72),%a4
+    2a60:	262f 004c      	movel %sp@(76),%d3
+  unsigned int flags, width, precision, n;
+  size_t idx = 0U;
+
+  if (!buffer) {
+    2a64:	4a86           	tstl %d6
+    2a66:	6700 023e      	beqw 2ca6 <_vsnprintf+0x25e>
+    // use null output function
+    out = _out_null;
+  }
+
+  while (*format)
+    2a6a:	1014           	moveb %a4@,%d0
+    2a6c:	95ca           	subal %a2,%a2
+    2a6e:	4a00           	tstb %d0
+    2a70:	6700 0244      	beqw 2cb6 <_vsnprintf+0x26e>
+    }
+
+    // evaluate flags
+    flags = 0U;
+    do {
+      switch (*format) {
+    2a74:	2c7c 0000 2ae4 	moveal #10980,%fp
+      format++;
+    2a7a:	528c           	addql #1,%a4
+    if (*format != '%') {
+    2a7c:	0c00 0025      	cmpib #37,%d0
+    2a80:	6740           	beqs 2ac2 <_vsnprintf+0x7a>
+      out(*format, buffer, idx++, maxlen);
+    2a82:	280a           	movel %a2,%d4
+    2a84:	5284           	addql #1,%d4
+    2a86:	2f02           	movel %d2,%sp@-
+    2a88:	2f0a           	movel %a2,%sp@-
+    2a8a:	2f06           	movel %d6,%sp@-
+    2a8c:	4880           	extw %d0
+    2a8e:	3040           	moveaw %d0,%a0
+    2a90:	2f08           	movel %a0,%sp@-
+    2a92:	4e95           	jsr %a5@
+      continue;
+    2a94:	4fef 0010      	lea %sp@(16),%sp
+      out(*format, buffer, idx++, maxlen);
+    2a98:	2444           	moveal %d4,%a2
+  while (*format)
+    2a9a:	1014           	moveb %a4@,%d0
+    2a9c:	66dc           	bnes 2a7a <_vsnprintf+0x32>
+
+  // termination
+  out((char)0, buffer, idx < maxlen ? idx : maxlen - 1U, maxlen);
+
+  // return written chars without terminating \0
+  return (int)idx;
+    2a9e:	260a           	movel %a2,%d3
+  out((char)0, buffer, idx < maxlen ? idx : maxlen - 1U, maxlen);
+    2aa0:	b5c2           	cmpal %d2,%a2
+    2aa2:	6504           	bcss 2aa8 <_vsnprintf+0x60>
+    2aa4:	2442           	moveal %d2,%a2
+    2aa6:	538a           	subql #1,%a2
+    2aa8:	2f02           	movel %d2,%sp@-
+    2aaa:	2f0a           	movel %a2,%sp@-
+    2aac:	2f06           	movel %d6,%sp@-
+    2aae:	42a7           	clrl %sp@-
+    2ab0:	4e95           	jsr %a5@
+  return (int)idx;
+    2ab2:	4fef 0010      	lea %sp@(16),%sp
+}
+    2ab6:	2003           	movel %d3,%d0
+    2ab8:	4cdf 7cfc      	moveml %sp@+,%d2-%d7/%a2-%fp
+    2abc:	4fef 000c      	lea %sp@(12),%sp
+    2ac0:	4e75           	rts
+    flags = 0U;
+    2ac2:	7200           	moveq #0,%d1
+      switch (*format) {
+    2ac4:	204c           	moveal %a4,%a0
+    2ac6:	1018           	moveb %a0@+,%d0
+    2ac8:	1800           	moveb %d0,%d4
+    2aca:	0604 ffe0      	addib #-32,%d4
+    2ace:	0c04 0010      	cmpib #16,%d4
+    2ad2:	6232           	bhis 2b06 <_vsnprintf+0xbe>
+    2ad4:	0284 0000 00ff 	andil #255,%d4
+    2ada:	d884           	addl %d4,%d4
+    2adc:	3276 4800      	moveaw %fp@(0,%d4:l),%a1
+    2ae0:	4efb 9002      	jmp %pc@(2ae4 <_vsnprintf+0x9c>,%a1:w)
+    2ae4:	00e2           	.short 0x00e2
+    2ae6:	0022 0022      	orib #34,%a2@-
+    2aea:	00d8           	.short 0x00d8
+    2aec:	0022 0022      	orib #34,%a2@-
+    2af0:	0022 0022      	orib #34,%a2@-
+    2af4:	0022 0022      	orib #34,%a2@-
+    2af8:	0022 00ce      	orib #-50,%a2@-
+    2afc:	0022 00c4      	orib #-60,%a2@-
+    2b00:	0022 0022      	orib #34,%a2@-
+    2b04:	00ba           	.short 0x00ba
+  return (ch >= '0') && (ch <= '9');
+    2b06:	1800           	moveb %d0,%d4
+    2b08:	0604 ffd0      	addib #-48,%d4
+    if (_is_digit(*format)) {
+    2b0c:	0c04 0009      	cmpib #9,%d4
+    2b10:	6300 00be      	blsw 2bd0 <_vsnprintf+0x188>
+    else if (*format == '*') {
+    2b14:	0c00 002a      	cmpib #42,%d0
+    2b18:	6700 0172      	beqw 2c8c <_vsnprintf+0x244>
+    width = 0U;
+    2b1c:	97cb           	subal %a3,%a3
+    if (*format == '.') {
+    2b1e:	0c00 002e      	cmpib #46,%d0
+    2b22:	6700 00fc      	beqw 2c20 <_vsnprintf+0x1d8>
+    precision = 0U;
+    2b26:	7e00           	moveq #0,%d7
+        format++;
+    2b28:	2808           	movel %a0,%d4
+    switch (*format) {
+    2b2a:	0c00 006c      	cmpib #108,%d0
+    2b2e:	6700 011e      	beqw 2c4e <_vsnprintf+0x206>
+    2b32:	0c00 006c      	cmpib #108,%d0
+    2b36:	6e00 0136      	bgtw 2c6e <_vsnprintf+0x226>
+    2b3a:	0c00 0068      	cmpib #104,%d0
+    2b3e:	6700 02c8      	beqw 2e08 <_vsnprintf+0x3c0>
+    2b42:	0c00 006a      	cmpib #106,%d0
+    2b46:	6600 017a      	bnew 2cc2 <_vsnprintf+0x27a>
+        flags |= (sizeof(intmax_t) == sizeof(long) ? FLAGS_LONG : FLAGS_LONG_LONG);
+    2b4a:	0041 0200      	oriw #512,%d1
+        if (*format == 'l') {
+    2b4e:	102c 0001      	moveb %a4@(1),%d0
+        format++;
+    2b52:	2844           	moveal %d4,%a4
+    2b54:	528c           	addql #1,%a4
+    switch (*format) {
+    2b56:	0c00 0078      	cmpib #120,%d0
+    2b5a:	6e00 0198      	bgtw 2cf4 <_vsnprintf+0x2ac>
+    2b5e:	0c00 0063      	cmpib #99,%d0
+    2b62:	6e00 0168      	bgtw 2ccc <_vsnprintf+0x284>
+    2b66:	0c00 0062      	cmpib #98,%d0
+    2b6a:	6700 05de      	beqw 314a <_vsnprintf+0x702>
+    2b6e:	0c00 0063      	cmpib #99,%d0
+    2b72:	6700 0362      	beqw 2ed6 <_vsnprintf+0x48e>
+    2b76:	0c00 0025      	cmpib #37,%d0
+    2b7a:	6600 050a      	bnew 3086 <_vsnprintf+0x63e>
+        out('%', buffer, idx++, maxlen);
+    2b7e:	280a           	movel %a2,%d4
+    2b80:	5284           	addql #1,%d4
+    2b82:	2f02           	movel %d2,%sp@-
+    2b84:	2f0a           	movel %a2,%sp@-
+    2b86:	2f06           	movel %d6,%sp@-
+    2b88:	4878 0025      	pea 25 <R_STOPCNTCMD+0x7>
+    2b8c:	4e95           	jsr %a5@
+        break;
+    2b8e:	4fef 0010      	lea %sp@(16),%sp
+        out('%', buffer, idx++, maxlen);
+    2b92:	2444           	moveal %d4,%a2
+  while (*format)
+    2b94:	1014           	moveb %a4@,%d0
+    2b96:	6600 fee2      	bnew 2a7a <_vsnprintf+0x32>
+    2b9a:	6000 ff02      	braw 2a9e <_vsnprintf+0x56>
+        case '0': flags |= FLAGS_ZEROPAD; format++; n = 1U; break;
+    2b9e:	7001           	moveq #1,%d0
+    2ba0:	8280           	orl %d0,%d1
+  while (*format)
+    2ba2:	2848           	moveal %a0,%a4
+    2ba4:	6000 ff1e      	braw 2ac4 <_vsnprintf+0x7c>
+        case '-': flags |= FLAGS_LEFT;    format++; n = 1U; break;
+    2ba8:	7a02           	moveq #2,%d5
+    2baa:	8285           	orl %d5,%d1
+  while (*format)
+    2bac:	2848           	moveal %a0,%a4
+    2bae:	6000 ff14      	braw 2ac4 <_vsnprintf+0x7c>
+        case '+': flags |= FLAGS_PLUS;    format++; n = 1U; break;
+    2bb2:	7004           	moveq #4,%d0
+    2bb4:	8280           	orl %d0,%d1
+  while (*format)
+    2bb6:	2848           	moveal %a0,%a4
+    2bb8:	6000 ff0a      	braw 2ac4 <_vsnprintf+0x7c>
+        case '#': flags |= FLAGS_HASH;    format++; n = 1U; break;
+    2bbc:	7010           	moveq #16,%d0
+    2bbe:	8280           	orl %d0,%d1
+  while (*format)
+    2bc0:	2848           	moveal %a0,%a4
+    2bc2:	6000 ff00      	braw 2ac4 <_vsnprintf+0x7c>
+        case ' ': flags |= FLAGS_SPACE;   format++; n = 1U; break;
+    2bc6:	7a08           	moveq #8,%d5
+    2bc8:	8285           	orl %d5,%d1
+  while (*format)
+    2bca:	2848           	moveal %a0,%a4
+    2bcc:	6000 fef6      	braw 2ac4 <_vsnprintf+0x7c>
+  unsigned int i = 0U;
+    2bd0:	97cb           	subal %a3,%a3
+    i = i * 10U + (unsigned int)(*((*str)++) - '0');
+    2bd2:	2848           	moveal %a0,%a4
+    2bd4:	43f3 b800      	lea %a3@(0,%a3:l),%a1
+    2bd8:	d3c9           	addal %a1,%a1
+    2bda:	47f1 b800      	lea %a1@(0,%a3:l),%a3
+    2bde:	d7cb           	addal %a3,%a3
+    2be0:	4880           	extw %d0
+    2be2:	47f3 00d0      	lea %a3@(ffffffffffffffd0,%d0:w),%a3
+  while (_is_digit(**str)) {
+    2be6:	1010           	moveb %a0@,%d0
+  return (ch >= '0') && (ch <= '9');
+    2be8:	1800           	moveb %d0,%d4
+    2bea:	0604 ffd0      	addib #-48,%d4
+    2bee:	5288           	addql #1,%a0
+  while (_is_digit(**str)) {
+    2bf0:	0c04 0009      	cmpib #9,%d4
+    2bf4:	6200 ff28      	bhiw 2b1e <_vsnprintf+0xd6>
+    i = i * 10U + (unsigned int)(*((*str)++) - '0');
+    2bf8:	2848           	moveal %a0,%a4
+    2bfa:	43f3 b800      	lea %a3@(0,%a3:l),%a1
+    2bfe:	d3c9           	addal %a1,%a1
+    2c00:	47f1 b800      	lea %a1@(0,%a3:l),%a3
+    2c04:	d7cb           	addal %a3,%a3
+    2c06:	4880           	extw %d0
+    2c08:	47f3 00d0      	lea %a3@(ffffffffffffffd0,%d0:w),%a3
+  while (_is_digit(**str)) {
+    2c0c:	1010           	moveb %a0@,%d0
+  return (ch >= '0') && (ch <= '9');
+    2c0e:	1800           	moveb %d0,%d4
+    2c10:	0604 ffd0      	addib #-48,%d4
+    2c14:	5288           	addql #1,%a0
+  while (_is_digit(**str)) {
+    2c16:	0c04 0009      	cmpib #9,%d4
+    2c1a:	63b6           	blss 2bd2 <_vsnprintf+0x18a>
+    2c1c:	6000 ff00      	braw 2b1e <_vsnprintf+0xd6>
+      flags |= FLAGS_PRECISION;
+    2c20:	0041 0400      	oriw #1024,%d1
+      if (_is_digit(*format)) {
+    2c24:	102c 0001      	moveb %a4@(1),%d0
+  return (ch >= '0') && (ch <= '9');
+    2c28:	1a00           	moveb %d0,%d5
+    2c2a:	0605 ffd0      	addib #-48,%d5
+      if (_is_digit(*format)) {
+    2c2e:	0c05 0009      	cmpib #9,%d5
+    2c32:	6300 02f6      	blsw 2f2a <_vsnprintf+0x4e2>
+      else if (*format == '*') {
+    2c36:	0c00 002a      	cmpib #42,%d0
+    2c3a:	6700 0334      	beqw 2f70 <_vsnprintf+0x528>
+      format++;
+    2c3e:	2848           	moveal %a0,%a4
+    precision = 0U;
+    2c40:	7e00           	moveq #0,%d7
+    2c42:	5288           	addql #1,%a0
+        format++;
+    2c44:	2808           	movel %a0,%d4
+    switch (*format) {
+    2c46:	0c00 006c      	cmpib #108,%d0
+    2c4a:	6600 fee6      	bnew 2b32 <_vsnprintf+0xea>
+        if (*format == 'l') {
+    2c4e:	102c 0001      	moveb %a4@(1),%d0
+    2c52:	0c00 006c      	cmpib #108,%d0
+    2c56:	6700 040a      	beqw 3062 <_vsnprintf+0x61a>
+        flags |= FLAGS_LONG;
+    2c5a:	0041 0100      	oriw #256,%d1
+        format++;
+    2c5e:	2844           	moveal %d4,%a4
+    2c60:	528c           	addql #1,%a4
+    switch (*format) {
+    2c62:	0c00 0078      	cmpib #120,%d0
+    2c66:	6f00 fef6      	blew 2b5e <_vsnprintf+0x116>
+    2c6a:	6000 0088      	braw 2cf4 <_vsnprintf+0x2ac>
+    switch (*format) {
+    2c6e:	0c00 007a      	cmpib #122,%d0
+    2c72:	6600 00a2      	bnew 2d16 <_vsnprintf+0x2ce>
+        flags |= (sizeof(size_t) == sizeof(long) ? FLAGS_LONG : FLAGS_LONG_LONG);
+    2c76:	0041 0100      	oriw #256,%d1
+        if (*format == 'l') {
+    2c7a:	102c 0001      	moveb %a4@(1),%d0
+        format++;
+    2c7e:	2844           	moveal %d4,%a4
+    2c80:	528c           	addql #1,%a4
+    switch (*format) {
+    2c82:	0c00 0078      	cmpib #120,%d0
+    2c86:	6f00 fed6      	blew 2b5e <_vsnprintf+0x116>
+    2c8a:	6068           	bras 2cf4 <_vsnprintf+0x2ac>
+      const int w = va_arg(va, int);
+    2c8c:	2243           	moveal %d3,%a1
+    2c8e:	2659           	moveal %a1@+,%a3
+    2c90:	2609           	movel %a1,%d3
+      if (w < 0) {
+    2c92:	b6fc 0000      	cmpaw #0,%a3
+    2c96:	6d00 0124      	bltw 2dbc <_vsnprintf+0x374>
+    if (*format == '.') {
+    2c9a:	102c 0001      	moveb %a4@(1),%d0
+      format++;
+    2c9e:	2848           	moveal %a0,%a4
+    2ca0:	5288           	addql #1,%a0
+    2ca2:	6000 fe7a      	braw 2b1e <_vsnprintf+0xd6>
+    out = _out_null;
+    2ca6:	4bf9 0000 23d2 	lea 23d2 <_out_null>,%a5
+  while (*format)
+    2cac:	1014           	moveb %a4@,%d0
+    2cae:	95ca           	subal %a2,%a2
+    2cb0:	4a00           	tstb %d0
+    2cb2:	6600 fdc0      	bnew 2a74 <_vsnprintf+0x2c>
+    2cb6:	7600           	moveq #0,%d3
+  out((char)0, buffer, idx < maxlen ? idx : maxlen - 1U, maxlen);
+    2cb8:	b5c2           	cmpal %d2,%a2
+    2cba:	6500 fdec      	bcsw 2aa8 <_vsnprintf+0x60>
+    2cbe:	6000 fde4      	braw 2aa4 <_vsnprintf+0x5c>
+        format++;
+    2cc2:	2848           	moveal %a0,%a4
+    switch (*format) {
+    2cc4:	0c00 0063      	cmpib #99,%d0
+    2cc8:	6f00 fe9c      	blew 2b66 <_vsnprintf+0x11e>
+    2ccc:	1a00           	moveb %d0,%d5
+    2cce:	0605 ff9c      	addib #-100,%d5
+    2cd2:	0285 0000 00ff 	andil #255,%d5
+    2cd8:	7801           	moveq #1,%d4
+    2cda:	ebac           	lsll %d5,%d4
+    2cdc:	0284 0012 0821 	andil #1181729,%d4
+    2ce2:	6652           	bnes 2d36 <_vsnprintf+0x2ee>
+    2ce4:	0c00 0073      	cmpib #115,%d0
+    2ce8:	6700 0140      	beqw 2e2a <_vsnprintf+0x3e2>
+    2cec:	0c00 0070      	cmpib #112,%d0
+    2cf0:	6700 00e0      	beqw 2dd2 <_vsnprintf+0x38a>
+        out(*format, buffer, idx++, maxlen);
+    2cf4:	280a           	movel %a2,%d4
+    2cf6:	5284           	addql #1,%d4
+    2cf8:	2f02           	movel %d2,%sp@-
+    2cfa:	2f0a           	movel %a2,%sp@-
+    2cfc:	2f06           	movel %d6,%sp@-
+    2cfe:	4880           	extw %d0
+    2d00:	3240           	moveaw %d0,%a1
+    2d02:	2f09           	movel %a1,%sp@-
+    2d04:	4e95           	jsr %a5@
+        break;
+    2d06:	4fef 0010      	lea %sp@(16),%sp
+        out(*format, buffer, idx++, maxlen);
+    2d0a:	2444           	moveal %d4,%a2
+  while (*format)
+    2d0c:	1014           	moveb %a4@,%d0
+    2d0e:	6600 fd6a      	bnew 2a7a <_vsnprintf+0x32>
+    2d12:	6000 fd8a      	braw 2a9e <_vsnprintf+0x56>
+        format++;
+    2d16:	2848           	moveal %a0,%a4
+    switch (*format) {
+    2d18:	0c00 0078      	cmpib #120,%d0
+    2d1c:	6ed6           	bgts 2cf4 <_vsnprintf+0x2ac>
+    2d1e:	1a00           	moveb %d0,%d5
+    2d20:	0605 ff9c      	addib #-100,%d5
+    2d24:	0285 0000 00ff 	andil #255,%d5
+    2d2a:	7801           	moveq #1,%d4
+    2d2c:	ebac           	lsll %d5,%d4
+    2d2e:	0284 0012 0821 	andil #1181729,%d4
+    2d34:	67ae           	beqs 2ce4 <_vsnprintf+0x29c>
+        if (*format == 'x' || *format == 'X') {
+    2d36:	0c00 006f      	cmpib #111,%d0
+    2d3a:	6700 025c      	beqw 2f98 <_vsnprintf+0x550>
+    2d3e:	6e00 03f2      	bgtw 3132 <_vsnprintf+0x6ea>
+          flags &= ~FLAGS_HASH;   // no hash for dec format
+    2d42:	78ef           	moveq #-17,%d4
+    2d44:	c881           	andl %d1,%d4
+        if ((*format != 'i') && (*format != 'd')) {
+    2d46:	0c00 0069      	cmpib #105,%d0
+    2d4a:	6600 045e      	bnew 31aa <_vsnprintf+0x762>
+        if (flags & FLAGS_PRECISION) {
+    2d4e:	0801 000a      	btst #10,%d1
+    2d52:	6704           	beqs 2d58 <_vsnprintf+0x310>
+          flags &= ~FLAGS_ZEROPAD;
+    2d54:	78ee           	moveq #-18,%d4
+    2d56:	c881           	andl %d1,%d4
+          if (flags & FLAGS_LONG_LONG) {
+    2d58:	0804 0009      	btst #9,%d4
+    2d5c:	6600 fd3c      	bnew 2a9a <_vsnprintf+0x52>
+            const long value = va_arg(va, long);
+    2d60:	2a03           	movel %d3,%d5
+    2d62:	5885           	addql #4,%d5
+          else if (flags & FLAGS_LONG) {
+    2d64:	0804 0008      	btst #8,%d4
+    2d68:	6600 0470      	bnew 31da <_vsnprintf+0x792>
+            const int value = (flags & FLAGS_CHAR) ? (char)va_arg(va, int) : (flags & FLAGS_SHORT) ? (short int)va_arg(va, int) : va_arg(va, int);
+    2d6c:	0804 0006      	btst #6,%d4
+    2d70:	6600 03e0      	bnew 3152 <_vsnprintf+0x70a>
+    2d74:	4a04           	tstb %d4
+    2d76:	6a00 04ac      	bplw 3224 <_vsnprintf+0x7dc>
+    2d7a:	2043           	moveal %d3,%a0
+    2d7c:	2010           	movel %a0@,%d0
+    2d7e:	48c0           	extl %d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, (unsigned int)(value > 0 ? value : 0 - value), value < 0, base, precision, width, flags);
+    2d80:	2f04           	movel %d4,%sp@-
+    2d82:	2f0b           	movel %a3,%sp@-
+    2d84:	2f07           	movel %d7,%sp@-
+    2d86:	4878 000a      	pea a <DUART_IMR>
+    2d8a:	2200           	movel %d0,%d1
+    2d8c:	d281           	addl %d1,%d1
+    2d8e:	9381           	subxl %d1,%d1
+    2d90:	4481           	negl %d1
+    2d92:	2f01           	movel %d1,%sp@-
+    2d94:	4a80           	tstl %d0
+    2d96:	6d00 03dc      	bltw 3174 <_vsnprintf+0x72c>
+    2d9a:	2f00           	movel %d0,%sp@-
+    2d9c:	2f02           	movel %d2,%sp@-
+    2d9e:	2f0a           	movel %a2,%sp@-
+    2da0:	2f06           	movel %d6,%sp@-
+    2da2:	2f0d           	movel %a5,%sp@-
+    2da4:	4eb9 0000 23d4 	jsr 23d4 <_ntoa_long>
+    2daa:	2440           	moveal %d0,%a2
+    2dac:	4fef 0028      	lea %sp@(40),%sp
+    2db0:	2605           	movel %d5,%d3
+  while (*format)
+    2db2:	1014           	moveb %a4@,%d0
+    2db4:	6600 fcc4      	bnew 2a7a <_vsnprintf+0x32>
+    2db8:	6000 fce4      	braw 2a9e <_vsnprintf+0x56>
+        flags |= FLAGS_LEFT;    // reverse padding
+    2dbc:	7002           	moveq #2,%d0
+    2dbe:	8280           	orl %d0,%d1
+        width = (unsigned int)-w;
+    2dc0:	2a0b           	movel %a3,%d5
+    2dc2:	4485           	negl %d5
+    2dc4:	2645           	moveal %d5,%a3
+    if (*format == '.') {
+    2dc6:	102c 0001      	moveb %a4@(1),%d0
+      format++;
+    2dca:	2848           	moveal %a0,%a4
+    2dcc:	5288           	addql #1,%a0
+    2dce:	6000 fd4e      	braw 2b1e <_vsnprintf+0xd6>
+          idx = _ntoa_long(out, buffer, idx, maxlen, (unsigned long)((uintptr_t)va_arg(va, void*)), false, 16U, precision, width, flags);
+    2dd2:	7021           	moveq #33,%d0
+    2dd4:	8081           	orl %d1,%d0
+    2dd6:	2f00           	movel %d0,%sp@-
+    2dd8:	4878 0008      	pea 8 <DUART_ACR>
+    2ddc:	2f07           	movel %d7,%sp@-
+    2dde:	4878 0010      	pea 10 <DUART_MR1B>
+    2de2:	42a7           	clrl %sp@-
+    2de4:	2043           	moveal %d3,%a0
+    2de6:	2f18           	movel %a0@+,%sp@-
+    2de8:	2608           	movel %a0,%d3
+    2dea:	2f02           	movel %d2,%sp@-
+    2dec:	2f0a           	movel %a2,%sp@-
+    2dee:	2f06           	movel %d6,%sp@-
+    2df0:	2f0d           	movel %a5,%sp@-
+    2df2:	4eb9 0000 23d4 	jsr 23d4 <_ntoa_long>
+    2df8:	2440           	moveal %d0,%a2
+        break;
+    2dfa:	4fef 0028      	lea %sp@(40),%sp
+  while (*format)
+    2dfe:	1014           	moveb %a4@,%d0
+    2e00:	6600 fc78      	bnew 2a7a <_vsnprintf+0x32>
+    2e04:	6000 fc98      	braw 2a9e <_vsnprintf+0x56>
+        if (*format == 'h') {
+    2e08:	102c 0001      	moveb %a4@(1),%d0
+    2e0c:	0c00 0068      	cmpib #104,%d0
+    2e10:	6700 0232      	beqw 3044 <_vsnprintf+0x5fc>
+        flags |= FLAGS_SHORT;
+    2e14:	7a7f           	moveq #127,%d5
+    2e16:	4605           	notb %d5
+    2e18:	8285           	orl %d5,%d1
+        format++;
+    2e1a:	2844           	moveal %d4,%a4
+    2e1c:	528c           	addql #1,%a4
+    switch (*format) {
+    2e1e:	0c00 0078      	cmpib #120,%d0
+    2e22:	6f00 fd3a      	blew 2b5e <_vsnprintf+0x116>
+    2e26:	6000 fecc      	braw 2cf4 <_vsnprintf+0x2ac>
+        const char* p = va_arg(va, char*);
+    2e2a:	2f43 0030      	movel %d3,%sp@(48)
+    2e2e:	2243           	moveal %d3,%a1
+    2e30:	58af 0030      	addql #4,%sp@(48)
+    2e34:	2619           	movel %a1@+,%d3
+  for (s = str; *s && maxsize--; ++s);
+    2e36:	2043           	moveal %d3,%a0
+    2e38:	1f50 002f      	moveb %a0@,%sp@(47)
+    2e3c:	102f 002f      	moveb %sp@(47),%d0
+        unsigned int l = _strnlen_s(p, precision ? precision : (size_t)-1);
+    2e40:	4a87           	tstl %d7
+    2e42:	6700 0118      	beqw 2f5c <_vsnprintf+0x514>
+  for (s = str; *s && maxsize--; ++s);
+    2e46:	4a00           	tstb %d0
+    2e48:	671a           	beqs 2e64 <_vsnprintf+0x41c>
+    2e4a:	2807           	movel %d7,%d4
+    2e4c:	5384           	subql #1,%d4
+    2e4e:	2043           	moveal %d3,%a0
+    2e50:	43f0 4801      	lea %a0@(1,%d4:l),%a1
+    2e54:	5288           	addql #1,%a0
+    2e56:	4a10           	tstb %a0@
+    2e58:	6700 01e2      	beqw 303c <_vsnprintf+0x5f4>
+    2e5c:	b1c9           	cmpal %a1,%a0
+    2e5e:	66f4           	bnes 2e54 <_vsnprintf+0x40c>
+  return (unsigned int)(s - str);
+    2e60:	2809           	movel %a1,%d4
+    2e62:	9883           	subl %d3,%d4
+        if (flags & FLAGS_PRECISION) {
+    2e64:	2a01           	movel %d1,%d5
+    2e66:	0285 0000 0400 	andil #1024,%d5
+    2e6c:	2245           	moveal %d5,%a1
+    2e6e:	0801 000a      	btst #10,%d1
+    2e72:	6706           	beqs 2e7a <_vsnprintf+0x432>
+          l = (l < precision ? l : precision);
+    2e74:	be84           	cmpl %d4,%d7
+    2e76:	6402           	bccs 2e7a <_vsnprintf+0x432>
+    2e78:	2807           	movel %d7,%d4
+        if (!(flags & FLAGS_LEFT)) {
+    2e7a:	7a02           	moveq #2,%d5
+    2e7c:	ca81           	andl %d1,%d5
+    2e7e:	2f45 0034      	movel %d5,%sp@(52)
+    2e82:	0801 0001      	btst #1,%d1
+    2e86:	6700 0258      	beqw 30e0 <_vsnprintf+0x698>
+        while ((*p != 0) && (!(flags & FLAGS_PRECISION) || precision--)) {
+    2e8a:	4a2f 002f      	tstb %sp@(47)
+    2e8e:	6700 017a      	beqw 300a <_vsnprintf+0x5c2>
+    2e92:	220a           	movel %a2,%d1
+    2e94:	2a09           	movel %a1,%d5
+    2e96:	204b           	moveal %a3,%a0
+    2e98:	2643           	moveal %d3,%a3
+    2e9a:	224c           	moveal %a4,%a1
+    2e9c:	284a           	moveal %a2,%a4
+    2e9e:	2447           	moveal %d7,%a2
+    2ea0:	2e09           	movel %a1,%d7
+    2ea2:	2608           	movel %a0,%d3
+    2ea4:	4a85           	tstl %d5
+    2ea6:	670e           	beqs 2eb6 <_vsnprintf+0x46e>
+    2ea8:	41ea ffff      	lea %a2@(-1),%a0
+    2eac:	b4fc 0000      	cmpaw #0,%a2
+    2eb0:	6700 014c      	beqw 2ffe <_vsnprintf+0x5b6>
+    2eb4:	2448           	moveal %a0,%a2
+          out(*(p++), buffer, idx++, maxlen);
+    2eb6:	528c           	addql #1,%a4
+    2eb8:	528b           	addql #1,%a3
+    2eba:	2f02           	movel %d2,%sp@-
+    2ebc:	2f01           	movel %d1,%sp@-
+    2ebe:	2f06           	movel %d6,%sp@-
+    2ec0:	4880           	extw %d0
+    2ec2:	3240           	moveaw %d0,%a1
+    2ec4:	2f09           	movel %a1,%sp@-
+    2ec6:	4e95           	jsr %a5@
+        while ((*p != 0) && (!(flags & FLAGS_PRECISION) || precision--)) {
+    2ec8:	1013           	moveb %a3@,%d0
+    2eca:	4fef 0010      	lea %sp@(16),%sp
+    2ece:	6700 012e      	beqw 2ffe <_vsnprintf+0x5b6>
+    2ed2:	220c           	movel %a4,%d1
+    2ed4:	60ce           	bras 2ea4 <_vsnprintf+0x45c>
+      out(*format, buffer, idx++, maxlen);
+    2ed6:	280a           	movel %a2,%d4
+    2ed8:	5284           	addql #1,%d4
+            const long value = va_arg(va, long);
+    2eda:	2a03           	movel %d3,%d5
+    2edc:	5885           	addql #4,%d5
+        if (!(flags & FLAGS_LEFT)) {
+    2ede:	0801 0001      	btst #1,%d1
+    2ee2:	6700 01b6      	beqw 309a <_vsnprintf+0x652>
+        out((char)va_arg(va, int), buffer, idx++, maxlen);
+    2ee6:	2f02           	movel %d2,%sp@-
+    2ee8:	2f0a           	movel %a2,%sp@-
+    2eea:	2f06           	movel %d6,%sp@-
+    2eec:	2043           	moveal %d3,%a0
+    2eee:	2010           	movel %a0@,%d0
+    2ef0:	4880           	extw %d0
+    2ef2:	3240           	moveaw %d0,%a1
+    2ef4:	2f09           	movel %a1,%sp@-
+    2ef6:	4e95           	jsr %a5@
+          while (l++ < width) {
+    2ef8:	4fef 0010      	lea %sp@(16),%sp
+    2efc:	d5cb           	addal %a3,%a2
+    2efe:	7001           	moveq #1,%d0
+    2f00:	b08b           	cmpl %a3,%d0
+    2f02:	6400 02ce      	bccw 31d2 <_vsnprintf+0x78a>
+            out(' ', buffer, idx++, maxlen);
+    2f06:	2004           	movel %d4,%d0
+    2f08:	5284           	addql #1,%d4
+    2f0a:	2f02           	movel %d2,%sp@-
+    2f0c:	2f00           	movel %d0,%sp@-
+    2f0e:	2f06           	movel %d6,%sp@-
+    2f10:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    2f14:	4e95           	jsr %a5@
+          while (l++ < width) {
+    2f16:	4fef 0010      	lea %sp@(16),%sp
+    2f1a:	b5c4           	cmpal %d4,%a2
+    2f1c:	66e8           	bnes 2f06 <_vsnprintf+0x4be>
+        out((char)va_arg(va, int), buffer, idx++, maxlen);
+    2f1e:	2605           	movel %d5,%d3
+  while (*format)
+    2f20:	1014           	moveb %a4@,%d0
+    2f22:	6600 fb56      	bnew 2a7a <_vsnprintf+0x32>
+    2f26:	6000 fb76      	braw 2a9e <_vsnprintf+0x56>
+  unsigned int i = 0U;
+    2f2a:	7e00           	moveq #0,%d7
+    2f2c:	2848           	moveal %a0,%a4
+    2f2e:	2047           	moveal %d7,%a0
+    i = i * 10U + (unsigned int)(*((*str)++) - '0');
+    2f30:	528c           	addql #1,%a4
+    2f32:	43f0 8800      	lea %a0@(0,%a0:l),%a1
+    2f36:	d3c9           	addal %a1,%a1
+    2f38:	41f1 8800      	lea %a1@(0,%a0:l),%a0
+    2f3c:	d1c8           	addal %a0,%a0
+    2f3e:	4880           	extw %d0
+    2f40:	41f0 00d0      	lea %a0@(ffffffffffffffd0,%d0:w),%a0
+  while (_is_digit(**str)) {
+    2f44:	1014           	moveb %a4@,%d0
+  return (ch >= '0') && (ch <= '9');
+    2f46:	1800           	moveb %d0,%d4
+    2f48:	0604 ffd0      	addib #-48,%d4
+  while (_is_digit(**str)) {
+    2f4c:	0c04 0009      	cmpib #9,%d4
+    2f50:	63de           	blss 2f30 <_vsnprintf+0x4e8>
+    2f52:	2e08           	movel %a0,%d7
+    2f54:	41ec 0001      	lea %a4@(1),%a0
+    2f58:	6000 fbce      	braw 2b28 <_vsnprintf+0xe0>
+  for (s = str; *s && maxsize--; ++s);
+    2f5c:	4a2f 002f      	tstb %sp@(47)
+    2f60:	6700 ff02      	beqw 2e64 <_vsnprintf+0x41c>
+    2f64:	78fe           	moveq #-2,%d4
+    2f66:	2043           	moveal %d3,%a0
+    2f68:	43f0 4801      	lea %a0@(1,%d4:l),%a1
+    2f6c:	6000 fee6      	braw 2e54 <_vsnprintf+0x40c>
+        precision = prec > 0 ? (unsigned int)prec : 0U;
+    2f70:	2043           	moveal %d3,%a0
+    2f72:	2e18           	movel %a0@+,%d7
+    2f74:	2608           	movel %a0,%d3
+    2f76:	4a87           	tstl %d7
+    2f78:	6d0e           	blts 2f88 <_vsnprintf+0x540>
+    switch (*format) {
+    2f7a:	102c 0002      	moveb %a4@(2),%d0
+        format++;
+    2f7e:	548c           	addql #2,%a4
+    2f80:	41ec 0001      	lea %a4@(1),%a0
+    2f84:	6000 fba2      	braw 2b28 <_vsnprintf+0xe0>
+        precision = prec > 0 ? (unsigned int)prec : 0U;
+    2f88:	7e00           	moveq #0,%d7
+    switch (*format) {
+    2f8a:	102c 0002      	moveb %a4@(2),%d0
+        format++;
+    2f8e:	548c           	addql #2,%a4
+    2f90:	41ec 0001      	lea %a4@(1),%a0
+    2f94:	6000 fb92      	braw 2b28 <_vsnprintf+0xe0>
+    switch (*format) {
+    2f98:	307c 0008      	moveaw #8,%a0
+        if (flags & FLAGS_PRECISION) {
+    2f9c:	0801 000a      	btst #10,%d1
+    2fa0:	6600 00dc      	bnew 307e <_vsnprintf+0x636>
+          flags &= ~(FLAGS_PLUS | FLAGS_SPACE);
+    2fa4:	70f3           	moveq #-13,%d0
+    2fa6:	c280           	andl %d0,%d1
+          if (flags & FLAGS_LONG_LONG) {
+    2fa8:	0801 0009      	btst #9,%d1
+    2fac:	6600 faec      	bnew 2a9a <_vsnprintf+0x52>
+            const long value = va_arg(va, long);
+    2fb0:	2803           	movel %d3,%d4
+    2fb2:	5884           	addql #4,%d4
+          else if (flags & FLAGS_LONG) {
+    2fb4:	0801 0008      	btst #8,%d1
+    2fb8:	6600 0242      	bnew 31fc <_vsnprintf+0x7b4>
+            const unsigned int value = (flags & FLAGS_CHAR) ? (unsigned char)va_arg(va, unsigned int) : (flags & FLAGS_SHORT) ? (unsigned short int)va_arg(va, unsigned int) : va_arg(va, unsigned int);
+    2fbc:	0801 0006      	btst #6,%d1
+    2fc0:	6600 01d0      	bnew 3192 <_vsnprintf+0x74a>
+    2fc4:	2243           	moveal %d3,%a1
+    2fc6:	2011           	movel %a1@,%d0
+    2fc8:	4a01           	tstb %d1
+    2fca:	6a06           	bpls 2fd2 <_vsnprintf+0x58a>
+    2fcc:	0280 0000 ffff 	andil #65535,%d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, value, false, base, precision, width, flags);
+    2fd2:	2f01           	movel %d1,%sp@-
+    2fd4:	2f0b           	movel %a3,%sp@-
+    2fd6:	2f07           	movel %d7,%sp@-
+    2fd8:	2f08           	movel %a0,%sp@-
+    2fda:	42a7           	clrl %sp@-
+    2fdc:	2f00           	movel %d0,%sp@-
+    2fde:	2f02           	movel %d2,%sp@-
+    2fe0:	2f0a           	movel %a2,%sp@-
+    2fe2:	2f06           	movel %d6,%sp@-
+    2fe4:	2f0d           	movel %a5,%sp@-
+    2fe6:	4eb9 0000 23d4 	jsr 23d4 <_ntoa_long>
+    2fec:	2440           	moveal %d0,%a2
+    2fee:	4fef 0028      	lea %sp@(40),%sp
+    2ff2:	2604           	movel %d4,%d3
+  while (*format)
+    2ff4:	1014           	moveb %a4@,%d0
+    2ff6:	6600 fa82      	bnew 2a7a <_vsnprintf+0x32>
+    2ffa:	6000 faa2      	braw 2a9e <_vsnprintf+0x56>
+    2ffe:	2643           	moveal %d3,%a3
+    3000:	244c           	moveal %a4,%a2
+    3002:	2847           	moveal %d7,%a4
+        if (flags & FLAGS_LEFT) {
+    3004:	4aaf 0034      	tstl %sp@(52)
+    3008:	6724           	beqs 302e <_vsnprintf+0x5e6>
+    300a:	2a0a           	movel %a2,%d5
+          while (l++ < width) {
+    300c:	b88b           	cmpl %a3,%d4
+    300e:	641e           	bccs 302e <_vsnprintf+0x5e6>
+    3010:	45f3 a800      	lea %a3@(0,%a2:l),%a2
+    3014:	95c4           	subal %d4,%a2
+            out(' ', buffer, idx++, maxlen);
+    3016:	2005           	movel %d5,%d0
+    3018:	5285           	addql #1,%d5
+    301a:	2f02           	movel %d2,%sp@-
+    301c:	2f00           	movel %d0,%sp@-
+    301e:	2f06           	movel %d6,%sp@-
+    3020:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    3024:	4e95           	jsr %a5@
+          while (l++ < width) {
+    3026:	4fef 0010      	lea %sp@(16),%sp
+    302a:	ba8a           	cmpl %a2,%d5
+    302c:	66e8           	bnes 3016 <_vsnprintf+0x5ce>
+        const char* p = va_arg(va, char*);
+    302e:	262f 0030      	movel %sp@(48),%d3
+  while (*format)
+    3032:	1014           	moveb %a4@,%d0
+    3034:	6600 fa44      	bnew 2a7a <_vsnprintf+0x32>
+    3038:	6000 fa64      	braw 2a9e <_vsnprintf+0x56>
+  return (unsigned int)(s - str);
+    303c:	2808           	movel %a0,%d4
+    303e:	9883           	subl %d3,%d4
+    3040:	6000 fe22      	braw 2e64 <_vsnprintf+0x41c>
+          flags |= FLAGS_CHAR;
+    3044:	703f           	moveq #63,%d0
+    3046:	4600           	notb %d0
+    3048:	8280           	orl %d0,%d1
+          format++;
+    304a:	280c           	movel %a4,%d4
+    304c:	5484           	addql #2,%d4
+    switch (*format) {
+    304e:	102c 0002      	moveb %a4@(2),%d0
+        format++;
+    3052:	2844           	moveal %d4,%a4
+    3054:	528c           	addql #1,%a4
+    switch (*format) {
+    3056:	0c00 0078      	cmpib #120,%d0
+    305a:	6f00 fb02      	blew 2b5e <_vsnprintf+0x116>
+    305e:	6000 fc94      	braw 2cf4 <_vsnprintf+0x2ac>
+          flags |= FLAGS_LONG_LONG;
+    3062:	0041 0300      	oriw #768,%d1
+          format++;
+    3066:	280c           	movel %a4,%d4
+    3068:	5484           	addql #2,%d4
+    switch (*format) {
+    306a:	102c 0002      	moveb %a4@(2),%d0
+        format++;
+    306e:	2844           	moveal %d4,%a4
+    3070:	528c           	addql #1,%a4
+    switch (*format) {
+    3072:	0c00 0078      	cmpib #120,%d0
+    3076:	6f00 fae6      	blew 2b5e <_vsnprintf+0x116>
+    307a:	6000 fc78      	braw 2cf4 <_vsnprintf+0x2ac>
+          flags &= ~FLAGS_ZEROPAD;
+    307e:	70f2           	moveq #-14,%d0
+    3080:	c280           	andl %d0,%d1
+        if ((*format == 'i') || (*format == 'd')) {
+    3082:	6000 ff24      	braw 2fa8 <_vsnprintf+0x560>
+    switch (*format) {
+    3086:	0c00 0058      	cmpib #88,%d0
+    308a:	6600 fc68      	bnew 2cf4 <_vsnprintf+0x2ac>
+          flags |= FLAGS_UPPERCASE;
+    308e:	7a20           	moveq #32,%d5
+    3090:	8285           	orl %d5,%d1
+    3092:	307c 0010      	moveaw #16,%a0
+    3096:	6000 ff04      	braw 2f9c <_vsnprintf+0x554>
+          while (l++ < width) {
+    309a:	7001           	moveq #1,%d0
+    309c:	b08b           	cmpl %a3,%d0
+    309e:	6400 011c      	bccw 31bc <_vsnprintf+0x774>
+    30a2:	41f3 a8ff      	lea %a3@(ffffffffffffffff,%a2:l),%a0
+    30a6:	2e08           	movel %a0,%d7
+    30a8:	280a           	movel %a2,%d4
+            out(' ', buffer, idx++, maxlen);
+    30aa:	2004           	movel %d4,%d0
+    30ac:	5284           	addql #1,%d4
+    30ae:	2f02           	movel %d2,%sp@-
+    30b0:	2f00           	movel %d0,%sp@-
+    30b2:	2f06           	movel %d6,%sp@-
+    30b4:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    30b8:	4e95           	jsr %a5@
+          while (l++ < width) {
+    30ba:	4fef 0010      	lea %sp@(16),%sp
+    30be:	b887           	cmpl %d7,%d4
+    30c0:	66e8           	bnes 30aa <_vsnprintf+0x662>
+        out((char)va_arg(va, int), buffer, idx++, maxlen);
+    30c2:	d5cb           	addal %a3,%a2
+    30c4:	2f02           	movel %d2,%sp@-
+    30c6:	2f07           	movel %d7,%sp@-
+    30c8:	2f06           	movel %d6,%sp@-
+    30ca:	2243           	moveal %d3,%a1
+    30cc:	2011           	movel %a1@,%d0
+    30ce:	4880           	extw %d0
+    30d0:	3040           	moveaw %d0,%a0
+    30d2:	2f08           	movel %a0,%sp@-
+    30d4:	4e95           	jsr %a5@
+    30d6:	4fef 0010      	lea %sp@(16),%sp
+    30da:	2605           	movel %d5,%d3
+    30dc:	6000 fe42      	braw 2f20 <_vsnprintf+0x4d8>
+          while (l++ < width) {
+    30e0:	b88b           	cmpl %a3,%d4
+    30e2:	6400 0162      	bccw 3246 <_vsnprintf+0x7fe>
+    30e6:	200b           	movel %a3,%d0
+    30e8:	d08a           	addl %a2,%d0
+    30ea:	9084           	subl %d4,%d0
+    30ec:	2800           	movel %d0,%d4
+    30ee:	2a09           	movel %a1,%d5
+            out(' ', buffer, idx++, maxlen);
+    30f0:	200a           	movel %a2,%d0
+    30f2:	528a           	addql #1,%a2
+    30f4:	2f02           	movel %d2,%sp@-
+    30f6:	2f00           	movel %d0,%sp@-
+    30f8:	2f06           	movel %d6,%sp@-
+    30fa:	4878 0020      	pea 20 <R_STOPCNTCMD+0x2>
+    30fe:	4e95           	jsr %a5@
+          while (l++ < width) {
+    3100:	4fef 0010      	lea %sp@(16),%sp
+    3104:	b5c4           	cmpal %d4,%a2
+    3106:	66e8           	bnes 30f0 <_vsnprintf+0x6a8>
+    3108:	2245           	moveal %d5,%a1
+    310a:	280b           	movel %a3,%d4
+    310c:	5284           	addql #1,%d4
+    310e:	2043           	moveal %d3,%a0
+    3110:	1f50 002f      	moveb %a0@,%sp@(47)
+        while ((*p != 0) && (!(flags & FLAGS_PRECISION) || precision--)) {
+    3114:	102f 002f      	moveb %sp@(47),%d0
+    3118:	6700 ff14      	beqw 302e <_vsnprintf+0x5e6>
+    311c:	220a           	movel %a2,%d1
+    311e:	2a09           	movel %a1,%d5
+    3120:	204b           	moveal %a3,%a0
+    3122:	2643           	moveal %d3,%a3
+    3124:	224c           	moveal %a4,%a1
+    3126:	284a           	moveal %a2,%a4
+    3128:	2447           	moveal %d7,%a2
+    312a:	2e09           	movel %a1,%d7
+    312c:	2608           	movel %a0,%d3
+    312e:	6000 fd74      	braw 2ea4 <_vsnprintf+0x45c>
+    switch (*format) {
+    3132:	307c 0010      	moveaw #16,%a0
+    3136:	0c00 0078      	cmpib #120,%d0
+    313a:	6700 fe60      	beqw 2f9c <_vsnprintf+0x554>
+          flags &= ~FLAGS_HASH;   // no hash for dec format
+    313e:	70ef           	moveq #-17,%d0
+    3140:	c280           	andl %d0,%d1
+    3142:	307c 000a      	moveaw #10,%a0
+    3146:	6000 fe54      	braw 2f9c <_vsnprintf+0x554>
+    switch (*format) {
+    314a:	307c 0002      	moveaw #2,%a0
+    314e:	6000 fe4c      	braw 2f9c <_vsnprintf+0x554>
+            const int value = (flags & FLAGS_CHAR) ? (char)va_arg(va, int) : (flags & FLAGS_SHORT) ? (short int)va_arg(va, int) : va_arg(va, int);
+    3152:	2243           	moveal %d3,%a1
+    3154:	2011           	movel %a1@,%d0
+    3156:	4880           	extw %d0
+    3158:	48c0           	extl %d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, (unsigned int)(value > 0 ? value : 0 - value), value < 0, base, precision, width, flags);
+    315a:	2f04           	movel %d4,%sp@-
+    315c:	2f0b           	movel %a3,%sp@-
+    315e:	2f07           	movel %d7,%sp@-
+    3160:	4878 000a      	pea a <DUART_IMR>
+    3164:	2200           	movel %d0,%d1
+    3166:	d281           	addl %d1,%d1
+    3168:	9381           	subxl %d1,%d1
+    316a:	4481           	negl %d1
+    316c:	2f01           	movel %d1,%sp@-
+    316e:	4a80           	tstl %d0
+    3170:	6c00 fc28      	bgew 2d9a <_vsnprintf+0x352>
+    3174:	4480           	negl %d0
+    3176:	2f00           	movel %d0,%sp@-
+    3178:	2f02           	movel %d2,%sp@-
+    317a:	2f0a           	movel %a2,%sp@-
+    317c:	2f06           	movel %d6,%sp@-
+    317e:	2f0d           	movel %a5,%sp@-
+    3180:	4eb9 0000 23d4 	jsr 23d4 <_ntoa_long>
+    3186:	2440           	moveal %d0,%a2
+    3188:	4fef 0028      	lea %sp@(40),%sp
+    318c:	2605           	movel %d5,%d3
+    318e:	6000 fc22      	braw 2db2 <_vsnprintf+0x36a>
+    3192:	7000           	moveq #0,%d0
+    3194:	4600           	notb %d0
+    3196:	2243           	moveal %d3,%a1
+    3198:	c091           	andl %a1@,%d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, value, false, base, precision, width, flags);
+    319a:	2f01           	movel %d1,%sp@-
+    319c:	2f0b           	movel %a3,%sp@-
+    319e:	2f07           	movel %d7,%sp@-
+    31a0:	2f08           	movel %a0,%sp@-
+    31a2:	42a7           	clrl %sp@-
+    31a4:	2f00           	movel %d0,%sp@-
+    31a6:	6000 fe36      	braw 2fde <_vsnprintf+0x596>
+        if ((*format != 'i') && (*format != 'd')) {
+    31aa:	0c00 0064      	cmpib #100,%d0
+    31ae:	6700 fb9e      	beqw 2d4e <_vsnprintf+0x306>
+    31b2:	2204           	movel %d4,%d1
+    31b4:	307c 000a      	moveaw #10,%a0
+    31b8:	6000 fde2      	braw 2f9c <_vsnprintf+0x554>
+        out((char)va_arg(va, int), buffer, idx++, maxlen);
+    31bc:	2f02           	movel %d2,%sp@-
+    31be:	2f0a           	movel %a2,%sp@-
+    31c0:	2f06           	movel %d6,%sp@-
+    31c2:	2043           	moveal %d3,%a0
+    31c4:	2010           	movel %a0@,%d0
+    31c6:	4880           	extw %d0
+    31c8:	3240           	moveaw %d0,%a1
+    31ca:	2f09           	movel %a1,%sp@-
+    31cc:	4e95           	jsr %a5@
+    31ce:	4fef 0010      	lea %sp@(16),%sp
+    31d2:	2444           	moveal %d4,%a2
+    31d4:	2605           	movel %d5,%d3
+    31d6:	6000 fd48      	braw 2f20 <_vsnprintf+0x4d8>
+            const long value = va_arg(va, long);
+    31da:	2043           	moveal %d3,%a0
+    31dc:	2010           	movel %a0@,%d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, (unsigned int)(value > 0 ? value : 0 - value), value < 0, base, precision, width, flags);
+    31de:	2f04           	movel %d4,%sp@-
+    31e0:	2f0b           	movel %a3,%sp@-
+    31e2:	2f07           	movel %d7,%sp@-
+    31e4:	4878 000a      	pea a <DUART_IMR>
+    31e8:	2200           	movel %d0,%d1
+    31ea:	d281           	addl %d1,%d1
+    31ec:	9381           	subxl %d1,%d1
+    31ee:	4481           	negl %d1
+    31f0:	2f01           	movel %d1,%sp@-
+    31f2:	4a80           	tstl %d0
+    31f4:	6c00 fba4      	bgew 2d9a <_vsnprintf+0x352>
+    31f8:	6000 ff7a      	braw 3174 <_vsnprintf+0x72c>
+            idx = _ntoa_long(out, buffer, idx, maxlen, va_arg(va, unsigned long), false, base, precision, width, flags);
+    31fc:	2f01           	movel %d1,%sp@-
+    31fe:	2f0b           	movel %a3,%sp@-
+    3200:	2f07           	movel %d7,%sp@-
+    3202:	2f08           	movel %a0,%sp@-
+    3204:	42a7           	clrl %sp@-
+    3206:	2043           	moveal %d3,%a0
+    3208:	2f10           	movel %a0@,%sp@-
+            idx = _ntoa_long(out, buffer, idx, maxlen, value, false, base, precision, width, flags);
+    320a:	2f02           	movel %d2,%sp@-
+    320c:	2f0a           	movel %a2,%sp@-
+    320e:	2f06           	movel %d6,%sp@-
+    3210:	2f0d           	movel %a5,%sp@-
+    3212:	4eb9 0000 23d4 	jsr 23d4 <_ntoa_long>
+    3218:	2440           	moveal %d0,%a2
+    321a:	4fef 0028      	lea %sp@(40),%sp
+    321e:	2604           	movel %d4,%d3
+        break;
+    3220:	6000 fdd2      	braw 2ff4 <_vsnprintf+0x5ac>
+            const int value = (flags & FLAGS_CHAR) ? (char)va_arg(va, int) : (flags & FLAGS_SHORT) ? (short int)va_arg(va, int) : va_arg(va, int);
+    3224:	2243           	moveal %d3,%a1
+    3226:	2011           	movel %a1@,%d0
+            idx = _ntoa_long(out, buffer, idx, maxlen, (unsigned int)(value > 0 ? value : 0 - value), value < 0, base, precision, width, flags);
+    3228:	2f04           	movel %d4,%sp@-
+    322a:	2f0b           	movel %a3,%sp@-
+    322c:	2f07           	movel %d7,%sp@-
+    322e:	4878 000a      	pea a <DUART_IMR>
+    3232:	2200           	movel %d0,%d1
+    3234:	d281           	addl %d1,%d1
+    3236:	9381           	subxl %d1,%d1
+    3238:	4481           	negl %d1
+    323a:	2f01           	movel %d1,%sp@-
+    323c:	4a80           	tstl %d0
+    323e:	6c00 fb5a      	bgew 2d9a <_vsnprintf+0x352>
+    3242:	6000 ff30      	braw 3174 <_vsnprintf+0x72c>
+          while (l++ < width) {
+    3246:	5284           	addql #1,%d4
+        while ((*p != 0) && (!(flags & FLAGS_PRECISION) || precision--)) {
+    3248:	102f 002f      	moveb %sp@(47),%d0
+    324c:	6600 fece      	bnew 311c <_vsnprintf+0x6d4>
+    3250:	6000 fddc      	braw 302e <_vsnprintf+0x5e6>
+
+00003254 <printf_>:
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+int printf_(const char* format, ...)
+{
+    3254:	4e56 fffc      	linkw %fp,#-4
+  va_list va;
+  va_start(va, format);
+  char buffer[1];
+  const int ret = _vsnprintf(_out_char, buffer, (size_t)-1, format, va);
+    3258:	486e 000c      	pea %fp@(12)
+    325c:	2f2e 0008      	movel %fp@(8),%sp@-
+    3260:	4878 ffff      	pea ffffffff <DUART_BASE_R2+0xff07ff57>
+    3264:	486e ffff      	pea %fp@(-1)
+    3268:	4879 0000 2a30 	pea 2a30 <_out_char>
+    326e:	4eb9 0000 2a48 	jsr 2a48 <_vsnprintf>
+  va_end(va);
+  return ret;
+    3274:	4fef 0014      	lea %sp@(20),%sp
+}
+    3278:	4e5e           	unlk %fp
+    327a:	4e75           	rts
+
+0000327c <_putchar>:
+static char crbuf[2] = { '\r', 0 };
+
+/*
+ * This is used by printf.
+ */
+void _putchar(char chr) {
+    327c:	2f02           	movel %d2,%sp@-
+    327e:	242f 0008      	movel %sp@(8),%d2
+  if (chr == '\n') {
+    3282:	0c02 000a      	cmpib #10,%d2
+    3286:	6714           	beqs 329c <_putchar+0x20>
+    // is LF, print CR too
+    mcPrint(crbuf);
+  }
+
+  buf[0] = chr;
+    3288:	41f9 0000 3494 	lea 3494 <buf>,%a0
+    328e:	1082           	moveb %d2,%a0@
+  mcPrint(buf);
+    3290:	2f48 0008      	movel %a0,%sp@(8)
+}
+    3294:	241f           	movel %sp@+,%d2
+  mcPrint(buf);
+    3296:	4ef9 0000 32be 	jmp 32be <mcPrint>
+    mcPrint(crbuf);
+    329c:	4879 0000 3490 	pea 3490 <crbuf>
+    32a2:	4eb9 0000 32be 	jsr 32be <mcPrint>
+    32a8:	588f           	addql #4,%sp
+  buf[0] = chr;
+    32aa:	41f9 0000 3494 	lea 3494 <buf>,%a0
+    32b0:	1082           	moveb %d2,%a0@
+  mcPrint(buf);
+    32b2:	2f48 0008      	movel %a0,%sp@(8)
+}
+    32b6:	241f           	movel %sp@+,%d2
+  mcPrint(buf);
+    32b8:	4ef9 0000 32be 	jmp 32be <mcPrint>
+
+000032be <mcPrint>:
+    32be:	48e7 c080      	moveml %d0-%d1/%a0,%sp@-
+    32c2:	206f 0010      	moveal %sp@(16),%a0
+    32c6:	7200           	moveq #0,%d1
+    32c8:	4e4e           	trap #14
+    32ca:	4cdf 0103      	moveml %sp@+,%d0-%d1/%a0
+    32ce:	4e75           	rts
+
+000032d0 <__kinit>:
+
+void *__dso_handle;
+
+__attribute__((weak)) void __kinit() {
+  // zero .bss
+  for (uint32_t *dst = &_bss_start; dst < &_bss_end; *dst++ = 0);
+    32d0:	41f9 0000 3494 	lea 3494 <buf>,%a0
+    32d6:	b1fc 0000 6ca8 	cmpal #27816,%a0
+    32dc:	641c           	bccs 32fa <__kinit+0x2a>
+    32de:	203c 0000 6ca8 	movel #27816,%d0
+    32e4:	0480 0000 3495 	subil #13461,%d0
+    32ea:	72fc           	moveq #-4,%d1
+    32ec:	c081           	andl %d1,%d0
+    32ee:	0680 0000 3498 	addil #13464,%d0
+    32f4:	4298           	clrl %a0@+
+    32f6:	b088           	cmpl %a0,%d0
+    32f8:	66fa           	bnes 32f4 <__kinit+0x24>
+}
+    32fa:	4e75           	rts
+
+000032fc <__cxa_finalize>:
+/*
+ * We probably don't need the full dso_handle capability as we're always
+ * statically linked, but I'd rather do a proper impl now than have it 
+ * break later because of a half-baked one :D
+ */
+void __cxa_finalize(void *dso_handle) {
+    32fc:	48e7 3020      	moveml %d2-%d3/%a2,%sp@-
+    3300:	262f 0010      	movel %sp@(16),%d3
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    3304:	7200           	moveq #0,%d1
+    3306:	3239 0000 34a4 	movew 34a4 <cxa_atexit_count>,%d1
+    330c:	2401           	movel %d1,%d2
+    330e:	5382           	subql #1,%d2
+    3310:	4a81           	tstl %d1
+    3312:	6738           	beqs 334c <__cxa_finalize+0x50>
+    3314:	2001           	movel %d1,%d0
+    3316:	e788           	lsll #3,%d0
+    3318:	2440           	moveal %d0,%a2
+    331a:	95c1           	subal %d1,%a2
+    331c:	d5ca           	addal %a2,%a2
+    331e:	d5fc 0000 3498 	addal #13464,%a2
+        cxa_atexit_entry *entry = &cxa_atexits[i];
+
+        if ((dso_handle == NULL || dso_handle == entry->dso_handle) && !entry->done) {
+    3324:	4a83           	tstl %d3
+    3326:	662a           	bnes 3352 <__cxa_finalize+0x56>
+    3328:	4a2a 000c      	tstb %a2@(12)
+    332c:	6610           	bnes 333e <__cxa_finalize+0x42>
+            entry->func(entry->ptr);
+    332e:	2f2a 0004      	movel %a2@(4),%sp@-
+    3332:	2052           	moveal %a2@,%a0
+    3334:	4e90           	jsr %a0@
+            entry->done = true;
+    3336:	157c 0001 000c 	moveb #1,%a2@(12)
+    333c:	588f           	addql #4,%sp
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    333e:	45ea fff2      	lea %a2@(-14),%a2
+    3342:	51ca ffe0      	dbf %d2,3324 <__cxa_finalize+0x28>
+    3346:	4242           	clrw %d2
+    3348:	5382           	subql #1,%d2
+    334a:	64d8           	bccs 3324 <__cxa_finalize+0x28>
+        }
+    }
+}
+    334c:	4cdf 040c      	moveml %sp@+,%d2-%d3/%a2
+    3350:	4e75           	rts
+        if ((dso_handle == NULL || dso_handle == entry->dso_handle) && !entry->done) {
+    3352:	b6aa 0008      	cmpl %a2@(8),%d3
+    3356:	67d0           	beqs 3328 <__cxa_finalize+0x2c>
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    3358:	45ea fff2      	lea %a2@(-14),%a2
+    335c:	51ca fff4      	dbf %d2,3352 <__cxa_finalize+0x56>
+    3360:	4242           	clrw %d2
+    3362:	5382           	subql #1,%d2
+    3364:	64ec           	bccs 3352 <__cxa_finalize+0x56>
+}
+    3366:	4cdf 040c      	moveml %sp@+,%d2-%d3/%a2
+    336a:	4e75           	rts
+
+0000336c <__udivsi3>:
+    336c:	2f02           	movel %d2,%sp@-
+    336e:	222f 000c      	movel %sp@(12),%d1
+    3372:	202f 0008      	movel %sp@(8),%d0
+    3376:	0c81 0001 0000 	cmpil #65536,%d1
+    337c:	6416           	bccs 3394 <L3>
+    337e:	2400           	movel %d0,%d2
+    3380:	4242           	clrw %d2
+    3382:	4842           	swap %d2
+    3384:	84c1           	divuw %d1,%d2
+    3386:	3002           	movew %d2,%d0
+    3388:	4840           	swap %d0
+    338a:	342f 000a      	movew %sp@(10),%d2
+    338e:	84c1           	divuw %d1,%d2
+    3390:	3002           	movew %d2,%d0
+    3392:	6030           	bras 33c4 <L6>
+
+00003394 <L3>:
+    3394:	2401           	movel %d1,%d2
+
+00003396 <L4>:
+    3396:	e289           	lsrl #1,%d1
+    3398:	e288           	lsrl #1,%d0
+    339a:	0c81 0001 0000 	cmpil #65536,%d1
+    33a0:	64f4           	bccs 3396 <L4>
+    33a2:	80c1           	divuw %d1,%d0
+    33a4:	0280 0000 ffff 	andil #65535,%d0
+    33aa:	2202           	movel %d2,%d1
+    33ac:	c2c0           	muluw %d0,%d1
+    33ae:	4842           	swap %d2
+    33b0:	c4c0           	muluw %d0,%d2
+    33b2:	4842           	swap %d2
+    33b4:	4a42           	tstw %d2
+    33b6:	660a           	bnes 33c2 <L5>
+    33b8:	d282           	addl %d2,%d1
+    33ba:	6506           	bcss 33c2 <L5>
+    33bc:	b2af 0008      	cmpl %sp@(8),%d1
+    33c0:	6302           	blss 33c4 <L6>
+
+000033c2 <L5>:
+    33c2:	5380           	subql #1,%d0
+
+000033c4 <L6>:
+    33c4:	241f           	movel %sp@+,%d2
+    33c6:	4e75           	rts
+
+000033c8 <__umodsi3>:
+    33c8:	222f 0008      	movel %sp@(8),%d1
+    33cc:	202f 0004      	movel %sp@(4),%d0
+    33d0:	2f01           	movel %d1,%sp@-
+    33d2:	2f00           	movel %d0,%sp@-
+    33d4:	4eb9 0000 336c 	jsr 336c <__udivsi3>
+    33da:	508f           	addql #8,%sp
+    33dc:	222f 0008      	movel %sp@(8),%d1
+    33e0:	2f01           	movel %d1,%sp@-
+    33e2:	2f00           	movel %d0,%sp@-
+    33e4:	4eb9 0000 33f8 	jsr 33f8 <__mulsi3>
+    33ea:	508f           	addql #8,%sp
+    33ec:	222f 0004      	movel %sp@(4),%d1
+    33f0:	9280           	subl %d0,%d1
+    33f2:	2001           	movel %d1,%d0
+    33f4:	4e75           	rts
+	...
+
+000033f8 <__mulsi3>:
+    33f8:	302f 0004      	movew %sp@(4),%d0
+    33fc:	c0ef 000a      	muluw %sp@(10),%d0
+    3400:	322f 0006      	movew %sp@(6),%d1
+    3404:	c2ef 0008      	muluw %sp@(8),%d1
+    3408:	d041           	addw %d1,%d0
+    340a:	4840           	swap %d0
+    340c:	4240           	clrw %d0
+    340e:	322f 0006      	movew %sp@(6),%d1
+    3412:	c2ef 000a      	muluw %sp@(10),%d1
+    3416:	d081           	addl %d1,%d0
+    3418:	4e75           	rts
+    341a:	5369 7a65      	subqw #1,%a1@(31333)
+    341e:	206f 6620      	moveal %sp@(26144),%a0
+    3422:	6c6f           	bges 3493 <crbuf+0x3>
+    3424:	6e67           	bgts 348d <_code_end+0x2>
+    3426:	2025           	movel %a5@-,%d0
+    3428:	6c64           	bges 348e <_code_end+0x3>
+    342a:	0a00 4469      	eorib #105,%d0
+    342e:	7620           	moveq #32,%d3
+    3430:	6279           	bhis 34ab <cxa_atexits+0x5>
+    3432:	207a 6572      	moveal %pc@(99a6 <_bss_end+0x2cfe>),%a0
+    3436:	6f20           	bles 3458 <__mulsi3+0x60>
+    3438:	7472           	moveq #114,%d2
+    343a:	6170           	bsrs 34ac <cxa_atexits+0x6>
+    343c:	2028 3078      	movel %a0@(12408),%d0
+    3440:	3134 2920 7365 	movew %a4@(7365,%d2:l),%a0@-
+    3446:	7420           	moveq #32,%d2
+    3448:	746f           	moveq #111,%d2
+    344a:	2025           	movel %a5@-,%d0
+    344c:	6c58           	bges 34a6 <cxa_atexits>
+    344e:	0a00 462d      	eorib #45,%d0
+    3452:	6c69           	bges 34bd <cxa_atexits+0x17>
+    3454:	6e65           	bgts 34bb <cxa_atexits+0x15>
+    3456:	2074 7261      	moveal %a4@(61,%d7:w:2),%a0
+    345a:	7020           	moveq #32,%d0
+    345c:	2830 7832      	movel %a0@(32,%d7:l),%d4
+    3460:	4329           	.short 0x4329
+    3462:	2073 6574 2074 	moveal %a3@(20746f20)@(0),%a0
+    3468:	6f20 
+    346a:	256c 580a 0041 	movel %a4@(22538),%a2@(65)
+    3470:	626f           	bhis 34e1 <cxa_atexits+0x3b>
+    3472:	7574           	.short 0x7574
+    3474:	2074 6f20 6469 	moveal %a4@(6469,%d6:l:8),%a0
+    347a:	7669           	moveq #105,%d3
+    347c:	6465           	bccs 34e3 <cxa_atexits+0x3d>
+    347e:	2062           	moveal %a2@-,%a0
+    3480:	7920           	.short 0x7920
+    3482:	7a65           	moveq #101,%d5
+    3484:	726f           	moveq #111,%d1
+    3486:	202e 2e0a      	movel %fp@(11786),%d0
+	...

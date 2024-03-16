@@ -1,11 +1,11 @@
-{COMPONENT C:\ENABLE.SYM
+{COMPONENT Z:\USERS\MALCOLM\ROSCO-COPRO\CODE\PLD\ENABLE.SYM
 
  {ENVIRONMENT
   {PDIFvrev 3.00}
   {Program "CUPL(WM) Version 5.0a"}
   {DBtype "Schematic"}
   {DBvrev 1.01}
-  {DBtime "Thu Feb 29 20:31:00 2024 "}
+  {DBtime "Sat Mar 16 19:31:10 2024 "}
   {DBunit "MIL"}
   {DBgrid 10}
   {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
@@ -157,7 +157,7 @@
    {EX
     [Ly "ATTR2"]
     [Ts 12][Tj "CT"][Tr 0][Tm "N"]
-    {At PLD C:\ENABLE 190 440}
+    {At PLD Z:\USERS\MALCOLM\ROSCO-COPRO\CODE\PLD\ENABLE 190 440}
    }
   }
  }

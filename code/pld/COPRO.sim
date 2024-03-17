@@ -1,0 +1,43 @@
+%SIGNAL
+PIN  14 =  A5 
+PIN  15 =  A6 
+PIN  16 =  A7 
+PIN  17 =  A8 
+PIN  18 =  A9 
+PIN  19 =  A10 
+PIN  20 =  A11 
+PIN  21 =  A12 
+PIN   6 =  A13 
+PIN   7 =  A14 
+PIN   8 =  A15 
+PIN   9 =  A16 
+PIN  10 =  A17 
+PIN  11 =  A18 
+PIN  13 =  A19 
+PIN  22 =  CS 
+PIN  23 =  DS 
+PIN   3 =  F0 
+PIN   4 =  F1 
+PIN   5 =  F2 
+PIN   2 =  LDS 
+PIN   1 =  UDS 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!CS =>
+    A13 & !A14 & !A15 & !A16 & A17 & !A18 & !A19 & F0 & F1 & F2
+
+!DS =>
+    !UDS
+  # !LDS
+
+CS.oe  =>
+    1 
+
+DS.oe  =>
+    1 
+
+%END

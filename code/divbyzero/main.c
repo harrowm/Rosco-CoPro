@@ -4,7 +4,7 @@
  *
  */
 
-#include "stdio.h"
+// #include "stdio.h"
 #include "debug_stub.h"
 
 int kmain() {
@@ -12,13 +12,8 @@ int kmain() {
     
     int i=0;
     int j=10;
+    int k;
 
-    printf("Size of long %ld\n", sizeof(long));
-    printf("Div by zero trap (0x14) set to %lX\n", *(long *) 0x14);
-    printf("F-line trap (0x2C) set to %lX\n", *(long *) 0x2C);
-    printf("About to divide by zero ..\n");
-
-    printf("Answer (int) %d\n", j/i);
-
-    return 0;
+    k = j / i;
+    return k;
 }

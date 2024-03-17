@@ -17,18 +17,13 @@ else
 $(info NOTE: Using ROSCO_M68K_DIR libs in: $(ROSCO_M68K_DIR))
 endif
 
-#-include $(ROSCO_M68K_DIR)/code/software/software.mk
+-include $(ROSCO_M68K_DIR)/code/software/software.mk
 
-# A local copy with out the -O2 flag that optimizes away our tests
-# Or in this case optimizes out the division by zero to a direct call to trap 7 ..
--include ./software.mk
-
-# No -m68882 flag option for gcc
+# Changes to compile against 68020 and 68882
 CPU=68020
 EXTRA_CFLAGS=-m68881
 
-# Tell VASM about teh CoPro
 EXTRA_LIBS+=-lsdfat -ldebug_stub -lheap
-EXTRA_VASMFLAGS?=-showopt -m68882
+EXTRA_VASMFLAGS?=-m68882 #-showopt
 
 

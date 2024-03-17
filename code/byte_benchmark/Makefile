@@ -20,7 +20,6 @@ endif
 #-include $(ROSCO_M68K_DIR)/code/software/software.mk
 
 # A local copy with out the -O2 flag that optimizes away our tests
-# Or in this case optimizes out the division by zero to a direct call to trap 7 ..
 -include ./software.mk
 
 # No -m68882 flag option for gcc

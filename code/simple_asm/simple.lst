@@ -1,0 +1,70 @@
+Sections:
+00: ".text" (0-7C)
+
+
+Source: "simple.asm"
+                            	     1: *
+                            	     2: *  Just hack in my program here for now ...
+                            	     3: *
+                            	     4: 
+                            	     5:     section .text                     ; This is normal code
+                            	     6: 
+                            	     7: kmain::
+00:00000000 41FA003C        	     8:     lea.l   HELLO,A0                  ; Get the address of the message
+00:00000004 612C            	     9:     jsr     mcprintln                 ; Call mcPrintln (from the machine lib)
+                            	    10: 
+                            	    11:     ; the exciting part ..
+00:00000006 720A            	    12:     move.l  #10,D1
+00:00000008 F2015080        	    13:     fmove   D1,FP1
+00:0000000C F2005C00        	    14:     fmovecr #$00,FP0                  ; move PI const to FP0
+00:00000010 F2000423        	    15:     fmul    FP1,FP0
+00:00000014 F2000003        	    16:     fintrz  FP0,FP0                   ; convert to short integer
+00:00000018 F2017000        	    17:     fmove   FP0,D1                    ; move back to CPU               
+                            	    18: 
+00:0000001C 700F            	    19:     moveq.l #15,D0
+00:0000001E 143C000A        	    20:     move.b  #10,D2                    ; base 10
+00:00000022 4E4F            	    21:     trap    #15
+                            	    22: 
+00:00000024 41FA003E        	    23:     lea.l   BLANK,A0
+00:00000028 6108            	    24:     jsr     mcprintln
+                            	    25: 
+                            	    26: 
+00:0000002A 41FA0039        	    27:     lea.l   GOODBYE,A0
+00:0000002E 6102            	    28:     jsr     mcprintln
+00:00000030 4E75            	    29:     rts
+                            	    30:     
+                            	    31: mcprintln:
+00:00000032 2F08            	    32:     move.l  A0,-(A7)
+00:00000034 4EB900000000    	    33:     jsr     mcPrintln
+00:0000003A 588F            	    34:     addq.l  #4,A7
+00:0000003C 4E75            	    35:     rts
+                            	    36: 
+00:0000003E 70692A3130206173	    37: HELLO   dc.b    "pi*10 as an int is 31.  The FPU says:",0
+00:00000046 20616E20696E7420
+00:0000004E 69732033312E2020
+00:00000056 5468652046505520
+00:0000005E 736179733A
+00:00000063 00
+00:00000064 00              	    38: BLANK   dc.b    0 
+00:00000065 5072657474792065	    39: GOODBYE dc.b    "Pretty exciting stuff!",0  
+00:0000006D 78636974696E6720
+00:00000075 737475666621
+00:0000007B 00
+                            	    40: 
+                            	    41: 
+
+
+Symbols by name:
+BLANK                           00:00000064
+GOODBYE                         00:00000065
+HELLO                           00:0000003E
+kmain                           00:00000000 EXP
+mcPrintln                       external
+mcprintln                       00:00000032
+
+Symbols by value:
+00000000 kmain
+00000032 mcprintln
+0000003E HELLO
+00000064 BLANK
+00000065 GOODBYE

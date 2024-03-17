@@ -1,0 +1,224 @@
+
+simple_asm.elf:     file format elf32-m68k
+
+
+Disassembly of section .text.init:
+
+00002000 <_init>:
+    2000:	41fa fffe      	lea %pc@(2000 <_init>),%a0
+    2004:	43f9 0000 2000 	lea 2000 <_init>,%a1
+    200a:	203c 0000 20c4 	movel #8388,%d0
+    2010:	9089           	subl %a1,%d0
+    2012:	e488           	lsrl #2,%d0
+    2014:	5380           	subql #1,%d0
+    2016:	22d8           	movel %a0@+,%a1@+
+    2018:	51c8 fffc      	dbf %d0,2016 <_init+0x16>
+    201c:	4ef9 0000 2024 	jmp 2024 <_postinit>
+
+Disassembly of section .text.postinit:
+
+00002024 <_postinit>:
+    2024:	203c 0000 21f0 	movel #8688,%d0
+    202a:	9089           	subl %a1,%d0
+    202c:	e488           	lsrl #2,%d0
+    202e:	2200           	movel %d0,%d1
+    2030:	4841           	swap %d1
+    2032:	6002           	bras 2036 <_postinit+0x12>
+    2034:	22d8           	movel %a0@+,%a1@+
+    2036:	51c8 fffc      	dbf %d0,2034 <_postinit+0x10>
+    203a:	51c9 fff8      	dbf %d1,2034 <_postinit+0x10>
+
+0000203e <_start>:
+    203e:	2e78 0414      	moveal 414 <SDB_MEMSIZE>,%sp
+    2042:	23f8 0490 0000 	movel 490 <EFP_PROG_EXIT>,21f0 <_bss_start>
+    2048:	21f0 
+    204a:	21fc 0000 2064 	movel #8292,490 <EFP_PROG_EXIT>
+    2050:	0490 
+    2052:	41f9 0000 2152 	lea 2152 <__kinit>,%a0
+    2058:	4e90           	jsr %a0@
+    205a:	6124           	bsrs 2080 <CALL_CTORS>
+    205c:	41f9 0000 20c4 	lea 20c4 <_postinit_end>,%a0
+    2062:	4e90           	jsr %a0@
+    2064:	21f9 0000 21f0 	movel 21f0 <_bss_start>,490 <EFP_PROG_EXIT>
+    206a:	0490 
+    206c:	42a7           	clrl %sp@-
+    206e:	41f9 0000 217e 	lea 217e <__cxa_finalize>,%a0
+    2074:	4e90           	jsr %a0@
+    2076:	588f           	addql #4,%sp
+    2078:	6128           	bsrs 20a2 <CALL_DTORS>
+    207a:	2078 0004      	moveal 4 <DUART_CRA>,%a0
+    207e:	4ed0           	jmp %a0@
+
+00002080 <CALL_CTORS>:
+    2080:	48e7 0038      	moveml %a2-%a4,%sp@-
+    2084:	45f9 0000 21f0 	lea 21f0 <_bss_start>,%a2
+    208a:	47f9 0000 21f0 	lea 21f0 <_bss_start>,%a3
+    2090:	598b           	subql #4,%a3
+    2092:	b7ca           	cmpal %a2,%a3
+    2094:	6506           	bcss 209c <CALL_CTORS+0x1c>
+    2096:	2853           	moveal %a3@,%a4
+    2098:	4e94           	jsr %a4@
+    209a:	60f4           	bras 2090 <CALL_CTORS+0x10>
+    209c:	4cdf 1c00      	moveml %sp@+,%a2-%a4
+    20a0:	4e75           	rts
+
+000020a2 <CALL_DTORS>:
+    20a2:	48e7 0038      	moveml %a2-%a4,%sp@-
+    20a6:	45f9 0000 21f0 	lea 21f0 <_bss_start>,%a2
+    20ac:	47f9 0000 21f0 	lea 21f0 <_bss_start>,%a3
+    20b2:	b5cb           	cmpal %a3,%a2
+    20b4:	6708           	beqs 20be <CALL_DTORS+0x1c>
+    20b6:	2852           	moveal %a2@,%a4
+    20b8:	4e94           	jsr %a4@
+    20ba:	588a           	addql #4,%a2
+    20bc:	60f4           	bras 20b2 <CALL_DTORS+0x10>
+    20be:	4cdf 1c00      	moveml %sp@+,%a2-%a4
+    20c2:	4e75           	rts
+
+Disassembly of section .text:
+
+000020c4 <_code>:
+    20c4:	41fa 003c      	lea %pc@(2102 <HELLO>),%a0
+    20c8:	612c           	bsrs 20f6 <mcprintln>
+    20ca:	720a           	moveq #10,%d1
+    20cc:	f201 5080      	fmovew %d1,%fp1
+    20d0:	f200 5c00      	fmovecrx #0,%fp0
+    20d4:	f200 0423      	fmulx %fp1,%fp0
+    20d8:	f200 0003      	fintrzx %fp0,%fp0
+    20dc:	f201 7000      	fmovew %fp0,%d1
+    20e0:	700f           	moveq #15,%d0
+    20e2:	143c 000a      	moveb #10,%d2
+    20e6:	4e4f           	trap #15
+    20e8:	41fa 003e      	lea %pc@(2128 <BLANK>),%a0
+    20ec:	6108           	bsrs 20f6 <mcprintln>
+    20ee:	41fa 0039      	lea %pc@(2129 <GOODBYE>),%a0
+    20f2:	6102           	bsrs 20f6 <mcprintln>
+    20f4:	4e75           	rts
+
+000020f6 <mcprintln>:
+    20f6:	2f08           	movel %a0,%sp@-
+    20f8:	4eb9 0000 2140 	jsr 2140 <mcPrintln>
+    20fe:	588f           	addql #4,%sp
+    2100:	4e75           	rts
+
+00002102 <HELLO>:
+    2102:	7069           	moveq #105,%d0
+    2104:	2a31 3020      	movel %a1@(20,%d3:w),%d5
+    2108:	6173           	bsrs 217d <__kinit+0x2b>
+    210a:	2061           	moveal %a1@-,%a0
+    210c:	6e20           	bgts 212e <GOODBYE+0x5>
+    210e:	696e           	bvss 217e <__cxa_finalize>
+    2110:	7420           	moveq #32,%d2
+    2112:	6973           	bvss 2187 <__cxa_finalize+0x9>
+    2114:	2033 312e 2020 	movel %a3@(2020)@(5468,%d3:w),%d0
+    211a:	5468 
+    211c:	6520           	bcss 213e <GOODBYE+0x15>
+    211e:	4650           	notw %a0@
+    2120:	5520           	subqb #2,%a0@-
+    2122:	7361           	.short 0x7361
+    2124:	7973           	.short 0x7973
+    2126:	3a00           	movew %d0,%d5
+
+00002128 <BLANK>:
+	...
+
+00002129 <GOODBYE>:
+    2129:	5072 6574 7479 	addqw #8,%a2@(74792065)@(0)
+    212f:	2065 
+    2131:	7863           	moveq #99,%d4
+    2133:	6974           	bvss 21a9 <__cxa_finalize+0x2b>
+    2135:	696e           	bvss 21a5 <__cxa_finalize+0x27>
+    2137:	6720           	beqs 2159 <__kinit+0x7>
+    2139:	7374           	.short 0x7374
+    213b:	7566           	.short 0x7566
+    213d:	6621           	bnes 2160 <__kinit+0xe>
+	...
+
+00002140 <mcPrintln>:
+    2140:	48e7 c080      	moveml %d0-%d1/%a0,%sp@-
+    2144:	206f 0010      	moveal %sp@(16),%a0
+    2148:	7201           	moveq #1,%d1
+    214a:	4e4e           	trap #14
+    214c:	4cdf 0103      	moveml %sp@+,%d0-%d1/%a0
+    2150:	4e75           	rts
+
+00002152 <__kinit>:
+
+void *__dso_handle;
+
+__attribute__((weak)) void __kinit() {
+  // zero .bss
+  for (uint32_t *dst = &_bss_start; dst < &_bss_end; *dst++ = 0);
+    2152:	41f9 0000 21f0 	lea 21f0 <_ctors>,%a0
+    2158:	b1fc 0000 59f8 	cmpal #23032,%a0
+    215e:	641c           	bccs 217c <__kinit+0x2a>
+    2160:	203c 0000 59f8 	movel #23032,%d0
+    2166:	0480 0000 21f1 	subil #8689,%d0
+    216c:	72fc           	moveq #-4,%d1
+    216e:	c081           	andl %d1,%d0
+    2170:	0680 0000 21f4 	addil #8692,%d0
+    2176:	4298           	clrl %a0@+
+    2178:	b088           	cmpl %a0,%d0
+    217a:	66fa           	bnes 2176 <__kinit+0x24>
+}
+    217c:	4e75           	rts
+
+0000217e <__cxa_finalize>:
+/*
+ * We probably don't need the full dso_handle capability as we're always
+ * statically linked, but I'd rather do a proper impl now than have it 
+ * break later because of a half-baked one :D
+ */
+void __cxa_finalize(void *dso_handle) {
+    217e:	48e7 3020      	moveml %d2-%d3/%a2,%sp@-
+    2182:	262f 0010      	movel %sp@(16),%d3
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    2186:	7200           	moveq #0,%d1
+    2188:	3239 0000 21f4 	movew 21f4 <cxa_atexit_count>,%d1
+    218e:	2401           	movel %d1,%d2
+    2190:	5382           	subql #1,%d2
+    2192:	4a81           	tstl %d1
+    2194:	6738           	beqs 21ce <__cxa_finalize+0x50>
+    2196:	2001           	movel %d1,%d0
+    2198:	e788           	lsll #3,%d0
+    219a:	2440           	moveal %d0,%a2
+    219c:	95c1           	subal %d1,%a2
+    219e:	d5ca           	addal %a2,%a2
+    21a0:	d5fc 0000 21e8 	addal #8680,%a2
+        cxa_atexit_entry *entry = &cxa_atexits[i];
+
+        if ((dso_handle == NULL || dso_handle == entry->dso_handle) && !entry->done) {
+    21a6:	4a83           	tstl %d3
+    21a8:	662a           	bnes 21d4 <__cxa_finalize+0x56>
+    21aa:	4a2a 000c      	tstb %a2@(12)
+    21ae:	6610           	bnes 21c0 <__cxa_finalize+0x42>
+            entry->func(entry->ptr);
+    21b0:	2f2a 0004      	movel %a2@(4),%sp@-
+    21b4:	2052           	moveal %a2@,%a0
+    21b6:	4e90           	jsr %a0@
+            entry->done = true;
+    21b8:	157c 0001 000c 	moveb #1,%a2@(12)
+    21be:	588f           	addql #4,%sp
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    21c0:	45ea fff2      	lea %a2@(-14),%a2
+    21c4:	51ca ffe0      	dbf %d2,21a6 <__cxa_finalize+0x28>
+    21c8:	4242           	clrw %d2
+    21ca:	5382           	subql #1,%d2
+    21cc:	64d8           	bccs 21a6 <__cxa_finalize+0x28>
+        }
+    }
+}
+    21ce:	4cdf 040c      	moveml %sp@+,%d2-%d3/%a2
+    21d2:	4e75           	rts
+        if ((dso_handle == NULL || dso_handle == entry->dso_handle) && !entry->done) {
+    21d4:	b6aa 0008      	cmpl %a2@(8),%d3
+    21d8:	67d0           	beqs 21aa <__cxa_finalize+0x2c>
+    for (int i = cxa_atexit_count - 1; i >= 0; i--) {
+    21da:	45ea fff2      	lea %a2@(-14),%a2
+    21de:	51ca fff4      	dbf %d2,21d4 <__cxa_finalize+0x56>
+    21e2:	4242           	clrw %d2
+    21e4:	5382           	subql #1,%d2
+    21e6:	64ec           	bccs 21d4 <__cxa_finalize+0x56>
+}
+    21e8:	4cdf 040c      	moveml %sp@+,%d2-%d3/%a2
+    21ec:	4e75           	rts

@@ -1,0 +1,594 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../../rosco_m68k/code/software/libs/build/lib/libdebug_stub.a(debug_stub.o)
+                              main.o (debug_stub)
+../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+                              main.o (printf_)
+../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (_putchar)
+../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o) (mcPrint)
+../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+                              (_start)
+../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o) (__kinit)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__udivsi3)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__divsi3)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__umodsi3)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__modsi3)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__subdf3)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+                              /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o) (_fpCCR)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__nedf2)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__gtdf2)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__ltdf2)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__ledf2)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__fixunsdfsi)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+                              ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o) (__floatunsidf)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+                              /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o) (__mulsi3_internal)
+/opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+                              /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o) (__gedf2)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text.tan      0x00000000       0x22 main.o
+ .text.asin     0x00000000       0x22 main.o
+ .text.acos     0x00000000       0x22 main.o
+ .text.atan     0x00000000       0x22 main.o
+ .text.atan2    0x00000000      0x2ae main.o
+ .text.sinh     0x00000000       0x22 main.o
+ .text.cosh     0x00000000       0x22 main.o
+ .text.tanh     0x00000000       0x22 main.o
+ .text.atanh    0x00000000       0x22 main.o
+ .text.expm1    0x00000000       0x22 main.o
+ .text.log1p    0x00000000       0x22 main.o
+ .text.log10    0x00000000       0x22 main.o
+ .text.hypot    0x00000000       0x42 main.o
+ .text.pow      0x00000000      0x13a main.o
+ .text.fabs     0x00000000       0x22 main.o
+ .text.ceil     0x00000000       0x44 main.o
+ .text.floor    0x00000000       0x48 main.o
+ .text.rint     0x00000000       0x44 main.o
+ .text.fmod     0x00000000       0x32 main.o
+ .text.drem     0x00000000       0x32 main.o
+ .text.scalb    0x00000000       0x2e main.o
+ .text.logb     0x00000000       0x22 main.o
+ .text.ldexp    0x00000000       0x2e main.o
+ .text.frexp    0x00000000       0x74 main.o
+ .text.modf     0x00000000       0x42 main.o
+ .text          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .data          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .bss           0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._out_buffer
+                0x00000000       0x18 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._out_fct
+                0x00000000       0x20 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.sprintf_
+                0x00000000       0x28 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.snprintf_
+                0x00000000       0x28 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.vprintf_
+                0x00000000       0x28 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.vsnprintf_
+                0x00000000       0x22 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.fctprintf
+                0x00000000       0x34 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .data          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .bss           0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .text.mcPrintln
+                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcPrintchar
+                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcSetcursor
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcSendchar
+                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcReadchar
+                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcCheckchar
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcBusywait
+                0x00000000        0xc ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcDelaymsec10
+                0x00000000       0x10 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcDisableInterrupts
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcEnableInterrupts
+                0x00000000       0x1e ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcHalt   0x00000000        0x6 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcCheckDeviceSupport
+                0x00000000       0x16 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcGetDeviceCount
+                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcGetDevice
+                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcAddDevice
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcCheckDevice
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcReadDevice
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcSendDevice
+                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcDeviceCtrl
+                0x00000000       0x32 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcInputchar
+                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcCheckInput
+                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .data          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .bss           0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .text.__cxa_atexit
+                0x00000000       0x4c ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .bss.__dso_handle
+                0x00000000        0x4 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+ .bss           0x00000000        0x0 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000         0x00100000
+EXP_RAM          0x00100000         0x00d00000
+ROM              0x00e00000         0x00100000
+IO_SPACE         0x00f00000         0x00100000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                [!provide]                        PROVIDE (_STACK_SIZE = 0x4000)
+                [!provide]                        PROVIDE (_INITIAL_STACK = 0x0)
+                [!provide]                        PROVIDE (_WARM_BOOT = 0x4)
+                [!provide]                        PROVIDE (_MFP_VECTORS = 0x100)
+                [!provide]                        PROVIDE (_SDB = 0x400)
+                [!provide]                        PROVIDE (_SDB_MAGIC = 0x400)
+                [!provide]                        PROVIDE (_SDB_STATUS = 0x404)
+                [!provide]                        PROVIDE (_SDB_RSRVD_408 = 0x408)
+                0x0000040c                        PROVIDE (_TIMER_100HZ = 0x40c)
+                [!provide]                        PROVIDE (_EASY68K_ECHOON = 0x410)
+                [!provide]                        PROVIDE (_EASY68K_PROMPT = 0x411)
+                [!provide]                        PROVIDE (_EASY68K_SHOWLF = 0x412)
+                [!provide]                        PROVIDE (_SDB_RSRVD_413 = 0x413)
+                [!provide]                        PROVIDE (_SDB_MEM_SIZE = 0x414)
+                [!provide]                        PROVIDE (_SDB_UART_BASE = 0x418)
+                [!provide]                        PROVIDE (_SDB_CPU_INFO = 0x41c)
+                [!provide]                        PROVIDE (_EFP_TABLE = 0x420)
+                0x00000420                        PROVIDE (_EFP_PRINT = 0x420)
+                [!provide]                        PROVIDE (_EFP_PRINTLN = 0x424)
+                0x00000428                        PROVIDE (_EFP_PRINTCHAR = 0x428)
+                [!provide]                        PROVIDE (_EFP_HALT = 0x42c)
+                0x00000430                        PROVIDE (_EFP_SENDCHAR = 0x430)
+                [!provide]                        PROVIDE (_EFP_RECVCHAR = 0x434)
+                [!provide]                        PROVIDE (_EFP_CLRSCR = 0x438)
+                [!provide]                        PROVIDE (_EFP_MOVEXY = 0x43c)
+                [!provide]                        PROVIDE (_EFP_SETCURSOR = 0x440)
+                [!provide]                        PROVIDE (_EFP_CHECKCHAR = 0x444)
+                [!provide]                        PROVIDE (_EFP_PROGLOADER = 0x448)
+                [!provide]                        PROVIDE (_EFP_SD_INIT = 0x44c)
+                [!provide]                        PROVIDE (_EFP_SD_READ = 0x450)
+                [!provide]                        PROVIDE (_EFP_SD_WRITE = 0x454)
+                [!provide]                        PROVIDE (_EFP_SD_REG = 0x458)
+                [!provide]                        PROVIDE (_EFP_SPI_INIT = 0x45c)
+                [!provide]                        PROVIDE (_EFP_SPI_CS_A = 0x460)
+                [!provide]                        PROVIDE (_EFP_SPI_CS_D = 0x464)
+                [!provide]                        PROVIDE (_EFP_SPI_XFER_B = 0x468)
+                [!provide]                        PROVIDE (_EFP_SPI_XFER_M = 0x46c)
+                [!provide]                        PROVIDE (_EFP_SPI_RECV_B = 0x470)
+                [!provide]                        PROVIDE (_EFP_SPI_RECV_M = 0x474)
+                [!provide]                        PROVIDE (_EFP_SPI_SEND_B = 0x478)
+                [!provide]                        PROVIDE (_EFP_SPI_SEND_M = 0x47c)
+                [!provide]                        PROVIDE (_EFP_ATA_INIT = 0x480)
+                [!provide]                        PROVIDE (_EFP_ATA_READ = 0x484)
+                [!provide]                        PROVIDE (_EFP_ATA_WRITE = 0x488)
+                [!provide]                        PROVIDE (_EFP_ATA_IDENT = 0x48c)
+                [!provide]                        PROVIDE (_EFP_INPUTCHAR = 0x494)
+                [!provide]                        PROVIDE (_EFP_CHECKINPUT = 0x498)
+                [!provide]                        PROVIDE (_FIRMWARE = 0xe00000)
+                [!provide]                        PROVIDE (_FIRMWARE_REV = 0xe00400)
+                0x00040000                        PROVIDE (_LOAD_ADDRESS = 0x40000)
+                0x00002000                        PROVIDE (_RUN_ADDRESS = 0x2000)
+
+.text.init      0x00002000       0x22 load address 0x00040000
+                0x00002000                        _init = .
+ *(.init)
+ .init          0x00002000       0x22 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+                0x00002022                        _init_end = .
+
+.text.postinit  0x00002024       0xa0 load address 0x00040024
+                0x00002024                        _postinit = .
+ *(.postinit)
+ .postinit      0x00002024       0xa0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+                0x0000203e                _start
+                0x00002080                CALL_CTORS
+                0x000020a2                CALL_DTORS
+                0x000020c4                        . = ALIGN (0x4)
+                0x000020c4                        _postinit_end = .
+
+.text           0x000020c4     0x2c54 load address 0x000400c4
+                0x000020c4                        _code = .
+ *(.text*)
+ .text.sin      0x000020c4       0x22 main.o
+                0x000020c4                sin
+ .text.cos      0x000020e6       0x22 main.o
+                0x000020e6                cos
+ .text.exp      0x00002108       0x22 main.o
+                0x00002108                exp
+ .text.log      0x0000212a       0x22 main.o
+                0x0000212a                log
+ .text.sqrt     0x0000214c       0x22 main.o
+                0x0000214c                sqrt
+ .text.kmain    0x0000216e      0x168 main.o
+                0x0000216e                kmain
+ *fill*         0x000022d6        0x2 
+ .text.debug_stub
+                0x000022d8      0x2ce ../../../rosco_m68k/code/software/libs/build/lib/libdebug_stub.a(debug_stub.o)
+                0x000022d8                debug_stub
+ .text._out_null
+                0x000025a6        0x2 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._out_rev
+                0x000025a8       0xc2 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._ntoa_long
+                0x0000266a      0x566 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._out_char
+                0x00002bd0       0x18 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text._vsnprintf
+                0x00002be8      0xd28 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .text.printf_  0x00003910       0x28 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+                0x00003910                printf_
+ .text._putchar
+                0x00003938       0x42 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+                0x00003938                _putchar
+ .text.mcPrint  0x0000397a       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x0000397a                mcPrint
+ .text.__kinit  0x0000398c       0x2c ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x0000398c                __kinit
+ .text.__cxa_finalize
+                0x000039b8       0x70 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x000039b8                __cxa_finalize
+ .text          0x00003a28       0x5c /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+                0x00003a28                __udivsi3_internal
+                0x00003a28                __udivsi3
+ .text          0x00003a84       0x2e /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+                0x00003a84                __divsi3_internal
+                0x00003a84                __divsi3
+ *fill*         0x00003ab2        0x2 
+ .text          0x00003ab4       0x2e /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+                0x00003ab4                __umodsi3
+ *fill*         0x00003ae2        0x2 
+ .text          0x00003ae4       0x2e /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+                0x00003ae4                __modsi3
+ *fill*         0x00003b12        0x2 
+ .text          0x00003b14      0x9cc /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+                0x00003b6e                __subdf3
+                0x00003b74                __adddf3
+                0x00003f0a                __muldf3
+                0x000040b8                __divdf3
+                0x0000432c                __negdf2
+                0x0000438a                __cmpdf2_internal
+                0x0000445a                __cmpdf2
+ .text          0x000044e0       0x6a /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+                0x000044e0                __clear_sticky_bit
+                0x000044ee                $_exception_handler
+ *fill*         0x0000454a        0x2 
+ .text          0x0000454c       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+                0x0000454c                __nedf2
+ *fill*         0x0000456e        0x2 
+ .text          0x00004570       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+                0x00004570                __gtdf2
+ *fill*         0x00004592        0x2 
+ .text          0x00004594       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+                0x00004594                __ltdf2
+ *fill*         0x000045b6        0x2 
+ .text          0x000045b8       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+                0x000045b8                __ledf2
+ *fill*         0x000045da        0x2 
+ .text          0x000045dc       0x66 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+                0x000045dc                __fixunsdfsi
+ *fill*         0x00004642        0x2 
+ .text          0x00004644      0x524 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+                0x000046ce                __unordsf2
+                0x0000471a                __unorddf2
+                0x0000477e                __floatunsidf
+                0x00004800                __floatsidf
+                0x00004814                __floatunsisf
+                0x000048a0                __floatsisf
+                0x000048bc                __extendsfdf2
+                0x00004930                __truncdfsf2
+                0x00004a44                __fixdfsi
+                0x00004ad4                __fixsfsi
+ .text          0x00004b68       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+                0x00004b68                __mulsi3_internal
+                0x00004b68                __mulsi3
+ *fill*         0x00004b8a        0x2 
+ .text          0x00004b8c       0x22 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+                0x00004b8c                __gedf2
+ *(.rodata*)
+ .rodata        0x00004bae      0x108 main.o
+ .rodata._vsnprintf.str1.1
+                0x00004cb6       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .rodata.pow10.0
+                0x00004cc8       0x50 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+                0x00004d18                        _code_end = .
+                0x00004d20                        . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.ctors          0x00004d20        0x0
+                0x00004d20                        _ctors = .
+ *(.ctors)
+ *(SORT_BY_NAME(.ctors.*))
+                0x00004d20                        _ctors_end = .
+
+.dtors          0x00004d20        0x0
+                0x00004d20                        _dtors = .
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x00004d20                        _dtors_end = .
+
+.data           0x00004d20       0x20 load address 0x00042d20
+                0x00004d20                        _data_start = .
+ *(.data*)
+ .data.crbuf    0x00004d20        0x2 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ *fill*         0x00004d22        0x2 
+ .data          0x00004d24       0x1c /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+                0x00004d24                _fpCCR
+                0x00004d40                        . = ALIGN (0x4)
+                0x00004d40                        _data_end = .
+
+.bss            0x00004d40     0x3818 load address 0x00042d40
+                0x00004d40                        _bss_start = .
+ *(.bss*)
+ .bss.buf       0x00004d40        0x2 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ *fill*         0x00004d42        0xe 
+ .bss           0x00004d50        0x4 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+ .bss.cxa_atexit_count
+                0x00004d54        0x2 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .bss.cxa_atexits
+                0x00004d56     0x3800 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ *(COMMON)
+                0x00008558                        . = ALIGN (0x4)
+ *fill*         0x00008556        0x2 
+                0x00008558                        _bss_end = .
+                0x00008558                        . = DATA_SEGMENT_END (.)
+                0x00008558                        _end = .
+LOAD main.o
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libsdfat.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libdebug_stub.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libheap.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libprintf.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libcstdlib.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a
+LOAD ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a
+LOAD /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a
+OUTPUT(trig.elf elf32-m68k)
+
+.debug_info     0x00000000     0x24df
+ .debug_info    0x00000000      0x8e5 main.o
+ .debug_info    0x000008e5     0x1001 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_info    0x000018e6      0x104 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_info    0x000019ea      0x254 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_info    0x00001c3e       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_info    0x00001c62       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_info    0x00001c86       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_info    0x00001caa       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_info    0x00001cce       0x25 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_info    0x00001cf3       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_info    0x00001d17       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_info    0x00001d3b       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_info    0x00001d5f       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_info    0x00001d83       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_info    0x00001da7      0x128 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .debug_info    0x00001ecf      0x5c8 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .debug_info    0x00002497       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_info    0x000024bb       0x24 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+.debug_abbrev   0x00000000      0xc34
+ .debug_abbrev  0x00000000      0x1f5 main.o
+ .debug_abbrev  0x000001f5      0x428 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_abbrev  0x0000061d       0xc2 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_abbrev  0x000006df      0x188 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_abbrev  0x00000867       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000087b       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_abbrev  0x0000088f       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x000008a3       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_abbrev  0x000008b7       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_abbrev  0x000008cb       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_abbrev  0x000008df       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_abbrev  0x000008f3       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_abbrev  0x00000907       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_abbrev  0x0000091b       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_abbrev  0x0000092f       0x7e /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .debug_abbrev  0x000009ad      0x25f /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .debug_abbrev  0x00000c0c       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_abbrev  0x00000c20       0x14 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+.debug_aranges  0x00000000      0x3a0
+ .debug_aranges
+                0x00000000      0x110 main.o
+ .debug_aranges
+                0x00000110       0x80 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_aranges
+                0x00000190       0x20 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_aranges
+                0x000001b0       0x30 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_aranges
+                0x000001e0       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000200       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x00000220       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_aranges
+                0x00000240       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_aranges
+                0x00000260       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_aranges
+                0x00000280       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_aranges
+                0x000002a0       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_aranges
+                0x000002c0       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_aranges
+                0x000002e0       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_aranges
+                0x00000300       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_aranges
+                0x00000320       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .debug_aranges
+                0x00000340       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .debug_aranges
+                0x00000360       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_aranges
+                0x00000380       0x20 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+.debug_rnglists
+                0x00000000      0x383
+ .debug_rnglists
+                0x00000000       0xca main.o
+ .debug_rnglists
+                0x000000ca      0x20d ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_rnglists
+                0x000002d7       0x13 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_rnglists
+                0x000002ea       0x37 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_rnglists
+                0x00000321       0x62 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+
+.debug_line     0x00000000     0x2991
+ .debug_line    0x00000000      0x687 main.o
+ .debug_line    0x00000687     0x12ce ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_line    0x00001955       0x9a ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_line    0x000019ef      0x199 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_line    0x00001b88       0x6d /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_line    0x00001bf5       0x5c /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_line    0x00001c51       0x58 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_line    0x00001ca9       0x58 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_line    0x00001d01      0x3cb /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_line    0x000020cc       0x63 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_line    0x0000212f       0x52 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_line    0x00002181       0x52 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_line    0x000021d3       0x52 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_line    0x00002225       0x52 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_line    0x00002277       0x8d /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .debug_line    0x00002304      0x5e7 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+ .debug_line    0x000028eb       0x54 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_line    0x0000293f       0x52 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+.debug_str      0x00000000      0x7fa
+ .debug_str     0x00000000      0x23e main.o
+                                0x2ab (size before relaxing)
+ .debug_str     0x0000023e      0x29f ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+                                0x37f (size before relaxing)
+ .debug_str     0x000004dd       0x23 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+                                0x160 (size before relaxing)
+ .debug_str     0x00000500       0xb7 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                                0x21a (size before relaxing)
+ .debug_str     0x000005b7       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_str     0x00000649       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_str     0x00000649       0xe4 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+                                0x1f6 (size before relaxing)
+ .debug_str     0x0000072d       0xcd /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+                                0x1e2 (size before relaxing)
+ .debug_str     0x000007fa       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_str     0x000007fa       0x92 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 main.o
+                                 0x13 (size before relaxing)
+ .comment       0x00000012       0x13 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .comment       0x00000012       0x13 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .comment       0x00000012       0x13 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .comment       0x00000012       0x13 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .comment       0x00000012       0x13 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+
+.debug_frame    0x00000000      0xbfc
+ .debug_frame   0x00000000      0x34c main.o
+ .debug_frame   0x0000034c      0x688 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_frame   0x000009d4       0x30 ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(putchar.o)
+ .debug_frame   0x00000a04       0x54 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_frame   0x00000a58       0x5c /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_fixunsdfsi.o)
+ .debug_frame   0x00000ab4      0x148 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+
+.debug_loclists
+                0x00000000     0x2401
+ .debug_loclists
+                0x00000000     0x1d4a ../../../rosco_m68k/code/software/libs/build/lib/libprintf-softfloat.a(printf-softfloat.o)
+ .debug_loclists
+                0x00001d4a       0x80 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_loclists
+                0x00001dca      0x637 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(fpgnulib.o)
+
+.debug_line_str
+                0x00000000       0x86
+ .debug_line_str
+                0x00000000       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_udivsi3.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_divsi3.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_umodsi3.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_modsi3.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_double.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_floatex.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_nedf2.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gtdf2.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ltdf2.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_ledf2.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_mulsi3.o)
+ .debug_line_str
+                0x00000086       0x86 /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a(_gedf2.o)

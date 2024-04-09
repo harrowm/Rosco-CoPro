@@ -1,0 +1,1401 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o (atexit)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o (exit)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o) (__stdio_exit_handler)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (_fwalk_sglue)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (_impure_data)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (memset)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o) (__register_exitproc)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o) (__call_exitprocs)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (_malloc_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o) (__malloc_lock)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (_fclose_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o) (__sflush_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o) (__sread)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o) (_close_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o) (errno)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o) (_lseek_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o) (_read_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o) (_sbrk_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o) (_write_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o) (_free_r)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o) (_exit)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o) (mcGetStackPointer)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o) (SD_FAT_initialize)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o) (SD_initialize)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o) (Part_init_SD)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o) (fl_attach_media)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_entry_is_dir)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_total_path_levels)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_fat_purge)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_add_free_space)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_init)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (fatfs_cache_init)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o) (strncmp)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (strlen)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (memcpy)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (__mulsi3)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (__udivsi3)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (__divsi3)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o) (__umodsi3)
+/opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+                              /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o) (__modsi3)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000         0x00100000
+EXP_RAM          0x00100000         0x00d00000
+ROM              0x00e00000         0x00100000
+IO_SPACE         0x00f00000         0x00100000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+LOAD main.o
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a
+                [!provide]                        PROVIDE (_STACK_SIZE = 0x4000)
+                [!provide]                        PROVIDE (_relocIAL_STACK = 0x0)
+                [!provide]                        PROVIDE (_WARM_BOOT = 0x4)
+                [!provide]                        PROVIDE (_MFP_VECTORS = 0x100)
+                [!provide]                        PROVIDE (_SDB = 0x400)
+                0x00000400                        PROVIDE (_SDB_MAGIC = 0x400)
+                [!provide]                        PROVIDE (_SDB_STATUS = 0x404)
+                [!provide]                        PROVIDE (_SDB_RSRVD_408 = 0x408)
+                0x0000040c                        PROVIDE (_TIMER_100HZ = 0x40c)
+                [!provide]                        PROVIDE (_EASY68K_ECHOON = 0x410)
+                [!provide]                        PROVIDE (_EASY68K_PROMPT = 0x411)
+                [!provide]                        PROVIDE (_EASY68K_SHOWLF = 0x412)
+                [!provide]                        PROVIDE (_SDB_RSRVD_413 = 0x413)
+                [!provide]                        PROVIDE (_SDB_MEM_SIZE = 0x414)
+                [!provide]                        PROVIDE (_SDB_UART_BASE = 0x418)
+                [!provide]                        PROVIDE (_SDB_CPU_INFO = 0x41c)
+                [!provide]                        PROVIDE (_EFP_TABLE = 0x420)
+                [!provide]                        PROVIDE (_EFP_PRINT = 0x420)
+                [!provide]                        PROVIDE (_EFP_PRINTLN = 0x424)
+                [!provide]                        PROVIDE (_EFP_PRINTCHAR = 0x428)
+                [!provide]                        PROVIDE (_EFP_HALT = 0x42c)
+                [!provide]                        PROVIDE (_EFP_SENDCHAR = 0x430)
+                [!provide]                        PROVIDE (_EFP_RECVCHAR = 0x434)
+                [!provide]                        PROVIDE (_EFP_CLRSCR = 0x438)
+                [!provide]                        PROVIDE (_EFP_MOVEXY = 0x43c)
+                [!provide]                        PROVIDE (_EFP_SETCURSOR = 0x440)
+                [!provide]                        PROVIDE (_EFP_CHECKCHAR = 0x444)
+                [!provide]                        PROVIDE (_EFP_PROGLOADER = 0x448)
+                [!provide]                        PROVIDE (_EFP_SD_reloc = 0x44c)
+                [!provide]                        PROVIDE (_EFP_SD_READ = 0x450)
+                [!provide]                        PROVIDE (_EFP_SD_WRITE = 0x454)
+                [!provide]                        PROVIDE (_EFP_SD_REG = 0x458)
+                [!provide]                        PROVIDE (_EFP_SPI_reloc = 0x45c)
+                [!provide]                        PROVIDE (_EFP_SPI_CS_A = 0x460)
+                [!provide]                        PROVIDE (_EFP_SPI_CS_D = 0x464)
+                [!provide]                        PROVIDE (_EFP_SPI_XFER_B = 0x468)
+                [!provide]                        PROVIDE (_EFP_SPI_XFER_M = 0x46c)
+                [!provide]                        PROVIDE (_EFP_SPI_RECV_B = 0x470)
+                [!provide]                        PROVIDE (_EFP_SPI_RECV_M = 0x474)
+                [!provide]                        PROVIDE (_EFP_SPI_SEND_B = 0x478)
+                [!provide]                        PROVIDE (_EFP_SPI_SEND_M = 0x47c)
+                [!provide]                        PROVIDE (_EFP_ATA_reloc = 0x480)
+                [!provide]                        PROVIDE (_EFP_ATA_READ = 0x484)
+                [!provide]                        PROVIDE (_EFP_ATA_WRITE = 0x488)
+                [!provide]                        PROVIDE (_EFP_ATA_IDENT = 0x48c)
+                [!provide]                        PROVIDE (_EFP_INPUTCHAR = 0x494)
+                [!provide]                        PROVIDE (_EFP_CHECKINPUT = 0x498)
+                [!provide]                        PROVIDE (_FIRMWARE = 0xe00000)
+                [!provide]                        PROVIDE (_FIRMWARE_REV = 0xe00400)
+                0x00040000                        PROVIDE (_LOAD_ADDRESS = 0x40000)
+                0x00002000                        PROVIDE (_RUN_ADDRESS = 0x2000)
+
+.text.reloc     0x00002000       0x22 load address 0x00040000
+                0x00002000                        _reloc = .
+ *(.reloc)
+ .reloc         0x00002000       0x22 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o
+                0x00002000                _start
+                0x00002022                        _reloc_end = .
+
+.text.postreloc
+                0x00002024       0x7c load address 0x00040024
+                0x00002024                        _postreloc = .
+ *(.postreloc)
+ *fill*         0x00002024        0xc 
+ .postreloc     0x00002030       0x70 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o
+                0x0000204a                _enter
+                0x000020a0                        . = ALIGN (0x4)
+                0x000020a0                        _postreloc_end = .
+
+.eh_frame       0x000020a0        0x4 load address 0x000400a0
+ .eh_frame      0x000020a0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .eh_frame      0x000020a0        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+
+.text           0x000020a4     0x628a load address 0x000400a4
+                0x000020a4                        _code = .
+ *(.text*)
+ .text          0x000020a4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+ .text          0x000020a4       0xf0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .text          0x00002194       0x26 main.o
+                0x00002194                main
+ *fill*         0x000021ba        0x2 
+ .text          0x000021bc        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .text.atexit   0x000021bc       0x16 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+                0x000021bc                atexit
+ *fill*         0x000021d2        0x2 
+ .text          0x000021d4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .text.exit     0x000021d4       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+                0x000021d4                exit
+ .text          0x000021fc        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x000021fc        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x00002200       0x1e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x0000221e       0x52 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x00002270        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x00002274      0x178 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .text.__sfp    0x000023ec      0x100 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x000023ec                __sfp
+ .text.__sinit  0x000024ec       0x22 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x000024ec                __sinit
+ .text.__sfp_lock_acquire
+                0x0000250e        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x0000250e                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x00002510        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x00002510                __sfp_lock_release
+ .text.__fp_lock_all
+                0x00002512       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x00002512                __fp_lock_all
+ .text.__fp_unlock_all
+                0x0000252c       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x0000252c                __fp_unlock_all
+ *fill*         0x00002546        0x2 
+ .text          0x00002548        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .text._fwalk_sglue
+                0x00002548       0x56 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+                0x00002548                _fwalk_sglue
+ *fill*         0x0000259e        0x2 
+ .text          0x000025a0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .text          0x000025a0       0x72 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+                0x000025a0                memset
+ *fill*         0x00002612        0x2 
+ .text          0x00002614        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .text.__register_exitproc
+                0x00002614       0x96 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+                0x00002614                __register_exitproc
+ *fill*         0x000026aa        0x2 
+ .text          0x000026ac        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x000026ac       0xbc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+                0x000026ac                __call_exitprocs
+ .text          0x00002768        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .text._malloc_r
+                0x00002768      0x842 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x00002768                _malloc_r
+ *fill*         0x00002faa        0x2 
+ .text          0x00002fac        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .text.__malloc_lock
+                0x00002fac        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+                0x00002fac                __malloc_lock
+ .text.__malloc_unlock
+                0x00002fae        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+                0x00002fae                __malloc_unlock
+ .text          0x00002fb0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .text._fclose_r
+                0x00002fb0       0xd8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+                0x00002fb0                _fclose_r
+ .text.fclose   0x00003088       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+                0x00003088                fclose
+ .text          0x0000309c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .text.__sflush_r
+                0x0000309c      0x1ba /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+                0x0000309c                __sflush_r
+ .text._fflush_r
+                0x00003256       0x44 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+                0x00003256                _fflush_r
+ .text.fflush   0x0000329a       0x74 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+                0x0000329a                fflush
+ *fill*         0x0000330e        0x2 
+ .text          0x00003310        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .text.__sread  0x00003310       0x38 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                0x00003310                __sread
+ .text.__seofread
+                0x00003348        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                0x00003348                __seofread
+ .text.__swrite
+                0x0000334c       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                0x0000334c                __swrite
+ .text.__sseek  0x000033d2       0x40 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                0x000033d2                __sseek
+ .text.__sclose
+                0x00003412       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+                0x00003412                __sclose
+ .text          0x00003424        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .text._close_r
+                0x00003424       0x2a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+                0x00003424                _close_r
+ *fill*         0x0000344e        0x2 
+ .text          0x00003450        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x00003450       0xb6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+                0x00003450                _reclaim_reent
+ *fill*         0x00003506        0x2 
+ .text          0x00003508        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .text._lseek_r
+                0x00003508       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+                0x00003508                _lseek_r
+ .text          0x0000353c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .text._read_r  0x0000353c       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+                0x0000353c                _read_r
+ .text          0x00003570        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .text._sbrk_r  0x00003570       0x2a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+                0x00003570                _sbrk_r
+ *fill*         0x0000359a        0x2 
+ .text          0x0000359c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .text._write_r
+                0x0000359c       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+                0x0000359c                _write_r
+ .text          0x000035d0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .text._malloc_trim_r
+                0x000035d0       0xda /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+                0x000035d0                _malloc_trim_r
+ .text._free_r  0x000036aa      0x352 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+                0x000036aa                _free_r
+ .text          0x000039fc        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .text._exit    0x000039fc        0x8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x000039fc                _exit
+ .text._close   0x00003a04       0x7e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003a04                _close
+ .text._execve  0x00003a82        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003a82                _execve
+ .text._fork    0x00003a8e        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003a8e                _fork
+ .text._fstat   0x00003a9a       0x98 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003a9a                _fstat
+ .text._getpid  0x00003b32        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003b32                _getpid
+ .text._isatty  0x00003b36       0x10 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003b36                _isatty
+ .text._kill    0x00003b46        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003b46                _kill
+ .text._link    0x00003b52        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003b52                _link
+ .text._lseek   0x00003b5e       0x68 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003b5e                _lseek
+ .text._sd_open
+                0x00003bc6       0x96 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003bc6                _sd_open
+ .text._open    0x00003c5c       0xba /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003c5c                _open
+ .text._read    0x00003d16      0x124 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003d16                _read
+ .text._sbrk    0x00003e3a       0x72 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003e3a                _sbrk
+ .text._sd_stat
+                0x00003eac      0x120 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003eac                _sd_stat
+ .text._stat    0x00003fcc       0x9c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00003fcc                _stat
+ .text._times   0x00004068       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00004068                _times
+ .text._unlink  0x00004082        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00004082                _unlink
+ .text._wait    0x0000408e        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x0000408e                _wait
+ .text._write   0x0000409a       0xbc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x0000409a                _write
+ .text._gettimeofday
+                0x00004156        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00004156                _gettimeofday
+ .text.breakpoint
+                0x00004162        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x00004162                breakpoint
+ .text.mcPrint  0x00004164       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004164                mcPrint
+ .text.mcPrintln
+                0x00004176       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004176                mcPrintln
+ .text.mcPrintchar
+                0x00004188        0xa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004188                mcPrintchar
+ .text.mcSetcursor
+                0x00004192        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004192                mcSetcursor
+ .text.mcSendchar
+                0x000041a0       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041a0                mcSendchar
+ .text.mcReadchar
+                0x000041b2        0xa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041b2                mcReadchar
+ .text.mcCheckchar
+                0x000041bc        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041bc                mcCheckchar
+ .text.mcBusywait
+                0x000041ca        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041ca                mcBusywait
+ .text.mcDelaymsec10
+                0x000041d6       0x10 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041d6                mcDelaymsec10
+ .text.mcDisableInterrupts
+                0x000041e6        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041e6                mcDisableInterrupts
+ .text.mcEnableInterrupts
+                0x000041f4       0x1e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000041f4                mcEnableInterrupts
+ .text.mcHalt   0x00004212        0x6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004212                mcHalt
+ .text.mcCheckDeviceSupport
+                0x00004218       0x16 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004218                mcCheckDeviceSupport
+ .text.mcGetDeviceCount
+                0x0000422e        0xa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x0000422e                mcGetDeviceCount
+ .text.mcGetDevice
+                0x00004238       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004238                mcGetDevice
+ .text.mcAddDevice
+                0x0000424a        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x0000424a                mcAddDevice
+ .text.mcCheckDevice
+                0x00004258        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004258                mcCheckDevice
+ .text.mcReadDevice
+                0x00004266        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004266                mcReadDevice
+ .text.mcSendDevice
+                0x00004274       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004274                mcSendDevice
+ .text.mcDeviceCtrl
+                0x00004286       0x32 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x00004286                mcDeviceCtrl
+                0x000042a0                mcGetVecBase
+ .text.mcInputchar
+                0x000042b8        0xa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000042b8                mcInputchar
+ .text.mcCheckInput
+                0x000042c2        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000042c2                mcCheckInput
+ .text.mcGetStackPointer
+                0x000042d0        0x6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(machine.o)
+                0x000042d0                mcGetStackPointer
+ *fill*         0x000042d6        0x2 
+ .text          0x000042d8        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .text.__sd_fat_shutdown
+                0x000042d8       0x10 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .text.FAT_media_write
+                0x000042e8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .text.FAT_media_read
+                0x00004308       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .text.SD_FAT_initialize
+                0x00004328       0x7c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+                0x00004328                SD_FAT_initialize
+ .text.SD_FAT_get_sd_card
+                0x000043a4       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+                0x000043a4                SD_FAT_get_sd_card
+ .text.SD_check_support
+                0x000043b8       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                0x000043b8                SD_check_support
+ .text.SD_initialize
+                0x000043cc       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                0x000043cc                SD_initialize
+ .text.SD_read_block
+                0x000043de       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                0x000043de                SD_read_block
+ .text.SD_write_block
+                0x000043f8       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                0x000043f8                SD_write_block
+ .text.SD_read_register
+                0x00004412       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard_asm.o)
+                0x00004412                SD_read_register
+ .text          0x0000442c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .text.Part_init_SD
+                0x0000442c       0x88 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+                0x0000442c                Part_init_SD
+ .text.Part_read
+                0x000044b4       0xc0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+                0x000044b4                Part_read
+ .text.Part_write
+                0x00004574       0xc0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+                0x00004574                Part_write
+ .text.Part_valid
+                0x00004634       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+                0x00004634                Part_valid
+ .text          0x00004654        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._open_directory
+                0x00004654       0xb4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._write_sectors
+                0x00004708      0x1d8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._read_sectors
+                0x000048e0      0x136 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._allocate_file
+                0x00004a16       0xc8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._free_file
+                0x00004ade       0xcc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text._open_file
+                0x00004baa      0x196 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .text.fl_init  0x00004d40       0xc0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00004d40                fl_init
+ .text.fl_attach_locks
+                0x00004e00       0x12 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00004e00                fl_attach_locks
+ .text.fl_attach_media
+                0x00004e12       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00004e12                fl_attach_media
+ .text.fl_shutdown
+                0x00004e4e       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00004e4e                fl_shutdown
+ .text.fl_fopen
+                0x00004e8a      0x444 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00004e8a                fl_fopen
+ .text.fl_fflush
+                0x000052ce       0x72 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x000052ce                fl_fflush
+ .text.fl_fclose
+                0x00005340       0xd6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005340                fl_fclose
+ .text.fl_fread
+                0x00005416      0x17e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005416                fl_fread
+ .text.fl_fgetc
+                0x00005594       0x36 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005594                fl_fgetc
+ .text.fl_fgets
+                0x000055ca       0x84 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x000055ca                fl_fgets
+ .text.fl_fseek
+                0x0000564e      0x10c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x0000564e                fl_fseek
+ .text.fl_fgetpos
+                0x0000575a       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x0000575a                fl_fgetpos
+ .text.fl_ftell
+                0x00005796       0x3a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005796                fl_ftell
+ .text.fl_feof  0x000057d0       0x4a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x000057d0                fl_feof
+ .text.fl_fwrite
+                0x0000581a      0x25c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x0000581a                fl_fwrite
+ .text.fl_fputc
+                0x00005a76       0x40 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005a76                fl_fputc
+ .text.fl_fputs
+                0x00005ab6       0x2a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005ab6                fl_fputs
+ .text.fl_remove
+                0x00005ae0       0xca /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005ae0                fl_remove
+ .text.fl_createdirectory
+                0x00005baa      0x27a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+                0x00005baa                fl_createdirectory
+ .text          0x00005e24        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .text.fatfs_lfn_cache_init
+                0x00005e24       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005e24                fatfs_lfn_cache_init
+ .text.fatfs_lfn_cache_entry
+                0x00005e60       0xa6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005e60                fatfs_lfn_cache_entry
+ .text.fatfs_lfn_cache_get
+                0x00005f06       0x38 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005f06                fatfs_lfn_cache_get
+ .text.fatfs_entry_lfn_text
+                0x00005f3e       0x1a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005f3e                fatfs_entry_lfn_text
+ .text.fatfs_entry_lfn_invalid
+                0x00005f58       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005f58                fatfs_entry_lfn_invalid
+ .text.fatfs_entry_lfn_exists
+                0x00005f88       0x44 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005f88                fatfs_entry_lfn_exists
+ .text.fatfs_entry_sfn_only
+                0x00005fcc       0x3a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00005fcc                fatfs_entry_sfn_only
+ .text.fatfs_entry_is_dir
+                0x00006006       0x10 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00006006                fatfs_entry_is_dir
+ .text.fatfs_entry_is_file
+                0x00006016       0x10 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00006016                fatfs_entry_is_file
+ .text.fatfs_lfn_entries_required
+                0x00006026       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00006026                fatfs_lfn_entries_required
+ .text.fatfs_filename_to_lfn
+                0x0000604e      0x160 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x0000604e                fatfs_filename_to_lfn
+ .text.fatfs_sfn_create_entry
+                0x000061ae      0x1b2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x000061ae                fatfs_sfn_create_entry
+ .text.fatfs_lfn_create_sfn
+                0x00006360      0x130 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00006360                fatfs_lfn_create_sfn
+ .text.fatfs_lfn_generate_tail
+                0x00006490      0x154 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x00006490                fatfs_lfn_generate_tail
+ .text          0x000065e4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .text.FileString_StrCmpNoCase
+                0x000065e4       0xb6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .text.fatfs_total_path_levels
+                0x0000669a       0x66 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x0000669a                fatfs_total_path_levels
+ .text.fatfs_get_substring
+                0x00006700       0xbe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x00006700                fatfs_get_substring
+ .text.fatfs_split_path
+                0x000067be       0xa4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x000067be                fatfs_split_path
+ .text.fatfs_compare_names
+                0x00006862      0x154 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x00006862                fatfs_compare_names
+ .text.fatfs_string_ends_with_slash
+                0x000069b6       0x32 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x000069b6                fatfs_string_ends_with_slash
+ .text.fatfs_get_sfn_display_name
+                0x000069e8       0x4a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x000069e8                fatfs_get_sfn_display_name
+ .text.fatfs_get_extension
+                0x00006a32       0x7c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x00006a32                fatfs_get_extension
+ .text.fatfs_create_path_string
+                0x00006aae       0xa8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+                0x00006aae                fatfs_create_path_string
+ *fill*         0x00006b56        0x2 
+ .text          0x00006b58        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .text.fatfs_fat_read_sector
+                0x00006b58      0x122 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .text.fatfs_fat_init
+                0x00006c7a       0x5c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006c7a                fatfs_fat_init
+ .text.fatfs_fat_purge
+                0x00006cd6       0x84 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006cd6                fatfs_fat_purge
+ .text.fatfs_find_next_cluster
+                0x00006d5a       0xde /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006d5a                fatfs_find_next_cluster
+ .text.fatfs_set_fs_info_next_free_cluster
+                0x00006e38       0x9a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006e38                fatfs_set_fs_info_next_free_cluster
+ .text.fatfs_find_blank_cluster
+                0x00006ed2       0xda /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006ed2                fatfs_find_blank_cluster
+ .text.fatfs_fat_set_cluster
+                0x00006fac       0xca /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00006fac                fatfs_fat_set_cluster
+ .text.fatfs_free_cluster_chain
+                0x00007076       0x4a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x00007076                fatfs_free_cluster_chain
+ .text.fatfs_fat_add_cluster_to_chain
+                0x000070c0       0x5c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x000070c0                fatfs_fat_add_cluster_to_chain
+ .text.fatfs_count_free_clusters
+                0x0000711c       0xb4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+                0x0000711c                fatfs_count_free_clusters
+ .text          0x000071d0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .text.fatfs_add_free_space
+                0x000071d0       0x9c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+                0x000071d0                fatfs_add_free_space
+ .text.fatfs_allocate_free_space
+                0x0000726c      0x10e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+                0x0000726c                fatfs_allocate_free_space
+ .text.fatfs_add_file_entry
+                0x0000737a      0x28c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+                0x0000737a                fatfs_add_file_entry
+ *fill*         0x00007606        0x2 
+ .text          0x00007608        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .text.fatfs_init
+                0x00007608      0x202 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007608                fatfs_init
+ .text.fatfs_lba_of_cluster
+                0x0000780a       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x0000780a                fatfs_lba_of_cluster
+ .text.fatfs_sector_read
+                0x0000783e       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x0000783e                fatfs_sector_read
+ .text.fatfs_sector_write
+                0x0000785e       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x0000785e                fatfs_sector_write
+ .text.fatfs_sector_reader
+                0x0000787e      0x102 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x0000787e                fatfs_sector_reader
+ .text.fatfs_read_sector
+                0x00007980       0xf0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007980                fatfs_read_sector
+ .text.fatfs_write_sector
+                0x00007a70       0xf0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007a70                fatfs_write_sector
+ .text.fatfs_get_root_cluster
+                0x00007b60        0xa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007b60                fatfs_get_root_cluster
+ .text.fatfs_get_file_entry
+                0x00007b6a      0x1ee /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007b6a                fatfs_get_file_entry
+ .text.fatfs_sfn_exists
+                0x00007d58       0xaa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007d58                fatfs_sfn_exists
+ .text.fatfs_update_file_length
+                0x00007e02      0x120 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007e02                fatfs_update_file_length
+ .text.fatfs_mark_file_deleted
+                0x00007f22       0xca /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+                0x00007f22                fatfs_mark_file_deleted
+ .text          0x00007fec        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .text.fatfs_cache_init
+                0x00007fec       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+                0x00007fec                fatfs_cache_init
+ .text.fatfs_cache_get_next_cluster
+                0x00008020       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+                0x00008020                fatfs_cache_get_next_cluster
+ .text.fatfs_cache_set_next_cluster
+                0x00008048       0x26 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+                0x00008048                fatfs_cache_set_next_cluster
+ *fill*         0x0000806e        0x2 
+ .text          0x00008070        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .text.strncmp  0x00008070       0xa8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+                0x00008070                strncmp
+ .text          0x00008118        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .text.strlen   0x00008118       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+                0x00008118                strlen
+ .text          0x0000812c       0x6e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+                0x0000812c                memcpy
+ *fill*         0x0000819a        0x2 
+ .text          0x0000819c       0x22 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+                0x0000819c                __mulsi3_internal
+                0x0000819c                __mulsi3
+ *fill*         0x000081be        0x2 
+ .text          0x000081c0       0x5c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+                0x000081c0                __udivsi3_internal
+                0x000081c0                __udivsi3
+ .text          0x0000821c       0x2e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+                0x0000821c                __divsi3_internal
+                0x0000821c                __divsi3
+ *fill*         0x0000824a        0x2 
+ .text          0x0000824c       0x2e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+                0x0000824c                __umodsi3
+ *fill*         0x0000827a        0x2 
+ .text          0x0000827c       0x2e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+                0x0000827c                __modsi3
+ *fill*         0x000082aa        0x2 
+ .text          0x000082ac       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ .text          0x000082d0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+                0x000082d0                        _ctors = .
+ *(.ctors)
+ .ctors         0x000082d0        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .ctors         0x000082d4        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ *(SORT_BY_NAME(.ctors.*))
+                0x000082d8                        _ctors_end = .
+                0x000082d8                        _dtors = .
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ .dtors         0x000082d8        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .dtors         0x000082dc        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+                0x000082dc                __DTOR_END__
+                0x000082e0                        _dtors_end = .
+                0x000082e0                        . = ALIGN (0x4)
+ *(.rodata .rodata.*)
+ .rodata._open.str1.1
+                0x000082e0       0x2a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                                 0x19 (size before relaxing)
+ .rodata._read.str1.1
+                0x0000830a        0x1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .rodata.fatfs_lfn_generate_tail.str1.1
+                0x0000830a       0x11 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+                0x0000831c                        . = ALIGN (0x4)
+ *fill*         0x0000830a        0x2 
+ *(.gcc_except_table)
+                0x0000830c                        . = ALIGN (0x4)
+ *(.init*)
+ .init          0x0000830c        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+                0x0000830c                _init
+ .init          0x00008310        0x6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .init          0x00008316        0x6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ .init          0x0000831c        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+ *(.fini*)
+ .fini          0x00008320        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+                0x00008320                _fini
+ .fini          0x00008324        0x6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .fini          0x0000832a        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+                0x0000832e                        _code_end = .
+                0x0000a32e                        . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.data           0x0000a330      0x544 load address 0x00048330
+                0x0000a330                        _data_start = .
+ *(.data*)
+ .data          0x0000a330        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+ .data          0x0000a330        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+                0x0000a330                __dso_handle
+ .data          0x0000a334        0x0 main.o
+ .data          0x0000a334        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .data          0x0000a334        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .data          0x0000a334        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .data.__sglue  0x0000a334        0xc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x0000a334                __sglue
+ .data          0x0000a340        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .data          0x0000a340        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .data._impure_ptr
+                0x0000a340        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+                0x0000a340                _impure_ptr
+ .data._impure_data
+                0x0000a344      0x116 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+                0x0000a344                _impure_data
+ *fill*         0x0000a45a        0x2 
+ .data          0x0000a45c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .data          0x0000a45c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .data          0x0000a45c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .data          0x0000a45c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .data.__malloc_sbrk_base
+                0x0000a45c        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000a45c                __malloc_sbrk_base
+ .data.__malloc_trim_threshold
+                0x0000a460        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000a460                __malloc_trim_threshold
+ .data.__malloc_av_
+                0x0000a464      0x408 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000a464                __malloc_av_
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .data          0x0000a86c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .data.backspace
+                0x0000a86c        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .data.environ  0x0000a870        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x0000a870                environ
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ .data          0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+                0x0000a874                        . = ALIGN (0x4)
+                0x0000a874                        _data_end = .
+
+.tm_clone_table
+                0x0000a874        0x0 load address 0x00048874
+ .tm_clone_table
+                0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .tm_clone_table
+                0x0000a874        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+
+.bss            0x0000a874    0x15efc load address 0x00048874
+                0x0000a874                        _bss_start = .
+ *(.bss*)
+ .bss           0x0000a874        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/crt0.o
+ .bss           0x0000a878        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+ .bss           0x0000a878       0x1e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ *fill*         0x0000a896        0x2 
+ .bss           0x0000a898        0x0 main.o
+ .bss           0x0000a898        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .bss           0x0000a898        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .bss           0x0000a898        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .bss.__sf      0x0000a898      0x138 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x0000a898                __sf
+ .bss.__stdio_exit_handler
+                0x0000a9d0        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+                0x0000a9d0                __stdio_exit_handler
+ .bss           0x0000a9d4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .bss           0x0000a9d4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .bss           0x0000a9d4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .bss           0x0000a9d4        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .bss.__atexit0
+                0x0000a9d4      0x190 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+                0x0000a9d4                __atexit0
+ .bss           0x0000ab64        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .bss.__atexit  0x0000ab64        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+                0x0000ab64                __atexit
+ .bss           0x0000ab68        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .bss.__malloc_current_mallinfo
+                0x0000ab68       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000ab68                __malloc_current_mallinfo
+ .bss.__malloc_max_total_mem
+                0x0000ab90        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000ab90                __malloc_max_total_mem
+ .bss.__malloc_max_sbrked_mem
+                0x0000ab94        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000ab94                __malloc_max_sbrked_mem
+ .bss.__malloc_top_pad
+                0x0000ab98        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+                0x0000ab98                __malloc_top_pad
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .bss           0x0000ab9c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .bss.errno     0x0000ab9c        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+                0x0000ab9c                errno
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .bss           0x0000aba0        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.new.0     0x0000aba0        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.prev.1    0x0000aba4        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.sendbuf   0x0000aba8        0x2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.files     0x0000abaa       0x80 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.files_bmp
+                0x0000ac2a        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.stdin_nonblock
+                0x0000ac2e        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.heap      0x0000ac32        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .bss.__env     0x0000ac36        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+                0x0000ac36                __env
+ *fill*         0x0000ac3a        0x2 
+ .bss           0x0000ac3c        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .bss.initialized
+                0x0000ac3c        0x1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ *fill*         0x0000ac3d        0x1 
+ .bss.part      0x0000ac3e       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .bss.sdcard    0x0000ac6e       0x16 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .bss           0x0000ac84        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .bss.buffer    0x0000ac84      0x200 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .bss           0x0000ae84        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._free_file_list
+                0x0000ae84        0x8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._open_file_list
+                0x0000ae8c        0x8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._fs       0x0000ae94     0x5092 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._filelib_valid
+                0x0000ff26        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._filelib_init
+                0x0000ff2a        0x4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .bss._files    0x0000ff2e    0x10840 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ *fill*         0x0002076e        0x2 
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ .bss           0x00020770        0x0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+ *(COMMON)
+                0x00020770                        . = ALIGN (0x4)
+                0x00020770                        _bss_end = .
+                0x00020770                        . = DATA_SEGMENT_END (.)
+                0x00020770                        _end = .
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+LOAD /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+OUTPUT(divbyzero_020.elf elf32-m68k)
+
+.comment        0x00000000       0x2c
+ .comment       0x00000000       0x2c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crti.o
+                                  0xe (size before relaxing)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtbegin.o
+ .comment       0x0000002c       0x13 main.o
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .comment       0x0000002c       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtend.o
+ .comment       0x0000002c        0xe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/crtn.o
+
+.debug_info     0x00000000    0x10051
+ .debug_info    0x00000000       0xfc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_info    0x000000fc       0xee /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_info    0x000001ea      0xdef /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_info    0x00000fd9      0x7d6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_info    0x000017af      0x735 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .debug_info    0x00001ee4       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .debug_info    0x00001f08      0x1f0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_info    0x000020f8      0x21b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_info    0x00002313      0xc34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_info    0x00002f47      0x747 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_info    0x0000368e      0x897 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_info    0x00003f25      0x9ca /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_info    0x000048ef      0x9ff /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_info    0x000052ee      0x764 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_info    0x00005a52      0x7fa /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_info    0x0000624c      0x78c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_info    0x000069d8      0x797 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_info    0x0000716f      0x78a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_info    0x000078f9      0x79d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_info    0x00008096      0xac7 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_info    0x00008b5d     0x11c8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_info    0x00009d25      0x4c0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_info    0x0000a1e5      0x67a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_info    0x0000a85f     0x1f51 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_info    0x0000c7b0      0x7fe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_info    0x0000cfae      0x79e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_info    0x0000d74c      0x858 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_info    0x0000dfa4      0x9ac /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_info    0x0000e950      0xec8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_info    0x0000f818      0x57e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_info    0x0000fd96      0x108 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_info    0x0000fe9e       0xdb /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .debug_info    0x0000ff79       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_info    0x0000ff9d       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_info    0x0000ffc1       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_info    0x0000ffe5       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_info    0x00010009       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_info    0x0001002d       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+
+.debug_abbrev   0x00000000     0x4627
+ .debug_abbrev  0x00000000       0xb2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_abbrev  0x000000b2       0xbe /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_abbrev  0x00000170      0x41c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_abbrev  0x0000058c      0x1d6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_abbrev  0x00000762      0x185 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .debug_abbrev  0x000008e7       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .debug_abbrev  0x000008fb      0x13f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_abbrev  0x00000a3a      0x154 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_abbrev  0x00000b8e      0x2c8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_abbrev  0x00000e56      0x1ce /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_abbrev  0x00001024      0x2c1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_abbrev  0x000012e5      0x311 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_abbrev  0x000015f6      0x243 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_abbrev  0x00001839      0x1e0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_abbrev  0x00001a19      0x207 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_abbrev  0x00001c20      0x1f1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_abbrev  0x00001e11      0x1e0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_abbrev  0x00001ff1      0x207 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_abbrev  0x000021f8      0x1e5 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_abbrev  0x000023dd      0x274 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_abbrev  0x00002651      0x4d2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_abbrev  0x00002b23      0x1b8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_abbrev  0x00002cdb      0x245 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_abbrev  0x00002f20      0x49f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_abbrev  0x000033bf      0x334 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_abbrev  0x000036f3      0x296 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_abbrev  0x00003989      0x311 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_abbrev  0x00003c9a      0x2f5 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_abbrev  0x00003f8f      0x391 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_abbrev  0x00004320      0x173 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_abbrev  0x00004493       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_abbrev  0x00004525       0x8a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .debug_abbrev  0x000045af       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_abbrev  0x000045c3       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_abbrev  0x000045d7       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x000045eb       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_abbrev  0x000045ff       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_abbrev  0x00004613       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+
+.debug_aranges  0x00000000      0x858
+ .debug_aranges
+                0x00000000       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_aranges
+                0x00000020       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_aranges
+                0x00000040       0x70 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_aranges
+                0x000000b0       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_aranges
+                0x000000d0       0x18 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .debug_aranges
+                0x000000e8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .debug_aranges
+                0x00000108       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_aranges
+                0x00000128       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_aranges
+                0x00000148       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_aranges
+                0x00000168       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_aranges
+                0x00000190       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_aranges
+                0x000001b8       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_aranges
+                0x000001e8       0x40 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_aranges
+                0x00000228       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_aranges
+                0x00000248       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_aranges
+                0x00000268       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_aranges
+                0x00000288       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_aranges
+                0x000002a8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_aranges
+                0x000002c8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_aranges
+                0x000002e8       0x28 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_aranges
+                0x00000310       0xc8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_aranges
+                0x000003d8       0x40 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_aranges
+                0x00000418       0x38 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_aranges
+                0x00000450       0xe0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_aranges
+                0x00000530       0x88 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_aranges
+                0x000005b8       0x60 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_aranges
+                0x00000618       0x68 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_aranges
+                0x00000680       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_aranges
+                0x000006b0       0x78 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_aranges
+                0x00000728       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_aranges
+                0x00000758       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_aranges
+                0x00000778       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .debug_aranges
+                0x00000798       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_aranges
+                0x000007b8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_aranges
+                0x000007d8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x000007f8       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_aranges
+                0x00000818       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_aranges
+                0x00000838       0x20 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+
+.debug_rnglists
+                0x00000000      0x9ff
+ .debug_rnglists
+                0x00000000       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_rnglists
+                0x00000013       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_rnglists
+                0x00000026       0x6b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_rnglists
+                0x00000091       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_rnglists
+                0x000000a4       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_rnglists
+                0x000000b8       0x2b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_rnglists
+                0x000000e3       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_rnglists
+                0x0000011f       0x19 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_rnglists
+                0x00000138       0x35 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_rnglists
+                0x0000016d       0x6f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_rnglists
+                0x000001dc       0x2c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_rnglists
+                0x00000208       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_rnglists
+                0x0000021b       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_rnglists
+                0x0000022f       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_rnglists
+                0x00000242       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_rnglists
+                0x00000255       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_rnglists
+                0x00000268       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_rnglists
+                0x0000027b       0x1b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_rnglists
+                0x00000296      0x151 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_rnglists
+                0x000003e7       0x2b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_rnglists
+                0x00000412       0x6e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_rnglists
+                0x00000480      0x265 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_rnglists
+                0x000006e5       0x82 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_rnglists
+                0x00000767       0xbb /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_rnglists
+                0x00000822       0x83 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_rnglists
+                0x000008a5       0x31 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_rnglists
+                0x000008d6       0xe3 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_rnglists
+                0x000009b9       0x1f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_rnglists
+                0x000009d8       0x14 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_rnglists
+                0x000009ec       0x13 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+
+.debug_line     0x00000000     0x96df
+ .debug_line    0x00000000       0xd6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_line    0x000000d6      0x150 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_line    0x00000226      0x61a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_line    0x00000840      0x200 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_line    0x00000a40      0x11f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .debug_line    0x00000b5f       0x6d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .debug_line    0x00000bcc      0x16d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_line    0x00000d39      0x1e9 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_line    0x00000f22      0x9d4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_line    0x000018f6      0x1ab /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_line    0x00001aa1      0x2b0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_line    0x00001d51      0x4b4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_line    0x00002205      0x2af /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_line    0x000024b4      0x1d3 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_line    0x00002687      0x235 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_line    0x000028bc      0x1d3 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_line    0x00002a8f      0x1d2 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_line    0x00002c61      0x1d3 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_line    0x00002e34      0x1d3 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_line    0x00003007      0x5b8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_line    0x000035bf      0xc35 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_line    0x000041f4      0x268 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_line    0x0000445c      0x342 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_line    0x0000479e     0x1ca0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_line    0x0000643e      0x8bd /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_line    0x00006cfb      0x992 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_line    0x0000768d      0x88c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_line    0x00007f19      0x59c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_line    0x000084b5      0xb3f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_line    0x00008ff4      0x175 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_line    0x00009169      0x210 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_line    0x00009379      0x130 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .debug_line    0x000094a9       0x69 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_line    0x00009512       0x54 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_line    0x00009566       0x6d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_line    0x000095d3       0x5c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_line    0x0000962f       0x58 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_line    0x00009687       0x58 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+
+.debug_str      0x00000000     0x254e
+ .debug_str     0x00000000     0x254e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+                                0x1b8 (size before relaxing)
+ .debug_str     0x0000254e      0x1a1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_str     0x0000254e      0x69f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_str     0x0000254e      0x4a7 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_str     0x0000254e      0x49c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-impure.o)
+ .debug_str     0x0000254e       0x97 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+ .debug_str     0x0000254e      0x223 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_str     0x0000254e      0x212 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_str     0x0000254e      0x6b7 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_str     0x0000254e      0x4b5 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_str     0x0000254e      0x4f6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_str     0x0000254e      0x51e /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_str     0x0000254e      0x4fb /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_str     0x0000254e      0x48d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_str     0x0000254e      0x4b6 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_str     0x0000254e      0x49b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_str     0x0000254e      0x492 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_str     0x0000254e      0x4a0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_str     0x0000254e      0x494 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_str     0x0000254e      0x5ff /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_str     0x0000254e      0x7af /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_str     0x0000254e      0x428 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_str     0x0000254e      0x39f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_str     0x0000254e      0xadf /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_str     0x0000254e      0x488 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_str     0x0000254e      0x39f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_str     0x0000254e      0x51a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_str     0x0000254e      0x677 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_str     0x0000254e      0x723 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_str     0x0000254e      0x4fd /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_str     0x0000254e      0x17d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_str     0x0000254e      0x181 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+ .debug_str     0x0000254e       0x97 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_str     0x0000254e       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_str     0x0000254e       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_str     0x0000254e       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_str     0x0000254e       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_str     0x0000254e       0x92 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)
+
+.debug_frame    0x00000000     0x1a5c
+ .debug_frame   0x00000000       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-atexit.o)
+ .debug_frame   0x00000034       0x38 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-exit.o)
+ .debug_frame   0x0000006c      0x15c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_frame   0x000001c8       0x3c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_frame   0x00000204       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_frame   0x00000234       0x48 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_frame   0x0000027c       0xa4 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_frame   0x00000320       0x34 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mlock.o)
+ .debug_frame   0x00000354       0x7c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_frame   0x000003d0       0xd0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_frame   0x000004a0       0xa8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_frame   0x00000548       0x2c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_frame   0x00000574       0x5c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_frame   0x000005d0       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_frame   0x00000600       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_frame   0x00000630       0x2c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_frame   0x0000065c       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_frame   0x0000068c       0x90 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_frame   0x0000071c      0x2a0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_frame   0x000009bc       0xb8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(sdcard.o)
+ .debug_frame   0x00000a74       0xa0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_frame   0x00000b14      0x520 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_frame   0x00001034      0x184 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_frame   0x000011b8      0x17c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_frame   0x00001334      0x1f8 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_frame   0x0000152c      0x114 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_frame   0x00001640      0x364 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_frame   0x000019a4       0x64 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_frame   0x00001a08       0x30 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_frame   0x00001a38       0x24 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+
+.debug_loclists
+                0x00000000     0x507d
+ .debug_loclists
+                0x00000000      0x1a1 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-findfp.o)
+ .debug_loclists
+                0x000001a1       0x74 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fwalk.o)
+ .debug_loclists
+                0x00000215       0x47 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__atexit.o)
+ .debug_loclists
+                0x0000025c       0xdb /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-__call_atexit.o)
+ .debug_loclists
+                0x00000337      0x9ae /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-mallocr.o)
+ .debug_loclists
+                0x00000ce5       0x7a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fclose.o)
+ .debug_loclists
+                0x00000d5f      0x168 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-fflush.o)
+ .debug_loclists
+                0x00000ec7       0x9a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-stdio.o)
+ .debug_loclists
+                0x00000f61       0x17 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-closer.o)
+ .debug_loclists
+                0x00000f78       0x4a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-reent.o)
+ .debug_loclists
+                0x00000fc2       0x17 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-lseekr.o)
+ .debug_loclists
+                0x00000fd9       0x17 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-readr.o)
+ .debug_loclists
+                0x00000ff0       0x17 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-sbrkr.o)
+ .debug_loclists
+                0x00001007       0x17 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-writer.o)
+ .debug_loclists
+                0x0000101e      0x402 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-freer.o)
+ .debug_loclists
+                0x00001420      0x421 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(syscalls.o)
+ .debug_loclists
+                0x00001841      0x2ca /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(part.o)
+ .debug_loclists
+                0x00001b0b     0x12fc /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_filelib.o)
+ .debug_loclists
+                0x00002e07      0x4a0 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_misc.o)
+ .debug_loclists
+                0x000032a7      0x949 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_string.o)
+ .debug_loclists
+                0x00003bf0      0x58d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_table.o)
+ .debug_loclists
+                0x0000417d      0x61f /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_write.o)
+ .debug_loclists
+                0x0000479c      0x752 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_access.o)
+ .debug_loclists
+                0x00004eee       0x56 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/librosco.a(fat_cache.o)
+ .debug_loclists
+                0x00004f44      0x10c /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strncmp.o)
+ .debug_loclists
+                0x00005050       0x2d /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-strlen.o)
+
+.debug_line_str
+                0x00000000      0x11a
+ .debug_line_str
+                0x00000000      0x11a /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memset.o)
+                                 0x8b (size before relaxing)
+ .debug_line_str
+                0x0000011a       0x8b /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/../../../../m68k-elf-rosco/lib/libc.a(libc_a-memcpy.o)
+ .debug_line_str
+                0x0000011a       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_mulsi3.o)
+ .debug_line_str
+                0x0000011a       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_udivsi3.o)
+ .debug_line_str
+                0x0000011a       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_divsi3.o)
+ .debug_line_str
+                0x0000011a       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_umodsi3.o)
+ .debug_line_str
+                0x0000011a       0x86 /opt/homebrew/Cellar/rosco-m68k-toolchain@13/HEAD-e2a4d4b/lib/gcc/m68k-elf-rosco/13.2.0/libgcc.a(_modsi3.o)

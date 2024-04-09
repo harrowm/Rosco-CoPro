@@ -2,9 +2,6 @@
  * Program to test the m68882 FPU - trig functions
  * Malcolm Harrow, March 2024
  *
- * On a modern computer, remove -O2 flags etc from the compiler command line
- * This is why there is a local copy of software.mk in this project's directory
- *
  */
 
 /*
@@ -12,17 +9,10 @@
  * Copyright (c) 2020 Matthew Pearce (mattpearce@me.com)
  */
 
-
 #include "stdio.h"
-#include "debug_stub.h"
-
-// The order of the includes is important !
-#include "math-68881.h"
 #include <math.h>
 
-int kmain() {
-    debug_stub();
-
+int main() {
     float result = sin(35);
     double result2 = sqrt(4);
     float result3 = cos(45);

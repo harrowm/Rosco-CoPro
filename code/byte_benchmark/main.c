@@ -15,12 +15,12 @@
  *      IBM PC AT (8Mhz) no FPU:    116.36
  *      IBM PC AT (8 MHz) with FPU:   9.70
  *
- * Results in 2024 (100M iterations then scaled):
- *      Mac M1 Air                    0.000044
+ * Results in 2024 
+ *      rosco_020 (no FPU)           31.07
+ *      rosco_020 (FPU)               1.08
+ *      rosco_030 (no FPU)           32.00
+ *      rosco_030 (FPU)               1.07
  *     
- * On a modern computer, remove -O2 flags etc from the compiler command line
- *  eg on Mac, change kmain() to main() and compile with cc -O0 main.c
- *  eg on rosco, remove -O2 from included makefile
  */
 
 #include "stdio.h"
@@ -48,7 +48,7 @@ int getduration(int start, int end) {
     return (end > start) ? (end - start) : (0xFFFF - start + end);
 }
 
-int kmain() {
+int main() {
     double a, b, c; 
     int i;
 

@@ -4,15 +4,10 @@
  *
  */
 
-// #include "stdio.h"
-#include "debug_stub.h"
-
-int kmain() {
-    debug_stub();
-    
-    int i=0;
-    int j=10;
-    int k;
+int main() {
+    volatile int i=0; // volatiles to stop compiler trying to optimise
+    volatile int j=10;
+    volatile int k;
 
     k = j / i;
     return k;

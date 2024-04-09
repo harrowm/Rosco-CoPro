@@ -30,9 +30,8 @@ PIN   1 =  UDS
 !CS =>
     A13 & !A14 & !A15 & !A16 & A17 & !A18 & !A19 & F0 & F1 & F2
 
-!DS =>
-    !UDS
-  # !LDS
+DS =>
+    LDS
 
 CS.oe  =>
     1 

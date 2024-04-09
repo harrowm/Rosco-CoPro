@@ -1,33 +1,24 @@
-# Test program for the m68882 FPU
-# Malcolm Harrow, March 2024
-#
-# Make rosco_m68k example program for C
-#
-# Copyright (c) 2020-2022 Xark and contributors
-# MIT LICENSE
+CC=m68k-elf-rosco-gcc
+OBJCOPY=m68k-elf-rosco-objcopy
+OBJDUMP=m68k-elf-rosco-objdump
+CFLAGS?=
+LDFLAGS?=
+LIBS?=-lm
 
-ROSCO_M68K_DEFAULT_DIR=../rosco_m68k
+PROGRAM?=program
 
-ROSCO_M68K_DIR=../../../rosco_m68k
+all: $(PROGRAM).bin $(PROGRAM).dis 
 
-ifndef ROSCO_M68K_DIR
-$(info NOTE: ROSCO_M68K_DIR not set, using libs: ../rosco_m68k/code/software/libs)
-ROSCO_M68K_DIR=$(ROSCO_M68K_DEFAULT_DIR)
-else
-$(info NOTE: Using ROSCO_M68K_DIR libs in: $(ROSCO_M68K_DIR))
-endif
+$(PROGRAM).elf: main.o
+	$(CC) $(LDFLAGS) -Wl,-Map=$(PROGRAM).map -o $@ $^ ${LIBS}
 
-#-include $(ROSCO_M68K_DIR)/code/software/software.mk
+$(PROGRAM).dis: $(PROGRAM).elf
+	$(OBJDUMP) -d $< > $@
 
-# A local copy with out the -O2 flag that optimizes away our tests
--include ./software.mk
+$(PROGRAM).bin: $(PROGRAM).elf
+	$(OBJCOPY) -O binary $< $@
 
-# No -m68882 flag option for gcc
-CPU=68020
-EXTRA_CFLAGS=-m68881
+clean:
+	$(RM) main.o $(PROGRAM).bin $(PROGRAM).map $(PROGRAM).elf $(PROGRAM).dis 
 
-# Tell VASM about the CoPro
-EXTRA_LIBS+=-lsdfat -ldebug_stub -lheap -lprintf-softfloat
-EXTRA_VASMFLAGS?=-showopt -m68882
-
-
+.PHONY: all clean

@@ -31,5 +31,6 @@ PIN 22          = CS;           /* Enable 68882                 */
 
 /** Logic Equations **/
 
-!DS             = !UDS # !LDS;
+/*!DS             = !UDS # !LDS;*/
+DS              = LDS;
 !CS             = F2 & F1 & F0 & !A19 & !A18 & A17 & !A16 & !A15 & !A14 & A13; 

@@ -8,7 +8,7 @@
 
 ROSCO_M68K_DEFAULT_DIR=../rosco_m68k
 
-ROSCO_M68K_DIR=../../../rosco_m68k
+ROSCO_M68K_DIR=${HOME}/rosco_m68k
 
 ifndef ROSCO_M68K_DIR
 $(info NOTE: ROSCO_M68K_DIR not set, using libs: ../rosco_m68k/code/software/libs)
@@ -21,9 +21,9 @@ endif
 
 # Changes to compile against 68020 and 68882
 CPU=68020
-EXTRA_CFLAGS=-m68882
+EXTRA_CFLAGS=-m68881
 
 EXTRA_LIBS+=-lsdfat -ldebug_stub -lheap
-EXTRA_VASMFLAGS?=-showopt -m68882
+EXTRA_VASMFLAGS?=-m68882 #-showopt
 
 

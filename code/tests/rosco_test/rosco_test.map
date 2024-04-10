@@ -1,61 +1,61 @@
 Archive member included to satisfy reference by file (symbol)
 
-../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+/Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
                               rosco_test.o (mcPrintln)
-../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+/Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
                               (_start)
-../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
-                              ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o) (__kinit)
+/Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                              /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o) (__kinit)
 
 Discarded input sections
 
- .text.mcPrint  0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcPrint  0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcPrintchar
-                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcSetcursor
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcSendchar
-                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcReadchar
-                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xa /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcCheckchar
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcBusywait
-                0x00000000        0xc ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xc /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcDelaymsec10
-                0x00000000       0x10 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x10 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcDisableInterrupts
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcEnableInterrupts
-                0x00000000       0x1e ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
- .text.mcHalt   0x00000000        0x6 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x1e /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text.mcHalt   0x00000000        0x6 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcCheckDeviceSupport
-                0x00000000       0x16 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x16 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcGetDeviceCount
-                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xa /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcGetDevice
-                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcAddDevice
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcCheckDevice
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcReadDevice
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcSendDevice
-                0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcDeviceCtrl
-                0x00000000       0x32 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000       0x32 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcInputchar
-                0x00000000        0xa ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00000000        0xa /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
  .text.mcCheckInput
-                0x00000000        0xe ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
- .text          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
- .data          0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
- .bss           0x00000000        0x0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000        0xe /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+ .text          0x00000000        0x0 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .data          0x00000000        0x0 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .bss           0x00000000        0x0 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  .text.__cxa_atexit
-                0x00000000       0x4c ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000       0x4c /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  .bss.__dso_handle
-                0x00000000        0x4 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000        0x4 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 Memory Configuration
 
@@ -123,13 +123,13 @@ Linker script and memory map
 .text.init      0x00002000       0x22 load address 0x00040000
                 0x00002000                        _init = .
  *(.init)
- .init          0x00002000       0x22 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+ .init          0x00002000       0x22 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
                 0x00002022                        _init_end = .
 
 .text.postinit  0x00002024       0xa0 load address 0x00040024
                 0x00002024                        _postinit = .
  *(.postinit)
- .postinit      0x00002024       0xa0 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+ .postinit      0x00002024       0xa0 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
                 0x0000203e                _start
                 0x00002080                CALL_CTORS
                 0x000020a2                CALL_DTORS
@@ -142,12 +142,12 @@ Linker script and memory map
  .text          0x000020c4       0xb2 rosco_test.o
                 0x000020c4                kmain
  .text.mcPrintln
-                0x00002176       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00002176       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
                 0x00002176                mcPrintln
- .text.__kinit  0x00002188       0x2c ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .text.__kinit  0x00002188       0x2c /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
                 0x00002188                __kinit
  .text.__cxa_finalize
-                0x000021b4       0x70 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x000021b4       0x70 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
                 0x000021b4                __cxa_finalize
  *(.rodata*)
                 0x00002224                        _code_end = .
@@ -175,11 +175,11 @@ Linker script and memory map
                 0x00002234                        _bss_start = .
  *(.bss*)
  *fill*         0x00002234        0xc 
- .bss           0x00002240        0x4 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+ .bss           0x00002240        0x4 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
  .bss.cxa_atexit_count
-                0x00002244        0x2 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00002244        0x2 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  .bss.cxa_atexits
-                0x00002246     0x3800 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00002246     0x3800 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  *(COMMON)
                 0x00005a48                        . = ALIGN (0x4)
  *fill*         0x00005a46        0x2 
@@ -187,46 +187,46 @@ Linker script and memory map
                 0x00005a48                        . = DATA_SEGMENT_END (.)
                 0x00005a48                        _end = .
 LOAD rosco_test.o
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libsdfat.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libdebug_stub.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libheap.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libprintf.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libcstdlib.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libmachine.a
-LOAD ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libsdfat.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libdebug_stub.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libheap.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libprintf.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libcstdlib.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a
+LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a
 LOAD /opt/homebrew/Cellar/gcc-cross-m68k@13/13.1.0/lib/gcc/m68k-elf/13.1.0/m68000//libgcc.a
 OUTPUT(rosco_test.elf elf32-m68k)
 
 .debug_info     0x00000000      0x254
- .debug_info    0x00000000      0x254 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_info    0x00000000      0x254 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_abbrev   0x00000000      0x188
- .debug_abbrev  0x00000000      0x188 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_abbrev  0x00000000      0x188 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_loclists
                 0x00000000       0x80
  .debug_loclists
-                0x00000000       0x80 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000       0x80 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_aranges  0x00000000       0x30
  .debug_aranges
-                0x00000000       0x30 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000       0x30 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_rnglists
                 0x00000000       0x37
  .debug_rnglists
-                0x00000000       0x37 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00000000       0x37 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_line     0x00000000      0x199
- .debug_line    0x00000000      0x199 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_line    0x00000000      0x199 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
 
 .debug_str      0x00000000      0x1be
- .debug_str     0x00000000      0x1be ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_str     0x00000000      0x1be /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
                                 0x21a (size before relaxing)
 
 .comment        0x00000000       0x12
- .comment       0x00000000       0x12 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .comment       0x00000000       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
                                  0x13 (size before relaxing)
 
 .debug_frame    0x00000000       0x54
- .debug_frame   0x00000000       0x54 ../../../rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+ .debug_frame   0x00000000       0x54 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)

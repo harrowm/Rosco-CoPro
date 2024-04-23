@@ -61,7 +61,7 @@ C**********************************************************************
 #include <stdio.h>
 #include <string.h>
 
-#define PRINTOUT 1
+//#define PRINTOUT 1
 #define ROSCO 1
 
 #include <math.h>
@@ -124,7 +124,7 @@ int main()
 	float KIPS;
 	int continuous;
 
-	loopstart = 1;		/* see the note about LOOP below */
+	loopstart = 10;		/* see the note about LOOP below */
 	continuous = 0;
 
 #ifdef PRINTOUT
@@ -471,7 +471,15 @@ P3(double X, double Y, double *Z)
 void
 POUT(long N, long J, long K, double X1, double X2, double X3, double X4)
 {
-	printf("%7ld %7ld %7ld %12.4e %12.4e %12.4e %12.4e\n",
-						N, J, K, X1, X2, X3, X4);
+	printf("%7ld\n", N);
+	printf("%7ld\n", J);
+	printf("%7ld\n", K);
+	
+	printf("%12.4e\n", X1);
+	printf("%12.4e\n", X2);
+	printf("%12.4e\n", X3);
+	printf("%12.4e\n", X4);
+
+	printf("%7ld %7ld %7ld %12.4e %12.4e %12.4e %12.4e\n", N, J, K, X1, X2, X3, X4);
 }
 #endif

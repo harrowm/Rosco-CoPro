@@ -126,65 +126,63 @@ Linker script and memory map
  .init          0x00002000       0x22 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
                 0x00002022                        _init_end = .
 
-.text.postinit  0x00002024       0xa0 load address 0x00040024
+.text.postinit  0x00002024       0x88 load address 0x00040024
                 0x00002024                        _postinit = .
  *(.postinit)
- .postinit      0x00002024       0xa0 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
+ .postinit      0x00002024       0x88 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
                 0x0000203e                _start
-                0x00002080                CALL_CTORS
-                0x000020a2                CALL_DTORS
-                0x000020c4                        . = ALIGN (0x4)
-                0x000020c4                        _postinit_end = .
+                0x00002054                exit
+                0x000020ac                        . = ALIGN (0x4)
+                0x000020ac                        _postinit_end = .
 
-.text           0x000020c4      0x12a load address 0x000400c4
-                0x000020c4                        _code = .
+.text           0x000020ac      0x12a load address 0x000400ac
+                0x000020ac                        _code = .
  *(.text*)
- .text          0x000020c4       0x7c simple.o
-                0x000020c4                kmain
+ .text          0x000020ac       0x7c simple.o
+                0x000020ac                kmain
  .text.mcPrintln
-                0x00002140       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
-                0x00002140                mcPrintln
- .text.__kinit  0x00002152       0x2c /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
-                0x00002152                __kinit
+                0x00002128       0x12 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libmachine.a(machine.o)
+                0x00002128                mcPrintln
+ .text.__kinit  0x0000213a       0x2c /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x0000213a                __kinit
  .text.__cxa_finalize
-                0x0000217e       0x70 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
-                0x0000217e                __cxa_finalize
+                0x00002166       0x70 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x00002166                __cxa_finalize
  *(.rodata*)
-                0x000021ee                        _code_end = .
-                0x000021f0                        . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+                0x000021d6                        _code_end = .
+                0x000021e6                        . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
 
-.ctors          0x000021f0        0x0
-                0x000021f0                        _ctors = .
+.ctors          0x000021e8        0x0
+                0x000021e8                        _ctors = .
  *(.ctors)
  *(SORT_BY_NAME(.ctors.*))
-                0x000021f0                        _ctors_end = .
+                0x000021e8                        _ctors_end = .
 
-.dtors          0x000021f0        0x0
-                0x000021f0                        _dtors = .
+.dtors          0x000021e8        0x0
+                0x000021e8                        _dtors = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x000021f0                        _dtors_end = .
+                0x000021e8                        _dtors_end = .
 
-.data           0x000021f0        0x0
-                0x000021f0                        _data_start = .
+.data           0x000021e8        0x0
+                0x000021e8                        _data_start = .
  *(.data*)
-                0x000021f0                        . = ALIGN (0x4)
-                0x000021f0                        _data_end = .
+                0x000021e8                        . = ALIGN (0x4)
+                0x000021e8                        _data_end = .
 
-.bss            0x000021f0     0x3808 load address 0x000401f0
-                0x000021f0                        _bss_start = .
+.bss            0x000021e8     0x3804 load address 0x000401e8
+                0x000021e8                        _bss_start = .
  *(.bss*)
- .bss           0x000021f0        0x4 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(init.o)
  .bss.cxa_atexit_count
-                0x000021f4        0x2 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x000021e8        0x2 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  .bss.cxa_atexits
-                0x000021f6     0x3800 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
+                0x000021ea     0x3800 /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libstart_serial.a(kinit.o)
  *(COMMON)
-                0x000059f8                        . = ALIGN (0x4)
- *fill*         0x000059f6        0x2 
-                0x000059f8                        _bss_end = .
-                0x000059f8                        . = DATA_SEGMENT_END (.)
-                0x000059f8                        _end = .
+                0x000059ec                        . = ALIGN (0x4)
+ *fill*         0x000059ea        0x2 
+                0x000059ec                        _bss_end = .
+                0x000059ec                        . = DATA_SEGMENT_END (.)
+                0x000059ec                        _end = .
 LOAD simple.o
 LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libsdfat.a
 LOAD /Users/malcolm/rosco_m68k/code/software/libs/build/lib/libdebug_stub.a

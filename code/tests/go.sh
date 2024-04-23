@@ -10,3 +10,5 @@ done
 echo ""
 echo "Copy files to SD Card"
 cp **/*.bin /Volumes/ROSCO32
+echo "Unmount SD Card"
+diskUtil unMountDisk /dev/disk6

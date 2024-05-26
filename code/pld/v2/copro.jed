@@ -1,7 +1,7 @@
 
 CUPL(WM)        5.0a  Serial# 60008009
 Device          g22v10  Library DLIB-h-40-1
-Created         Mon Apr 15 14:25:41 2024
+Created         Mon May 06 21:56:31 2024
 Name            copro
 Partno          
 Revision        02
@@ -20,4 +20,4 @@ Location        None
 *L00512 10111011011110100000000000000000
 *L05792 00000000000000000001000000000000
 *C09F8
-*7FEF
+*7FF4

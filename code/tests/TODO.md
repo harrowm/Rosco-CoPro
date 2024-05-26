@@ -1,0 +1,9 @@
+Byte_benchmark - works
+Divbyzero - works
+roscotest - works
+simple_asm - works
+simple_c - works
+simple_trig - problem
+test_printf - works
+trig - works
+whetstone - problem
